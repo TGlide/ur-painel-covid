@@ -1,0 +1,210 @@
+{
+  "confirmed": {
+    "data": {
+      "labels": [
+        "Mar 6",
+        "Mar 7",
+        "Mar 8",
+        "Mar 9",
+        "Mar 10",
+        "Mar 11",
+        "Mar 12",
+        "Mar 13",
+        "Mar 14",
+        "Mar 15",
+        "Mar 16",
+        "Mar 17",
+        "Mar 18",
+        "Mar 19",
+        "Mar 20",
+        "Mar 21",
+        "Mar 22",
+        "Mar 23",
+        "Mar 24",
+        "Mar 25",
+        "Mar 26",
+        "Mar 27",
+        "Mar 28",
+        "Mar 29",
+        "Mar 30",
+        "Mar 31",
+        "Abr 01",
+        "Abr 02",
+        "Abr 03",
+        "Abr 04",
+        "Abr 05",
+        "Abr 06"
+      ],
+      "datasets": [
+        {
+          "label": "Casos Diários",
+          "borderColor": "rgb(255, 99, 132)",
+          "pointBackgroundColor": "rgb(255, 99, 132)",
+          "data": [
+            4,
+            5,
+            3,
+            1,
+            8,
+            4,
+            5,
+            8,
+            4,
+            6,
+            3,
+            9,
+            0,
+            3,
+            31,
+            9,
+            67,
+            44,
+            64,
+            53,
+            37,
+            63,
+            58,
+            26,
+            38,
+            30,
+            114,
+            110,
+            60,
+            115,
+            86,
+            42
+          ]
+        },
+        {
+          "label": "Total de Casos",
+          "backgroundColor": "rgba(255, 99, 132, 0)",
+          "borderColor": "rgb(255, 99, 132)",
+          "pointBackgroundColor": "rgb(255, 99, 132)",
+          "type": "line",
+          "data": [
+            4,
+            9,
+            12,
+            13,
+            21,
+            25,
+            30,
+            38,
+            42,
+            48,
+            51,
+            60,
+            60,
+            63,
+            94,
+            103,
+            170,
+            214,
+            278,
+            331,
+            368,
+            431,
+            489,
+            515,
+            553,
+            583,
+            697,
+            807,
+            867,
+            982,
+            1068,
+            1110
+          ]
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "scales": {
+        "xAxes": [
+          {
+            "gridLines": {
+              "display": false
+            }
+          }
+        ],
+        "yAxes": [
+          {
+            "ticks": {
+              "max": 2000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "projected": {
+    "data": {
+      "labels": [
+        "Abr 07",
+        "Abr 08",
+        "Abr 09",
+        "Abr 10",
+        "Abr 11",
+        "Abr 12",
+        "Abr 13"
+      ],
+      "datasets": [
+        {
+          "label": "Total (Projetado)",
+          "// backgroundColor": "rgba(255, 99, 132, 0.5)",
+          "borderColor": "rgb(255, 99, 132)",
+          "pointBackgroundColor": "rgb(255, 99, 132)",
+          "data": [
+            87,
+            112,
+            94,
+            120,
+            100,
+            97,
+            130
+          ]
+        },
+        {
+          "label": "Diário (Projetado)",
+          "type": "line",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgba(72,219,251, 0.5)",
+          "pointBackgroundColor": "rgba(72,219,251, 0.5)",
+          "data": [
+            1197,
+            1309,
+            1403,
+            1523,
+            1623,
+            1720,
+            1850
+          ]
+        }
+      ]
+    },
+    "options": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "scales": {
+        "xAxes": [
+          {
+            "gridLines": {
+              "display": false
+            }
+          }
+        ],
+        "yAxes": [
+          {
+            "ticks": {
+              "beginAtZero": true,
+              "max": 2000,
+              "display": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}
