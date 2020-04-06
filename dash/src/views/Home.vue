@@ -103,26 +103,6 @@ export default {
         confirmed: {
           data: {
             labels: [
-              "Feb 15",
-              "Feb 16",
-              "Feb 17",
-              "Feb 18",
-              "Feb 19",
-              "Feb 20",
-              "Feb 21",
-              "Feb 22",
-              "Feb 23",
-              "Feb 24",
-              "Feb 25",
-              "Feb 26",
-              "Feb 27",
-              "Feb 28",
-              "Feb 29",
-              "Mar 1",
-              "Mar 2",
-              "Mar 3",
-              "Mar 4",
-              "Mar 5",
               "Mar 6",
               "Mar 7",
               "Mar 8",
@@ -143,56 +123,99 @@ export default {
               "Mar 23",
               "Mar 24",
               "Mar 25",
-              "Mar 26"
+              "Mar 26",
+              "Mar 27",
+              "Mar 28",
+              "Mar 29",
+              "Mar 30",
+              "Mar 31",
+              "Abr 01",
+              "Abr 02",
+              "Abr 03",
+              "Abr 04",
+              "Abr 05",
+              "Abr 06"
             ],
             datasets: [
               {
-                label: "Total de Casos (Confirmados)",
+                label: "Casos Diários",
                 // backgroundColor: "rgba(255, 99, 132, 0.5)",
                 borderColor: "rgb(255, 99, 132)",
                 pointBackgroundColor: "rgb(255, 99, 132)",
                 data: [
-                  15,
-                  15,
-                  15,
-                  15,
-                  15,
-                  15,
-                  35,
-                  35,
-                  35,
+                  4,
+                  5,
+                  3,
+                  1,
+                  8,
+                  4,
+                  5,
+                  8,
+                  4,
+                  6,
+                  3,
+                  9,
+                  0,
+                  3,
+                  31,
+                  9,
+                  67,
+                  44,
+                  64,
                   53,
-                  57,
+                  37,
+                  63,
+                  58,
+                  26,
+                  38,
+                  30,
+                  114,
+                  110,
+                  60,
+                  115,
+                  86,
+                  42
+                ]
+              },
+              {
+                label: "Total de Casos",
+                backgroundColor: "rgba(255, 99, 132, 0)",
+                borderColor: "rgb(255, 99, 132)",
+                pointBackgroundColor: "rgb(255, 99, 132)",
+                type: "line",
+                data: [
+                  4,
+                  9,
+                  12,
+                  13,
+                  21,
+                  25,
+                  30,
+                  38,
+                  42,
+                  48,
+                  51,
                   60,
                   60,
                   63,
-                  68,
-                  75,
-                  100,
-                  124,
-                  158,
-                  221,
-                  319,
-                  435,
-                  541,
-                  704,
-                  994,
-                  1301,
-                  1630,
-                  2183,
-                  2770,
-                  3613,
-                  4596,
-                  6344,
-                  9197,
-                  13779,
-                  19367,
-                  24192,
-                  33592,
-                  43781,
-                  54856,
-                  68211,
-                  85435
+                  94,
+                  103,
+                  170,
+                  214,
+                  278,
+                  331,
+                  368,
+                  431,
+                  489,
+                  515,
+                  553,
+                  583,
+                  697,
+                  807,
+                  867,
+                  982,
+                  1068,
+                  1110
                 ]
               }
             ]
@@ -211,7 +234,7 @@ export default {
               yAxes: [
                 {
                   ticks: {
-                    max: 300000
+                    max: 2000
                   }
                 }
               ]
@@ -221,21 +244,29 @@ export default {
         projected: {
           data: {
             labels: [
-              "Mar 27",
-              "Mar 28",
-              "Mar 29",
-              "Mar 30",
-              "Mar 31",
-              "Abr 01",
-              "Abr 02"
+              "Abr 07",
+              "Abr 08",
+              "Abr 09",
+              "Abr 10",
+              "Abr 11",
+              "Abr 12",
+              "Abr 13"
             ],
             datasets: [
               {
-                label: "Total de Casos (Projetados)",
+                label: "Total (Projetado)",
                 // backgroundColor: "rgba(255, 99, 132, 0.5)",
                 borderColor: "rgb(255, 99, 132)",
                 pointBackgroundColor: "rgb(255, 99, 132)",
-                data: [113645, 132033, 154550, 183200, 221342, 252012, 290123]
+                data: [87, 112, 94, 120, 100, 97, 130]
+              },
+              {
+                label: "Diário (Projetado)",
+                type: "line",
+                backgroundColor: "rgba(0, 0, 0, 0)",
+                borderColor: "rgba(72,219,251, 0.5)",
+                pointBackgroundColor: "rgba(72,219,251, 0.5)",
+                data: [1197, 1309, 1403, 1523, 1623, 1720, 1850]
               }
             ]
           },
@@ -254,7 +285,7 @@ export default {
                 {
                   ticks: {
                     beginAtZero: true,
-                    max: 300000,
+                    max: 2000,
                     display: false
                   }
                 }
