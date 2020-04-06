@@ -8,6 +8,8 @@ $primary: #f05122;
 $primary-invert: findColorInvert($primary);
 $dark: #27293d;
 $dark-invert: findColorInvert($dark);
+$gray: #8395a7;
+$gray-invert: findColorInvert($gray);
 $twitter: #4099ff;
 $twitter-invert: findColorInvert($twitter);
 
@@ -28,6 +30,10 @@ $colors: (
   "dark": (
     $dark,
     $dark-invert
+  ),
+  "gray": (
+    $gray,
+    $gray-invert
   ),
   "primary": (
     $primary,
