@@ -61,14 +61,19 @@ $colors: (
   )
 );
 
+// Text
 $family-primary: "Montserrat", sans-serif;
 $body-family: $family-primary;
+$text: $white;
+$title-color: $white;
 
+// Box
 $box-background-color: $dark;
 
-$text: $white;
-
-$title-color: $white;
+// Table
+$table-background-color: rgba($gray, 0.1);
+$table-color: $white;
+$table-head-cell-color: $white;
 
 // Links
 $link: $primary;

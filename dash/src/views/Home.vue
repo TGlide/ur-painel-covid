@@ -45,6 +45,7 @@
               </div>
             </div>
           </div>
+
           <div class="column is-4">
             <div class="box stats">
               <h4 class="title is-4">Tipos de Casos</h4>
@@ -82,9 +83,64 @@
             </div>
           </div>
         </div>
+
         <div class="columns">
-          <div class="column is-8"><div class="box"></div></div>
-          <div class="column is-4"><div class="box"></div></div>
+          <div class="column is-7">
+            <div class="box"></div>
+          </div>
+
+          <div class="column is-5">
+            <div class="box">
+              <h4 class="title is-4">Bairros</h4>
+              <b-table
+                :data="neighborhoods.data"
+                default-sort-direction="desc"
+                default-sort="leitos"
+                sort-icon="arrow-up"
+                sort-icon-size="is-small"
+              >
+                <template slot-scope="props">
+                  <b-table-column
+                    field="name"
+                    label="Bairro"
+                    width="250"
+                    sortable
+                  >
+                    {{ props.row.name }}
+                  </b-table-column>
+                  <b-table-column
+                    field="infected"
+                    label="Infectados"
+                    numeric
+                    sortable
+                  >
+                    {{ props.row.infected }}
+                  </b-table-column>
+                  <b-table-column
+                    field="leitos"
+                    label="Leitos"
+                    numeric
+                    sortable
+                  >
+                    {{ props.row.leitos }}
+                  </b-table-column>
+
+                  <b-table-column
+                    field="status"
+                    label="Faról"
+                    width="40"
+                    centered
+                    sortable
+                  >
+                    <div
+                      class="farol"
+                      :class="['green', 'yellow', 'red'][props.row.status - 1]"
+                    />
+                  </b-table-column>
+                </template>
+              </b-table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -101,7 +157,17 @@ export default {
   components: { LineChart },
   data() {
     return {
-      charts: { ...chartsJson }
+      charts: { ...chartsJson },
+      neighborhoods: {
+        data: [
+          { name: "Barra Da Tijuca", infected: 118, leitos: 500, status: 1 },
+          { name: "Copacabana", infected: 174, leitos: 200, status: 2 },
+          { name: "Leblon", infected: 71, leitos: 50, status: 3 },
+          { name: "Ipanema", infected: 58, leitos: 300, status: 1 },
+          { name: "Botafogo", infected: 51, leitos: 150, status: 1 },
+          { name: "Tijuca", infected: 40, leitos: 100, status: 1 }
+        ]
+      }
     };
   },
   computed: {
@@ -111,9 +177,6 @@ export default {
     projectedGradient() {
       return ["rgba(72,219,251, 0.5)", "rgba(72,219,251, 0.25)"];
     }
-  },
-  mounted() {
-    console.log(this.charts);
   }
 };
 </script>
@@ -137,7 +200,7 @@ export default {
   }
 }
 
-.box.stats {
+.stats {
   $stat-colors: (
     "danger": rgba($danger, 0.8),
     "warning": rgba($warning, 0.5),
@@ -181,6 +244,27 @@ export default {
           color: $color;
         }
       }
+    }
+  }
+}
+
+.farol {
+  $farol-colors: (
+    "green": rgba($success, 0.75),
+    "yellow": rgba($warning, 0.75),
+    "red": rgba($danger, 0.75)
+  );
+
+  $size: 1rem;
+  display: inline-block;
+  border-radius: 1000px;
+  width: $size;
+  height: $size;
+  margin-right: 0.5rem;
+
+  @each $status, $color in $farol-colors {
+    &.#{$status} {
+      background-color: $color;
     }
   }
 }
