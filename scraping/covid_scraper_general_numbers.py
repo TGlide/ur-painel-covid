@@ -1,9 +1,5 @@
 # selenium imports
 from selenium.webdriver.common.by import By # type of query for locating elements
-from selenium.webdriver.support.ui import WebDriverWait # wait until condition is fullfiled
-from selenium.webdriver.support import expected_conditions as EC # condition to be fullfiled
-from selenium.webdriver.common.action_chains import ActionChains # perform user interaction actions
-from selenium.webdriver.common.keys import Keys # common keys
 
 from time import sleep # hacky, but sometimes the only option (i won't overdo it i swear)
 

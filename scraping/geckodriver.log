@@ -841,3 +841,497 @@ JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 2
 JavaScript error: resource://services-settings/RemoteSettingsClient.jsm, line 123: Error: Unknown callback
 JavaScript error: resource://devtools/client/jsonview/converter-observer.js, line 94: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
 1586235170036	Marionette	INFO	Listening on port 44881
+1586235681554	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJT4HkZ"
+*** You are running in headless mode.
+1586235682057	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586235683226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586235683226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586235683226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586235683226	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586235685061	Marionette	INFO	Listening on port 44437
+1586235685079	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1586235703524	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepvkiCW"
+*** You are running in headless mode.
+1586235704044	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586235705287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586235705287	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586235705288	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586235705288	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586235707197	Marionette	INFO	Listening on port 46825
+1586235707240	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586235724835	Marionette	INFO	Stopped listening on port 46825
+1586236274895	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePpSDp4"
+*** You are running in headless mode.
+1586236275424	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236276681	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236276682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236276682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236276682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236278748	Marionette	INFO	Listening on port 37329
+1586236279848	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236295262	Marionette	INFO	Stopped listening on port 37329
+Exiting due to channel error.
+Exiting due to channel error.
+1586236296832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexWw7m6"
+*** You are running in headless mode.
+1586236297352	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236298539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236298539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236298539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236298539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236300423	Marionette	INFO	Listening on port 34819
+1586236300445	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236322432	Marionette	INFO	Stopped listening on port 34819
+1586236565207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileORzxcL"
+*** You are running in headless mode.
+1586236565735	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236566958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236566958	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236566959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236566959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236568969	Marionette	INFO	Listening on port 37665
+1586236569023	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236589186	Marionette	INFO	Stopped listening on port 37665
+1586236632048	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSoEjrs"
+*** You are running in headless mode.
+1586236632604	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236633825	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236633825	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236633825	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236633825	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236635752	Marionette	INFO	Listening on port 44575
+1586236635767	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1586236640597	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAQPBxE"
+*** You are running in headless mode.
+1586236641179	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236642606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236642606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236642606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236642606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236644692	Marionette	INFO	Listening on port 38725
+1586236644725	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1586236668880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRomIF8"
+*** You are running in headless mode.
+1586236669459	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236670591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236670591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236670591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236670591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236672389	Marionette	INFO	Listening on port 46391
+1586236672396	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236688978	Marionette	INFO	Stopped listening on port 46391
+1586236818212	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileV2soBc"
+*** You are running in headless mode.
+1586236818702	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236819927	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236819927	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236819927	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236819927	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236821778	Marionette	INFO	Listening on port 36727
+1586236821833	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236839305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9sBbzi"
+*** You are running in headless mode.
+1586236839951	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236841171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236841171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236841171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236841171	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236844340	Marionette	INFO	Listening on port 38145
+1586236844434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236875814	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFOgGc4"
+*** You are running in headless mode.
+1586236876546	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586236877723	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586236877723	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586236877723	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586236877723	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586236879758	Marionette	INFO	Listening on port 33141
+1586236879830	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586236901718	Marionette	INFO	Stopped listening on port 33141
+1586237024025	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq4jPRQ"
+*** You are running in headless mode.
+1586237024551	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586237025660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586237025660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586237025660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586237025660	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586237027599	Marionette	INFO	Listening on port 42917
+1586237027649	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586237053069	Marionette	INFO	Stopped listening on port 42917
+Exiting due to channel error.
+Exiting due to channel error.
+1586237074393	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileY07fbx"
+*** You are running in headless mode.
+1586237074940	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586237076276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586237076276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586237076276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586237076276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586237078218	Marionette	INFO	Listening on port 46837
+1586237078309	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1586237281277	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDK8S4c"
+1586237281801	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586237282931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586237282931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586237282931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586237282931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586237285127	Marionette	INFO	Listening on port 42955
+1586237286248	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586237305502	Marionette	INFO	Stopped listening on port 42955
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1586237466366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQzhf7M"
+1586237466930	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586237468080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586237468080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586237468080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586237468080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586237471951	Marionette	INFO	Listening on port 39971
+1586237472001	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586237490448	Marionette	INFO	Stopped listening on port 39971
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1586237521586	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileefKv4H"
+1586237522120	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586237523265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586237523265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586237523265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586237523265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586237525703	Marionette	INFO	Listening on port 43801
+1586237526827	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586237544855	Marionette	INFO	Stopped listening on port 43801
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1586237677421	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRtS90A"
+1586237677966	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586237679122	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586237679122	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586237679122	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586237679123	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586237681456	Marionette	INFO	Listening on port 35151
+1586237682573	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586237700690	Marionette	INFO	Stopped listening on port 35151
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1586238143492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8dw4x3"
+1586238144047	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238145212	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238145213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238145213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238145213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238147315	Marionette	INFO	Listening on port 42499
+1586238147409	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238167242	Marionette	INFO	Stopped listening on port 42499
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1586238188722	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLMSIrj"
+*** You are running in headless mode.
+1586238189222	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238190350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238190350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238190350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238190350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238192177	Marionette	INFO	Listening on port 43499
+1586238192232	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238218102	Marionette	INFO	Stopped listening on port 43499
+1586238276399	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePi3dWx"
+*** You are running in headless mode.
+1586238276947	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238278074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238278074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238278074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238278074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238279967	Marionette	INFO	Listening on port 33975
+1586238280010	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238301546	Marionette	INFO	Stopped listening on port 33975
+1586238329497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehmeAs1"
+1586238330059	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238331179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238331179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238331179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238331179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238334789	Marionette	INFO	Listening on port 40591
+1586238334853	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238352377	Marionette	INFO	Stopped listening on port 40591
+Exiting due to channel error.
+1586238371501	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek7gGqu"
+1586238372044	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238373395	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238373396	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238373396	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238373396	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238375670	Marionette	INFO	Listening on port 39793
+1586238376734	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238396443	Marionette	INFO	Stopped listening on port 39793
+1586238503289	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledWrQ5K"
+1586238503830	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238504986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238504986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238504987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238504987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238507634	Marionette	INFO	Listening on port 32979
+1586238507708	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238531459	Marionette	INFO	Stopped listening on port 32979
+1586238585233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "https://experience.arcgis.com/experience/38efc69787a346959c931568bd9e2cc4" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevNb795"
+*** You are running in headless mode.
+1586238585720	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586238586823	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586238586823	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586238586823	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586238586823	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1586238588730	Marionette	INFO	Listening on port 45457
+1586238588748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/esri/dijit/BasemapGallery.js, line 22: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://js.arcgis.com/3.32/init.js, line 995: Error: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pcrj.maps.arcgis.com/apps/opsdashboard/assets/vendor-557b494b34c1b4f592d5f2948d530f35.js, line 2774: unreachable code after return statement
+1586238607257	Marionette	INFO	Stopped listening on port 45457

@@ -2,6 +2,8 @@
 from selenium import webdriver # webdriver for automated browser
 from selenium.webdriver.firefox.options import Options # options for the browser
 from selenium.webdriver.common.by import By # type of query for locating elements
+from selenium.webdriver.support.ui import WebDriverWait # wait until condition is fullfiled
+from selenium.webdriver.support import expected_conditions as EC # condition to be fullfiled
 
 # custom classes imports
 from covid_scraper_general_numbers import CovidScraperGeneralNumbers
@@ -50,8 +52,9 @@ class CovidScraper:
         driver.implicitly_wait(timeout)
 
         # get iframe with all the data and switch to it
-        iframe = driver.find_element(By.XPATH, "//iframe") # get iframe
-        driver.switch_to.frame(iframe)
+        iframe = WebDriverWait(driver, timeout).until(
+            EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe")) # get iframe
+        )
 
         return driver
 
@@ -71,8 +74,8 @@ class CovidScraper:
 
     def get_all(self):
 
-        self.data['total_cases'] = self.general_numbers.get_all()
         self.data['neighborhoods'] = self.hoods.get_all()
+        self.data['total_cases'] = self.general_numbers.get_all()
 
     def __del__(self):
 
