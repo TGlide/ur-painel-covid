@@ -27,6 +27,35 @@
               </div>
               <div class="columns charts">
                 <div class="column is-8">
+                  <b-field label="Fonte Confirmados">
+                    <b-dropdown
+                      v-model="sources.confirmed.selected"
+                      multiple
+                      aria-role="list"
+                    >
+                      <button
+                        class="button is-dark"
+                        type="button"
+                        slot="trigger"
+                      >
+                        <span
+                          >Selecionado ({{
+                            sources.confirmed.selected.length
+                          }})</span
+                        >
+                        <b-icon icon="menu-down"></b-icon>
+                      </button>
+
+                      <b-dropdown-item
+                        v-for="option in sources.confirmed.data"
+                        :key="option.value"
+                        :value="option.value"
+                        aria-role="listitem"
+                      >
+                        <span>{{ option.name }}</span>
+                      </b-dropdown-item>
+                    </b-dropdown>
+                  </b-field>
                   <line-chart
                     :chartdata="charts.confirmed.data"
                     :options="charts.confirmed.options"
@@ -35,6 +64,35 @@
                   </line-chart>
                 </div>
                 <div class="column is-4">
+                  <b-field label="Fonte Projetados">
+                    <b-dropdown
+                      v-model="sources.projected.selected"
+                      multiple
+                      aria-role="list"
+                    >
+                      <button
+                        class="button is-dark"
+                        type="button"
+                        slot="trigger"
+                      >
+                        <span
+                          >Selecionado ({{
+                            sources.projected.selected.length
+                          }})</span
+                        >
+                        <b-icon icon="menu-down"></b-icon>
+                      </button>
+
+                      <b-dropdown-item
+                        v-for="option in sources.projected.data"
+                        :key="option"
+                        :value="option"
+                        aria-role="listitem"
+                      >
+                        <span>{{ option }}</span>
+                      </b-dropdown-item>
+                    </b-dropdown>
+                  </b-field>
                   <line-chart
                     :chartdata="charts.projected.data"
                     :options="charts.projected.options"
@@ -98,6 +156,7 @@
                 default-sort="leitos"
                 sort-icon="arrow-up"
                 sort-icon-size="is-small"
+                striped
               >
                 <template slot-scope="props">
                   <b-table-column
@@ -167,6 +226,25 @@ export default {
           { name: "Botafogo", infected: 51, leitos: 150, status: 1 },
           { name: "Tijuca", infected: 40, leitos: 100, status: 1 }
         ]
+      },
+      sources: {
+        confirmed: {
+          selected: [],
+          data: [
+            {
+              name: "Estado",
+              value: "est"
+            },
+            {
+              name: "Município",
+              value: "mun"
+            }
+          ]
+        },
+        projected: {
+          selected: ["UFRJ"],
+          data: ["UFRJ", "UERJ", "UFF", "PUC"]
+        }
       }
     };
   },
@@ -244,6 +322,19 @@ export default {
           color: $color;
         }
       }
+    }
+  }
+}
+
+.charts {
+  align-items: flex-end;
+
+  /deep/ .dropdown button {
+    border-color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $white;
     }
   }
 }

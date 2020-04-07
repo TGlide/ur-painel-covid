@@ -71,9 +71,22 @@ $title-color: $white;
 $box-background-color: $dark;
 
 // Table
-$table-background-color: rgba($gray, 0.1);
+$table-background-color: transparent;
+$table-striped-row-even-background-color: rgba($gray, 0.1);
+$table-striped-row-even-hover-background-color: rgba($gray, 0.15);
 $table-color: $white;
 $table-head-cell-color: $white;
+
+// Form
+$label-color: $white;
+$input-background-color: transparent;
+$input-hover-color: $primary;
+
+// Dropdown
+$dropdown-content-background-color: lighten($dark, 5%);
+$dropdown-item-hover-color: $white;
+$dropdown-item-hover-background-color: rgba($primary, 0.75);
+$dropdown-item-active-background-color: rgba($primary, 0.9);
 
 // Links
 $link: $primary;
