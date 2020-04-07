@@ -48,13 +48,52 @@ class CovidScraperGeneralNumbers():
             self.dashboard.find_element(
                 By.XPATH,
                 "div[18]/margin-container/full-container/div/div[1]/div/div[2]"
-            ).text.replace(".", "")
+            ).text.replace(".", "").replace(",", "")
         )
 
         return self.data['recovered']
 
+    def get_hospitalized(self):
+
+        # get total number of hospitalized people and convert it to a number
+        self.data['hospitalized'] = int(
+            self.dashboard.find_element(
+                By.XPATH,
+                "div[11]/margin-container/full-container/div/div/div/div[2]"
+            ).text.replace(".", "").replace(",", "")
+        )
+
+        return self.data['hospitalized']
+
+    def get_interned(self):
+
+        # get total number of interned people and convert it to a number
+        self.data['interned'] = int(
+            self.dashboard.find_element(
+                By.XPATH,
+                "div[12]/margin-container/full-container/div/div/div/div[2]"
+            ).text.replace(".", "").replace(",", "")
+        )
+
+        return self.data['interned']
+
+    def get_dead(self):
+
+        # get total number of deaths and convert it to a number
+        self.data['dead'] = int(
+            self.dashboard.find_element(
+                By.XPATH,
+                "div[13]/margin-container/full-container/div/div/div/div[2]"
+            ).text.replace(".", "").replace(",", "")
+        )
+
+        return self.data['dead']
+
     def get_all(self):
 
+        self.get_hospitalized()
+        self.get_interned()
+        self.get_dead()
         self.get_confirmed()
         self.get_possible()
         self.get_recovered()

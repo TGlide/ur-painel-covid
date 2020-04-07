@@ -10,7 +10,8 @@ from covid_scraper_general_numbers import CovidScraperGeneralNumbers
 from covid_scraper_hood import CovidScraperHood
 
 # built-in imports
-from datetime import datetime
+from datetime import datetime # datetime object
+import json # for requests and pretty-printing results
 
 class CovidScraper:
 
@@ -18,7 +19,7 @@ class CovidScraper:
 
         # where all the data we gather will be kept
         self.data = {
-            'total_cases': None,
+            'total': None,
             'neighborhoods': None
         }
 
@@ -36,7 +37,7 @@ class CovidScraper:
 
         # classes which will help us gather the data we want
         self.general_numbers = CovidScraperGeneralNumbers(self.dashboard)
-        self.hoods = CovidScraperHood(self.dashboard)
+        self.hoods = CovidScraperHood(self.driver, self.navbar, self.dashboard)
 
     def _setup_driver(self, headless, timeout, binary_path):
 
@@ -74,8 +75,8 @@ class CovidScraper:
 
     def get_all(self):
 
+        self.data['total'] = self.general_numbers.get_all()
         self.data['neighborhoods'] = self.hoods.get_all()
-        self.data['total_cases'] = self.general_numbers.get_all()
 
     def __del__(self):
 
@@ -86,13 +87,12 @@ class CovidScraper:
 
         string = "Data Gathered({}):\n".format(self.last_update)
 
-        for key in self.data.keys():
-            string += "{} : {}\n".format(key, self.data[key])
+        string += json.dumps(self.data, sort_keys=True, indent=4)
 
         return string
 
 # testting
 if( __name__ == "__main__" ):
-    scavanger = CovidScraper()
+    scavanger = CovidScraper(headless=False)
     scavanger.get_all()
     print(scavanger)
