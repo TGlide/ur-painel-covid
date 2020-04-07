@@ -22,7 +22,8 @@ class CovidScraper:
         self.data = {
             'total': None,
             'neighborhoods': None,
-            'last_update': None
+            'last_update': None,
+            'public': None
         }
 
         # initialize the driver at the dashboard URL and switch its context to the dashboard's iframe
@@ -40,6 +41,7 @@ class CovidScraper:
         # classes which will help us gather the data we want
         self.total = CovidScraperTotal(self.dashboard)
         self.hoods = CovidScraperHood(self.driver, self.navbar, self.dashboard)
+        self.public = CovidScraperPublic(self.dashboard)
 
     def _setup_driver(self, headless, timeout, binary_path):
 
@@ -77,6 +79,7 @@ class CovidScraper:
 
     def get_all(self):
 
+        self.data['public'] = self.public.get_all()
         self.data['total'] = self.total.get_all()
         self.data['neighborhoods'] = self.hoods.get_all()
 
@@ -93,6 +96,6 @@ class CovidScraper:
 
 # testting
 if( __name__ == "__main__" ):
-    scavanger = CovidScraper()
+    scavanger = CovidScraper(headless=False)
     scavanger.get_all()
     print(scavanger)
