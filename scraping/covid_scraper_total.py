@@ -3,8 +3,7 @@ from selenium.webdriver.common.by import By # type of query for locating element
 
 from time import sleep # hacky, but sometimes the only option (i won't overdo it i swear)
 
-class CovidScraperGeneralNumbers():
-
+class CovidScraperTotal():
 
     def __init__(self, dashboard):
 
@@ -12,7 +11,10 @@ class CovidScraperGeneralNumbers():
         self.data = {
             'confirmed': None,
             'possible': None,
-            'recovered': None
+            'recovered': None,
+            'hospitalized': None,
+            'interned': None,
+            'dead': None
         }
 
         self.dashboard = dashboard

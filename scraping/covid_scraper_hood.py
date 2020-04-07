@@ -113,7 +113,7 @@ class CovidScraperHood():
 
     def get_all(self):
 
-        self.get_neighborhoods_deaths()
         self.get_neighborhoods_cases()
+        self.get_neighborhoods_deaths()
 
         return self.data
