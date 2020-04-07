@@ -1,5 +1,13 @@
+# ignore libraries
 node_modules
 
+# ignore IDE file
+.vscode
+
+# ignore environmental variables
 .env
 .env.local
-py3env
+
+# ignore all files in scraping/ that are not .py
+scraping/*
+!scraping/*.py

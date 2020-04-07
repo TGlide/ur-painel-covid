@@ -1,32 +1,42 @@
+# selenium imports
 from selenium import webdriver # webdriver for automated browser
 from selenium.webdriver.firefox.options import Options # options for the browser
 from selenium.webdriver.common.by import By # type of query for locating elements
-from selenium.webdriver.support.ui import WebDriverWait # wait for condition to be fullfiled when looking for element
-from selenium.webdriver.support import expected_conditions as EC # condition to be fullfiled
 
+# custom classes imports
+from covid_scraper_general_numbers import CovidScraperGeneralNumbers
+from covid_scraper_hood import CovidScraperHood
+
+# built-in imports
 from datetime import datetime
 
 class CovidScraper:
 
     def __init__(self, headless=True, timeout=300, binary_path="geckodriver"):
 
-        # where all the gathered data will be kept
+        # where all the data we gather will be kept
         self.data = {
-            'confirmed': None,
-            'possible': None,
-            'recovered': None
+            'total_cases': None,
+            'neighborhoods': None
         }
 
-        # initialize the driver at the dashboard URL
-        self.driver = self.setup_driver(headless, timeout, binary_path)
+        # initialize the driver at the dashboard URL and switch its context to the dashboard's iframe
+        self.driver = self._setup_driver(headless, timeout, binary_path)
+
+        # get navbar
+        self.navbar = self.driver.find_element(By.XPATH, "//body/div/div/div[1]/div[@class='margin-container']/div[@class='full-container']/div")
 
         # get time of the last update (if it is in maintenance, None will be returned)
-        self.last_update = self.page_status()
+        self.last_update = self._page_status()
 
         # get main dashboard tag (so we don't need to search from root everytime)
         if( self.last_update ): self.dashboard = self.driver.find_element(By.XPATH, "//html/body/div/div/div[2]/div/div/div/margin-container/full-container")
 
-    def setup_driver(self, headless, timeout, binary_path):
+        # classes which will help us gather the data we want
+        self.general_numbers = CovidScraperGeneralNumbers(self.dashboard)
+        self.hoods = CovidScraperHood(self.dashboard)
+
+    def _setup_driver(self, headless, timeout, binary_path):
 
         # set starting URL and if we will run headless or not
         options = Options()
@@ -45,13 +55,10 @@ class CovidScraper:
 
         return driver
 
-    def page_status(self):
-
-        # get navbar
-        navbar = self.driver.find_element(By.XPATH, "//body/div/div/div[1]/div[@class='margin-container']/div[@class='full-container']/div")
+    def _page_status(self):
 
         # get text in navbar containing the time it was last updated
-        last_update_str = navbar.find_element(By.XPATH, "div[2]/div[2]").text
+        last_update_str = self.navbar.find_element(By.XPATH, "div[2]/div[2]").text
 
         # check if page is under maintance right now
         if( last_update_str == None or "atualização" in  last_update_str):
@@ -62,6 +69,11 @@ class CovidScraper:
 
         return last_update
 
+    def get_all(self):
+
+        self.data['total_cases'] = self.general_numbers.get_all()
+        self.data['neighborhoods'] = self.hoods.get_all()
+
     def __del__(self):
 
         # close driver
@@ -71,25 +83,13 @@ class CovidScraper:
 
         string = "Data Gathered({}):\n".format(self.last_update)
 
-        for key in self.data:
-            string + "{} : {}\n".format(key, self.data[key])
+        for key in self.data.keys():
+            string += "{} : {}\n".format(key, self.data[key])
 
         return string
 
-    '''
-        all the methods from this point on have the purpose
-        of getting the data and feeding it to the 'data' attribute
-    '''
-    def get_confirmed_cases(self):
-
-        # get number of confirmed cases and convert it to a numeric type
-        self.data['confirmed'] = int(self.dashboard.find_element(
-            By.XPATH,
-             "//div[1]/margin-container/full-container/div/div/div/div[2]/svg/g[2]/svg/text"
-             ).text.replace(",", "."))
-
 # testting
 if( __name__ == "__main__" ):
-    scavanger = CovidScraper(headless=False)
-    scavanger.get_confirmed_cases()
+    scavanger = CovidScraper()
+    scavanger.get_all()
     print(scavanger)
