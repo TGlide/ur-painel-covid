@@ -49,23 +49,27 @@
 
                       <b-dropdown-item
                         v-for="option in sources.confirmed.data"
-                        :key="option.value"
-                        :value="option.value"
+                        :key="option"
+                        :value="option"
                         aria-role="listitem"
                       >
-                        <span>{{ option.name }}</span>
+                        <span>{{ option }}</span>
                       </b-dropdown-item>
                     </b-dropdown>
                   </b-field>
                   <line-chart
                     :chartdata="charts.confirmed.data"
                     :options="charts.confirmed.options"
-                    :gradientColors="confirmedGradient"
+                    v-if="
+                      sources.confirmed.selected &&
+                        sources.confirmed.selected.length > 0
+                    "
                   >
                   </line-chart>
+                  <NoContent v-else />
                 </div>
                 <div class="column is-4">
-                  <b-field label="Fonte Projetados">
+                  <b-field label="Fonte Projetados (Município)">
                     <b-dropdown
                       v-model="sources.projected.selected"
                       multiple
@@ -228,17 +232,8 @@ export default {
       },
       sources: {
         confirmed: {
-          selected: [],
-          data: [
-            {
-              name: "Estado",
-              value: "est"
-            },
-            {
-              name: "Município",
-              value: "mun"
-            }
-          ]
+          selected: ["Estado", "Município"],
+          data: ["Estado", "Município"]
         },
         projected: {
           selected: ["UFRJ"],
@@ -249,6 +244,20 @@ export default {
   },
   computed: {
     charts() {
+      const confirmedKeys = Object.keys(
+        chartsJson.confirmed.data.datasets
+      ).filter(key => {
+        return this.sources.confirmed.selected.includes(key);
+      });
+
+      let confirmedDatasets = [];
+      for (let key of confirmedKeys) {
+        confirmedDatasets = [
+          ...confirmedDatasets,
+          ...chartsJson.confirmed.data.datasets[key]
+        ];
+      }
+
       const projectedKeys = Object.keys(
         chartsJson.projected.data.datasets
       ).filter(key => {
@@ -264,7 +273,13 @@ export default {
       }
 
       const res = {
-        confirmed: { ...chartsJson.confirmed },
+        confirmed: {
+          data: {
+            labels: chartsJson.confirmed.data.labels,
+            datasets: confirmedDatasets
+          },
+          options: chartsJson.confirmed.options
+        },
         projected: {
           data: {
             labels: chartsJson.projected.data.labels,
@@ -275,9 +290,6 @@ export default {
       };
       console.log(res);
       return res;
-    },
-    confirmedGradient() {
-      return ["rgba(255, 99, 132, 0.5)", "rgba(255, 99, 132, 0.25)"];
     }
   },
   methods: {
