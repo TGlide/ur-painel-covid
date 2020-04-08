@@ -1,6 +1,10 @@
 # selenium imports
 from selenium.webdriver.common.by import By # type of query for locating elements
 
+# custom imports
+from covid_scraper_utils import change_to_right_subpanel
+
+# built-in imports
 from time import sleep # hacky, but sometimes the only option (i won't overdo it i swear)
 
 class CovidScraperTotal():
@@ -10,7 +14,7 @@ class CovidScraperTotal():
         # where all the gathered data will be kept
         self.data = {
             'confirmed': None,
-            'possible': None,
+            'lethality': None,
             'recovered': None,
             'hospitalized': None,
             'interned': None,
@@ -31,17 +35,17 @@ class CovidScraperTotal():
 
         return self.data['confirmed']
 
-    def get_possible(self):
+    def get_lethality(self):
 
         # get number of possible cases and convert it to a numeric value
-        self.data['possible'] = int(
+        self.data['lethality'] = float(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[2]/margin-container/full-container/div/div[1]/div/div[2]"
-            ).text.replace(".", "")
-        )
+                "div[16]/margin-container/full-container/div/div[1]/div/div[2]"
+            ).text.replace("%", "")
+        )/100
 
-        return self.data['possible']
+        return self.data['lethality']
 
     def get_recovered(self):
 
@@ -49,7 +53,7 @@ class CovidScraperTotal():
         self.data['recovered'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[18]/margin-container/full-container/div/div[1]/div/div[2]"
+                "div[2]/margin-container/full-container/div/div[1]/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -57,11 +61,14 @@ class CovidScraperTotal():
 
     def get_hospitalized(self):
 
+        # go to first subpanel
+        change_to_right_subpanel(self.dashboard, 1)
+
         # get total number of hospitalized people and convert it to a number
         self.data['hospitalized'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[11]/margin-container/full-container/div/div/div/div[2]"
+                "div[10]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -69,11 +76,14 @@ class CovidScraperTotal():
 
     def get_interned(self):
 
+        # go to first subpanel
+        change_to_right_subpanel(self.dashboard, 1)
+
         # get total number of interned people and convert it to a number
         self.data['interned'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[12]/margin-container/full-container/div/div/div/div[2]"
+                "div[11]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -81,11 +91,14 @@ class CovidScraperTotal():
 
     def get_dead(self):
 
+        # go to first subpanel
+        change_to_right_subpanel(self.dashboard, 1)
+
         # get total number of deaths and convert it to a number
         self.data['dead'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[13]/margin-container/full-container/div/div/div/div[2]"
+                "div[17]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -93,11 +106,11 @@ class CovidScraperTotal():
 
     def get_all(self):
 
+        self.get_lethality()
+        self.get_confirmed()
+        self.get_recovered()
         self.get_hospitalized()
         self.get_interned()
         self.get_dead()
-        self.get_confirmed()
-        self.get_possible()
-        self.get_recovered()
 
         return self.data

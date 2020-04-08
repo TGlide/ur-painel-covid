@@ -1,9 +1,12 @@
+#selenium imports
 from selenium.webdriver.common.by import By # type of query for locating elements
 from selenium.webdriver.support.ui import WebDriverWait # wait until condition is fullfiled
 from selenium.webdriver.support import expected_conditions as EC # condition to be fullfiled
-from selenium.webdriver.common.action_chains import ActionChains # perform user interaction actions
-from selenium.webdriver.common.keys import Keys # common keys
 
+# custom imports
+from covid_scraper_utils import dropdown_menu_set # toogle deaf/confirmed mode
+
+# built-in
 from time import sleep
 
 class CovidScraperHood():
@@ -11,8 +14,28 @@ class CovidScraperHood():
     def __init__(self, driver, navbar, dashboard, timeout=5):
 
         # where all the gathered data will be kept
-        self.data = {
+        self.data = dict()
+        '''
+        'neighborhood_name' = {
+            'confirmed': None,
+            'dead': None,
+            'gender': {
+                # from CovidScraperCircleGraph
+                'male': {
+                    'confirmed': None,
+                    'dead': None
+                },
+                'female': {
+                    'confirmed': None,
+                    'dead': None
+                },
+                'no_info': {
+                    'confirmed': None,
+                    'dead': None
+                }
+            }
         }
+        '''
 
         self.driver = driver
         self.navbar = navbar
@@ -23,22 +46,6 @@ class CovidScraperHood():
 
         # path to access the list of neighborhoods
         self.hood_list = "div[3]/margin-container/full-container/div/div[2]/nav/span"
-
-    def dropdown_menu_toogle(self):
-
-        # find dropdown menu
-        dropdown_menu = self.navbar.find_element(By.XPATH, "div[3]/div[2]/div/div/div[2]/div/a")
-
-        # click it!
-        dropdown_menu.click()
-        
-        # let's perform some interaction actions 
-        actions = ActionChains(self.driver)
-
-        actions.send_keys(Keys.ARROW_DOWN)
-
-        # press ENTER to select the desired option
-        actions.send_keys(Keys.ENTER).perform()
 
     def get_neighborhood_cases(self, hood_element):
 
@@ -85,7 +92,7 @@ class CovidScraperHood():
         sleep(self.timeout)
 
         # check for deaths
-        self.dropdown_menu_toogle()
+        dropdown_menu_set(self.driver, self.navbar, "Óbitos confirmados")
 
         # iterate through neighborhoods and get death toll of each one
         for neighborhood in self.dashboard.find_elements(By.XPATH, self.hood_list):
@@ -101,7 +108,7 @@ class CovidScraperHood():
             self.get_neighborhood_deaths(neighborhood_name)
 
         # got back to show confirmed cases     
-        self.dropdown_menu_toogle()
+        dropdown_menu_set(self.driver, self.navbar, "Todos os confirmados")
 
         # click once again on the last neighborhood so we go back seeing the total cases
         self.dashboard.find_element(By.XPATH, self.hood_list + "[last()]").click()

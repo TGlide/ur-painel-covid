@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC # condition to 
 from covid_scraper_total import CovidScraperTotal
 from covid_scraper_hood import CovidScraperHood
 from covid_scraper_public import CovidScraperPublic
+from covid_scraper_graph import CovidScraperGraph
 
 # built-in imports
 from datetime import datetime # datetime object
@@ -23,14 +24,15 @@ class CovidScraper:
             'total': None,
             'neighborhoods': None,
             'last_update': None,
-            'public': None
+            'public': None,
+            'daily': None
         }
 
         # initialize the driver at the dashboard URL and switch its context to the dashboard's iframe
         self.driver = self._setup_driver(headless, timeout, binary_path)
 
         # get navbar
-        self.navbar = self.driver.find_element(By.XPATH, "//body/div/div/div[1]/div[@class='margin-container']/div[@class='full-container']/div")
+        self.navbar = self.driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[@class='margin-container']/div[@class='full-container']/div")
 
         # get time of the last update (if it is in maintenance, None will be returned)
         self.data['last_update'] = self._page_status()
@@ -42,6 +44,7 @@ class CovidScraper:
         self.total = CovidScraperTotal(self.dashboard)
         self.hoods = CovidScraperHood(self.driver, self.navbar, self.dashboard)
         self.public = CovidScraperPublic(self.dashboard)
+        self.graph = CovidScraperGraph(self.dashboard)
 
     def _setup_driver(self, headless, timeout, binary_path):
 
@@ -79,9 +82,15 @@ class CovidScraper:
 
     def get_all(self):
 
+        print(self)
         self.data['public'] = self.public.get_all()
+        print(self)
         self.data['total'] = self.total.get_all()
+        print(self)
+        self.data['daily'] = self.graph.get_all()
+        print(self)
         self.data['neighborhoods'] = self.hoods.get_all()
+        print(self)
 
     def __del__(self):
 
@@ -90,12 +99,11 @@ class CovidScraper:
 
     def __repr__(self):
 
-        string = json.dumps(self.data, sort_keys=True, indent=4)
+        string = json.dumps(self.data, sort_keys=True, indent=4, default=str)
 
         return string
 
 # testting
 if( __name__ == "__main__" ):
-    scavanger = CovidScraper(headless=False)
+    scavanger = CovidScraper(headless=True)
     scavanger.get_all()
-    print(scavanger)
