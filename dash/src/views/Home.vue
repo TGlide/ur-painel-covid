@@ -3,6 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="columns">
+          <!-- Charts -->
           <div class="column is-12">
             <div class="box">
               <div class="box-header">
@@ -103,6 +104,7 @@
                     "
                   >
                   </line-chart>
+                  <NoContent v-else />
                 </div>
               </div>
             </div>
@@ -110,6 +112,7 @@
         </div>
 
         <div class="columns">
+          <!-- Neighborhoods -->
           <div class="column is-7">
             <div class="box">
               <h4 class="title is-4">Bairros</h4>
@@ -165,6 +168,7 @@
               </b-table>
             </div>
           </div>
+          <!-- Stats -->
           <div class="column is-5">
             <div class="box stats">
               <h4 class="title is-4">Tipos de Casos</h4>
@@ -212,10 +216,11 @@ import { chartsJson } from "@/data/charts.js";
 import leitosJson from "@/data/leitos.json";
 
 import LineChart from "@/components/LineChart";
+import NoContent from "@/components/NoContent";
 
 export default {
   name: "Home",
-  components: { LineChart },
+  components: { LineChart, NoContent },
   data() {
     return {
       neighborhoods: {
@@ -366,7 +371,7 @@ export default {
 }
 
 .charts {
-  align-items: flex-end;
+  align-items: stretch;
 
   /deep/ .dropdown button {
     border-color: $white;
@@ -374,6 +379,14 @@ export default {
     &:active,
     &:focus {
       border-color: $white;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    /deep/ .no-content {
+      flex-grow: 1;
     }
   }
 }
