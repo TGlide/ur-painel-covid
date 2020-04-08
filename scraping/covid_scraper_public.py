@@ -23,7 +23,7 @@ class CovidScraperPublic():
         self.data['hospitalized'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[7]/margin-container/full-container/div/div/div/div[2]"
+                "div[8]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -38,7 +38,7 @@ class CovidScraperPublic():
         self.data['interned'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[8]/margin-container/full-container/div/div/div/div[2]"
+                "div[9]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -53,7 +53,7 @@ class CovidScraperPublic():
         self.data['dead'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[18]/margin-container/full-container/div/div/div/div[2]"
+                "div[19]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 

@@ -14,7 +14,6 @@ class CovidScraperTotal():
         # where all the gathered data will be kept
         self.data = {
             'confirmed': None,
-            'lethality': None,
             'recovered': None,
             'hospitalized': None,
             'interned': None,
@@ -34,7 +33,7 @@ class CovidScraperTotal():
             )
 
         return self.data['confirmed']
-
+    '''
     def get_lethality(self):
 
         # get number of possible cases and convert it to a numeric value
@@ -46,7 +45,7 @@ class CovidScraperTotal():
         )/100
 
         return self.data['lethality']
-
+    '''
     def get_recovered(self):
 
         # get number of recovered cases and convert it to a numeric value
@@ -68,7 +67,7 @@ class CovidScraperTotal():
         self.data['hospitalized'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[10]/margin-container/full-container/div/div/div/div[2]"
+                "div[11]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -83,7 +82,7 @@ class CovidScraperTotal():
         self.data['interned'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[11]/margin-container/full-container/div/div/div/div[2]"
+                "div[12]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -98,7 +97,7 @@ class CovidScraperTotal():
         self.data['dead'] = int(
             self.dashboard.find_element(
                 By.XPATH,
-                "div[17]/margin-container/full-container/div/div/div/div[2]"
+                "div[20]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
@@ -106,7 +105,7 @@ class CovidScraperTotal():
 
     def get_all(self):
 
-        self.get_lethality()
+        #self.get_lethality()
         self.get_confirmed()
         self.get_recovered()
         self.get_hospitalized()

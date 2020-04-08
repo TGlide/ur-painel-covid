@@ -38,13 +38,21 @@ class CovidScraper:
         self.data['last_update'] = self._page_status()
 
         # get main dashboard tag (so we don't need to search from root everytime)
-        if( self.data['last_update'] ): self.dashboard = self.driver.find_element(By.XPATH, "//html/body/div/div/div[2]/div/div/div/margin-container/full-container")
+        if( self.data['last_update'] ):
+            self.dashboard = self.driver.find_element(By.XPATH, "//html/body/div/div/div[2]/div/div/div/margin-container/full-container")
+            self.available=True
+        else:
+            self.available=False
 
         # classes which will help us gather the data we want
         self.total = CovidScraperTotal(self.dashboard)
         self.hoods = CovidScraperHood(self.driver, self.navbar, self.dashboard)
         self.public = CovidScraperPublic(self.dashboard)
         self.graph = CovidScraperGraph(self.dashboard)
+
+    def is_available(self):
+        # check if page is available
+        return self.available
 
     def _setup_driver(self, headless, timeout, binary_path):
 
@@ -82,15 +90,15 @@ class CovidScraper:
 
     def get_all(self):
 
-        print(self)
+        print("after initialization:", self)
         self.data['public'] = self.public.get_all()
-        print(self)
+        print("after public:", self)
         self.data['total'] = self.total.get_all()
-        print(self)
+        print("after total:", self)
         self.data['daily'] = self.graph.get_all()
-        print(self)
+        print("after daily:", self)
         self.data['neighborhoods'] = self.hoods.get_all()
-        print(self)
+        print("after neighborhoods:", self)
 
     def __del__(self):
 
