@@ -1,0 +1,546 @@
+{
+  "ALTO DA BOA VISTA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "ANCHIETA": {
+    "confirmed": 8,
+    "dead": "0"
+  },
+  "ANDARAI": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "ANIL": {
+    "confirmed": 5,
+    "dead": "0"
+  },
+  "BANCARIOS": {
+    "confirmed": 2,
+    "dead": "1"
+  },
+  "BANGU": {
+    "confirmed": 18,
+    "dead": "2"
+  },
+  "BARRA DA TIJUCA": {
+    "confirmed": 144,
+    "dead": "3"
+  },
+  "BARROS FILHO": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "BENFICA": {
+    "confirmed": 6,
+    "dead": "1"
+  },
+  "BENTO RIBEIRO": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "BONSUCESSO": {
+    "confirmed": 8,
+    "dead": "1"
+  },
+  "BOTAFOGO": {
+    "confirmed": 61,
+    "dead": "2"
+  },
+  "BRAS DE PINA": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "CACHAMBI": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "CACUIA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "CAJU": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "CAMORIM": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "CAMPO GRANDE": {
+    "confirmed": 17,
+    "dead": "1"
+  },
+  "CASCADURA": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "CATETE": {
+    "confirmed": 5,
+    "dead": "0"
+  },
+  "CATUMBI": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "CAVALCANTE": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "CENTRO": {
+    "confirmed": 17,
+    "dead": "0"
+  },
+  "CIDADE DE DEUS": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "CIDADE NOVA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "COELHO NETO": {
+    "confirmed": 3,
+    "dead": "1"
+  },
+  "COLEGIO": {
+    "confirmed": 4,
+    "dead": "1"
+  },
+  "COMPLEXO DO ALEMAO": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "COPACABANA": {
+    "confirmed": 92,
+    "dead": "5"
+  },
+  "CORDOVIL": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "COSME VELHO": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "COSMOS": {
+    "confirmed": 6,
+    "dead": "0"
+  },
+  "COSTA BARROS": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "CURICICA": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "DEL CASTILHO": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "DEODORO": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "ENCANTADO": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "ENGENHO DA RAINHA": {
+    "confirmed": 3,
+    "dead": "1"
+  },
+  "ENGENHO DE DENTRO": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "ENGENHO NOVO": {
+    "confirmed": 6,
+    "dead": "0"
+  },
+  "ESTACIO": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "FLAMENGO": {
+    "confirmed": 39,
+    "dead": "2"
+  },
+  "FORA DO MUNIC\u00cdPIO": {
+    "confirmed": 50,
+    "dead": "0"
+  },
+  "FREGUESIA-ILHA": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "FREGUESIA-JPA": {
+    "confirmed": 11,
+    "dead": "1"
+  },
+  "GAMBOA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "GARDENIA AZUL": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "GAVEA": {
+    "confirmed": 16,
+    "dead": "1"
+  },
+  "GRAJAU": {
+    "confirmed": 8,
+    "dead": "0"
+  },
+  "GUADALUPE": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "GUARATIBA": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "HIGIENOPOLIS": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "HUMAITA": {
+    "confirmed": 9,
+    "dead": "0"
+  },
+  "INDEFINIDO": {
+    "confirmed": 135,
+    "dead": "0"
+  },
+  "INHAUMA": {
+    "confirmed": 6,
+    "dead": "0"
+  },
+  "INHOAIBA": {
+    "confirmed": 2,
+    "dead": "1"
+  },
+  "IPANEMA": {
+    "confirmed": 64,
+    "dead": "4"
+  },
+  "IRAJA": {
+    "confirmed": 11,
+    "dead": "0"
+  },
+  "ITANHANGA": {
+    "confirmed": 9,
+    "dead": "1"
+  },
+  "JACARE": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "JACAREPAGUA": {
+    "confirmed": 28,
+    "dead": "0"
+  },
+  "JARDIM BOTANICO": {
+    "confirmed": 30,
+    "dead": "1"
+  },
+  "JARDIM CARIOCA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "JARDIM GUANABARA": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "JARDIM SULACAP": {
+    "confirmed": 2,
+    "dead": "1"
+  },
+  "JOA": {
+    "confirmed": 2,
+    "dead": "1"
+  },
+  "LAGOA": {
+    "confirmed": 41,
+    "dead": "1"
+  },
+  "LARANJEIRAS": {
+    "confirmed": 21,
+    "dead": "1"
+  },
+  "LEBLON": {
+    "confirmed": 87,
+    "dead": "0"
+  },
+  "LEME": {
+    "confirmed": 10,
+    "dead": "1"
+  },
+  "LINS DE VASCONCELOS": {
+    "confirmed": 7,
+    "dead": "1"
+  },
+  "MADUREIRA": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "MAGALHAES BASTOS": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "MANGUEIRA": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "MANGUINHOS": {
+    "confirmed": 6,
+    "dead": "1"
+  },
+  "MARACANA": {
+    "confirmed": 9,
+    "dead": "1"
+  },
+  "MARE": {
+    "confirmed": 2,
+    "dead": "1"
+  },
+  "MARECHAL HERMES": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "MEIER": {
+    "confirmed": 21,
+    "dead": "1"
+  },
+  "OLARIA": {
+    "confirmed": 6,
+    "dead": "0"
+  },
+  "OSWALDO CRUZ": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "PACIENCIA": {
+    "confirmed": 5,
+    "dead": "0"
+  },
+  "PADRE MIGUEL": {
+    "confirmed": 8,
+    "dead": "1"
+  },
+  "PAQUETA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "PARADA DE LUCAS": {
+    "confirmed": 5,
+    "dead": "0"
+  },
+  "PAVUNA": {
+    "confirmed": 13,
+    "dead": "0"
+  },
+  "PECHINCHA": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "PEDRA DE GUARATIBA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "PENHA": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "PENHA CIRCULAR": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "PIEDADE": {
+    "confirmed": 6,
+    "dead": "1"
+  },
+  "PILARES": {
+    "confirmed": 2,
+    "dead": "1"
+  },
+  "PITANGUEIRAS": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "PORTUGUESA": {
+    "confirmed": 3,
+    "dead": "1"
+  },
+  "PRACA DA BANDEIRA": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "PRACA SECA": {
+    "confirmed": 5,
+    "dead": "0"
+  },
+  "PRAIA DA BANDEIRA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "QUINTINO BOCAIUVA": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "RAMOS": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "REALENGO": {
+    "confirmed": 13,
+    "dead": "2"
+  },
+  "RECREIO DOS BANDEIRANTES": {
+    "confirmed": 26,
+    "dead": "4"
+  },
+  "RIACHUELO": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "RIBEIRA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "RIO COMPRIDO": {
+    "confirmed": 7,
+    "dead": "0"
+  },
+  "ROCHA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "ROCHA MIRANDA": {
+    "confirmed": 6,
+    "dead": "1"
+  },
+  "ROCINHA": {
+    "confirmed": 11,
+    "dead": "2"
+  },
+  "SAMPAIO": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "SANTA CRUZ": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "SANTA TERESA": {
+    "confirmed": 6,
+    "dead": "0"
+  },
+  "SANTISSIMO": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "SAO CONRADO": {
+    "confirmed": 24,
+    "dead": "1"
+  },
+  "SAO CRISTOVAO": {
+    "confirmed": 5,
+    "dead": "0"
+  },
+  "SAUDE": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "SENADOR CAMARA": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "SENADOR VASCONCELOS": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "SEPETIBA": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "TANQUE": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "TAQUARA": {
+    "confirmed": 11,
+    "dead": "0"
+  },
+  "TAUA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "TIJUCA": {
+    "confirmed": 50,
+    "dead": "5"
+  },
+  "TODOS OS SANTOS": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "TOMAS COELHO": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "TURIACU": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "URCA": {
+    "confirmed": 4,
+    "dead": "0"
+  },
+  "VARGEM GRANDE": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "VARGEM PEQUENA": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "VAZ LOBO": {
+    "confirmed": 3,
+    "dead": "1"
+  },
+  "VICENTE DE CARVALHO": {
+    "confirmed": 3,
+    "dead": "0"
+  },
+  "VIDIGAL": {
+    "confirmed": 1,
+    "dead": "0"
+  },
+  "VIGARIO GERAL": {
+    "confirmed": 4,
+    "dead": "2"
+  },
+  "VILA DA PENHA": {
+    "confirmed": 5,
+    "dead": "1"
+  },
+  "VILA ISABEL": {
+    "confirmed": 21,
+    "dead": "1"
+  },
+  "VILA KOSMOS": {
+    "confirmed": 2,
+    "dead": "0"
+  },
+  "VILA VALQUEIRE": {
+    "confirmed": 3,
+    "dead": "2"
+  },
+  "VISTA ALEGRE": {
+    "confirmed": 1,
+    "dead": "1"
+  }
+}

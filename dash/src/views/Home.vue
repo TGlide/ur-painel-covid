@@ -180,7 +180,7 @@
                 <span class="type"
                   ><span class="status danger" /> Total Confirmados:</span
                 >
-                <span class="value danger">1,068</span>
+                <span class="value danger">{{ this.confirmed }}</span>
               </div>
               <div class="stat">
                 <span class="type"
@@ -192,7 +192,7 @@
                 <span class="type"
                   ><span class="status gray" /> Casos fatais:</span
                 >
-                <span class="value gray">42</span>
+                <span class="value gray">{{ this.fatal }}</span>
               </div>
               <hr />
               <div class="stat">
@@ -218,6 +218,7 @@
 <script>
 import { chartsJson } from "@/data/charts.js";
 import leitosJson from "@/data/leitos.json";
+import infectedJson from "@/data/infected.json";
 
 import LineChart from "@/components/LineChart";
 import NoContent from "@/components/NoContent";
@@ -239,7 +240,9 @@ export default {
           selected: ["UFRJ"],
           data: ["UFRJ", "UERJ", "UFF", "PUC"]
         }
-      }
+      },
+      confirmed: 0,
+      fatal: 0
     };
   },
   computed: {
@@ -306,11 +309,27 @@ export default {
   mounted() {
     this.neighborhoods.data = Object.entries(leitosJson.municipio).map(n => {
       console.log(n);
-      return {
+      let res = {
         name: this.titleCase(n[0].toLowerCase()),
-        leitos: n[1]
+        leitos: n[1],
+        infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
+          ? infectedJson[n[0].toUpperCase()].confirmed
+          : NaN
       };
+      if (res.infected >= res.leitos * 0.75) {
+        res.status = 3;
+      } else if (res.infected >= res.leitos * 0.5) {
+        res.status = 2;
+      } else {
+        res.status = 1;
+      }
+      return res;
     });
+
+    for (let a of Object.entries(infectedJson)) {
+      this.confirmed += a[1].confirmed;
+      this.fatal += parseInt(a[1].dead);
+    }
   }
 };
 </script>
