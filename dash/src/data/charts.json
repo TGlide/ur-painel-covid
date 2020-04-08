@@ -126,6 +126,11 @@
           {
             "gridLines": {
               "display": false
+            },
+            "ticks": {
+              "autoSkip": true,
+              "maxRotation": 45,
+              "minRotation": 45
             }
           }
         ],
@@ -148,41 +153,79 @@
         "Abr 10",
         "Abr 11",
         "Abr 12",
-        "Abr 13"
+        "Abr 13",
+        "Abr 14"
       ],
-      "datasets": [
-        {
-          "label": "Total (Projetado)",
-          "// backgroundColor": "rgba(255, 99, 132, 0.5)",
-          "borderColor": "rgb(255, 99, 132)",
-          "pointBackgroundColor": "rgb(255, 99, 132)",
-          "data": [
-            87,
-            112,
-            94,
-            120,
-            100,
-            97,
-            130
-          ]
-        },
-        {
-          "label": "Diário (Projetado)",
-          "type": "line",
-          "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgba(72,219,251, 0.5)",
-          "pointBackgroundColor": "rgba(72,219,251, 0.5)",
-          "data": [
-            1197,
-            1309,
-            1403,
-            1523,
-            1623,
-            1720,
-            1850
-          ]
-        }
-      ]
+      "datasets": {
+        "UFRJ": [
+          {
+            "label": "Total",
+            "borderColor": "rgb(255, 99, 132)",
+            "pointBackgroundColor": "rgb(255, 99, 132)",
+            "data": [
+              87,
+              112,
+              94,
+              120,
+              100,
+              97,
+              130,
+              150
+            ]
+          },
+          {
+            "label": "Diário",
+            "type": "line",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(72,219,251, 0.5)",
+            "pointBackgroundColor": "rgba(72,219,251, 0.5)",
+            "data": [
+              1197,
+              1309,
+              1403,
+              1523,
+              1623,
+              1720,
+              1850,
+              2000
+            ]
+          }
+        ],
+        "UERJ": [
+          {
+            "label": "Toasdastal",
+            "borderColor": "rgb(255, 99, 132)",
+            "pointBackgroundColor": "rgb(255, 99, 132)",
+            "data": [
+              87,
+              112,
+              94,
+              120,
+              100,
+              97,
+              130,
+              150
+            ]
+          },
+          {
+            "label": "Diário",
+            "type": "line",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgba(72,219,251, 0.5)",
+            "pointBackgroundColor": "rgba(72,219,251, 0.5)",
+            "data": [
+              1197,
+              1309,
+              1403,
+              1523,
+              1623,
+              1720,
+              1850,
+              2000
+            ]
+          }
+        ]
+      }
     },
     "options": {
       "responsive": true,
@@ -192,6 +235,11 @@
           {
             "gridLines": {
               "display": false
+            },
+            "ticks": {
+              "autoSkip": true,
+              "maxRotation": 45,
+              "minRotation": 45
             }
           }
         ],

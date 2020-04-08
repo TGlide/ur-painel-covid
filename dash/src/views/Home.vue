@@ -43,7 +43,7 @@
                             sources.confirmed.selected.length
                           }})</span
                         >
-                        <b-icon icon="menu-down"></b-icon>
+                        <b-icon icon="chevron-down"></b-icon>
                       </button>
 
                       <b-dropdown-item
@@ -80,7 +80,7 @@
                             sources.projected.selected.length
                           }})</span
                         >
-                        <b-icon icon="menu-down"></b-icon>
+                        <b-icon icon="chevron-down"></b-icon>
                       </button>
 
                       <b-dropdown-item
@@ -93,10 +93,15 @@
                       </b-dropdown-item>
                     </b-dropdown>
                   </b-field>
+
                   <line-chart
                     :chartdata="charts.projected.data"
                     :options="charts.projected.options"
                     :gradientColors="projectedGradient"
+                    v-if="
+                      sources.projected.selected &&
+                        sources.projected.selected.length > 0
+                    "
                   >
                   </line-chart>
                 </div>
@@ -216,7 +221,6 @@ export default {
   components: { LineChart },
   data() {
     return {
-      charts: { ...chartsJson },
       neighborhoods: {
         data: [
           { name: "Barra Da Tijuca", infected: 118, leitos: 500, status: 1 },
@@ -249,6 +253,34 @@ export default {
     };
   },
   computed: {
+    charts() {
+      const projectedKeys = Object.keys(
+        chartsJson.projected.data.datasets
+      ).filter(key => {
+        return this.sources.projected.selected.includes(key);
+      });
+
+      let projectedDatasets = [];
+      for (let key of projectedKeys) {
+        projectedDatasets = [
+          ...projectedDatasets,
+          ...chartsJson.projected.data.datasets[key]
+        ];
+      }
+
+      const res = {
+        confirmed: { ...chartsJson.confirmed },
+        projected: {
+          data: {
+            labels: chartsJson.projected.data.labels,
+            datasets: projectedDatasets
+          },
+          options: chartsJson.projected.options
+        }
+      };
+      console.log(res);
+      return res;
+    },
     confirmedGradient() {
       return ["rgba(255, 99, 132, 0.5)", "rgba(255, 99, 132, 0.25)"];
     },
