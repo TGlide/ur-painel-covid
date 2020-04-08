@@ -76,6 +76,9 @@ $table-striped-row-even-background-color: rgba($gray, 0.1);
 $table-striped-row-even-hover-background-color: rgba($gray, 0.15);
 $table-color: $white;
 $table-head-cell-color: $white;
+.pagination-link {
+  color: $white !important;
+}
 
 // Form
 $label-color: $white;

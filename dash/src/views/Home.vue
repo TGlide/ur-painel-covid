@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column is-8">
+          <div class="column is-12">
             <div class="box">
               <div class="box-header">
                 <h4 class="title is-4">Evolução qnt. casos</h4>
@@ -97,7 +97,6 @@
                   <line-chart
                     :chartdata="charts.projected.data"
                     :options="charts.projected.options"
-                    :gradientColors="projectedGradient"
                     v-if="
                       sources.projected.selected &&
                         sources.projected.selected.length > 0
@@ -108,51 +107,10 @@
               </div>
             </div>
           </div>
-
-          <div class="column is-4">
-            <div class="box stats">
-              <h4 class="title is-4">Tipos de Casos</h4>
-              <div class="stat">
-                <span class="type"
-                  ><span class="status danger" /> Total Confirmados:</span
-                >
-                <span class="value danger">1,068</span>
-              </div>
-              <div class="stat">
-                <span class="type"
-                  ><span class="status warning" /> Casos prováveis:</span
-                >
-                <span class="value warning">4,471</span>
-              </div>
-              <div class="stat">
-                <span class="type"
-                  ><span class="status gray" /> Casos fatais:</span
-                >
-                <span class="value gray">42</span>
-              </div>
-              <hr />
-              <div class="stat">
-                <span class="type"
-                  ><span class="status blue" /> Hospitalizados:</span
-                >
-                <span class="value blue">253</span>
-              </div>
-              <div class="stat">
-                <span class="type"
-                  ><span class="status dark-blue" /> Em UTI:</span
-                >
-                <span class="value dark-blue">91</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="columns">
           <div class="column is-7">
-            <div class="box"></div>
-          </div>
-
-          <div class="column is-5">
             <div class="box">
               <h4 class="title is-4">Bairros</h4>
               <b-table
@@ -161,6 +119,8 @@
                 default-sort="leitos"
                 sort-icon="arrow-up"
                 sort-icon-size="is-small"
+                paginated
+                per-page="5"
                 striped
               >
                 <template slot-scope="props">
@@ -205,6 +165,42 @@
               </b-table>
             </div>
           </div>
+          <div class="column is-5">
+            <div class="box stats">
+              <h4 class="title is-4">Tipos de Casos</h4>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status danger" /> Total Confirmados:</span
+                >
+                <span class="value danger">1,068</span>
+              </div>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status warning" /> Casos prováveis:</span
+                >
+                <span class="value warning">4,471</span>
+              </div>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status gray" /> Casos fatais:</span
+                >
+                <span class="value gray">42</span>
+              </div>
+              <hr />
+              <div class="stat">
+                <span class="type"
+                  ><span class="status blue" /> Hospitalizados:</span
+                >
+                <span class="value blue">253</span>
+              </div>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status dark-blue" /> Em UTI:</span
+                >
+                <span class="value dark-blue">91</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -212,7 +208,8 @@
 </template>
 
 <script>
-import chartsJson from "@/data/charts.json";
+import { chartsJson } from "@/data/charts.js";
+import leitosJson from "@/data/leitos.json";
 
 import LineChart from "@/components/LineChart";
 
@@ -222,14 +219,7 @@ export default {
   data() {
     return {
       neighborhoods: {
-        data: [
-          { name: "Barra Da Tijuca", infected: 118, leitos: 500, status: 1 },
-          { name: "Copacabana", infected: 174, leitos: 200, status: 2 },
-          { name: "Leblon", infected: 71, leitos: 50, status: 3 },
-          { name: "Ipanema", infected: 58, leitos: 300, status: 1 },
-          { name: "Botafogo", infected: 51, leitos: 150, status: 1 },
-          { name: "Tijuca", infected: 40, leitos: 100, status: 1 }
-        ]
+        data: []
       },
       sources: {
         confirmed: {
@@ -283,10 +273,27 @@ export default {
     },
     confirmedGradient() {
       return ["rgba(255, 99, 132, 0.5)", "rgba(255, 99, 132, 0.25)"];
-    },
-    projectedGradient() {
-      return ["rgba(72,219,251, 0.5)", "rgba(72,219,251, 0.25)"];
     }
+  },
+  methods: {
+    titleCase(str) {
+      var splitStr = str.toLowerCase().split(" ");
+      for (var i = 0; i < splitStr.length; i++) {
+        splitStr[i] =
+          splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+      }
+
+      return splitStr.join(" ");
+    }
+  },
+  mounted() {
+    this.neighborhoods.data = Object.entries(leitosJson.municipio).map(n => {
+      console.log(n);
+      return {
+        name: this.titleCase(n[0].toLowerCase()),
+        leitos: n[1]
+      };
+    });
   }
 };
 </script>
