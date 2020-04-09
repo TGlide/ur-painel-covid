@@ -1,8 +1,21 @@
 <template>
   <div class="box">
-    <h4 class="title is-4">Locais</h4>
+    <div class="box-header">
+      <h4 class="title is-4">Locais</h4>
+      <b-field>
+        <p class="control" v-for="locale in Object.keys(locales)" :key="locale">
+          <b-button
+            class="button is-primary"
+            @click="selected = locale"
+            :outlined="selected != locale"
+          >
+            {{ locale }}
+          </b-button>
+        </p>
+      </b-field>
+    </div>
     <b-table
-      :data="neighborhoods.data"
+      :data="locales[selected].data"
       default-sort-direction="desc"
       default-sort="leitos"
       sort-icon="arrow-up"
@@ -53,9 +66,15 @@ import infectedJson from "@/data/infected.json";
 export default {
   data() {
     return {
-      neighborhoods: {
-        data: []
-      }
+      locales: {
+        municipio: {
+          data: []
+        },
+        estado: {
+          data: []
+        }
+      },
+      selected: "municipio"
     };
   },
 
@@ -71,30 +90,36 @@ export default {
     }
   },
   mounted() {
-    this.neighborhoods.data = Object.entries(leitosJson.municipio).map(n => {
-      let res = {
-        name: this.titleCase(n[0].toLowerCase()),
-        leitosSus: n[1].SUS,
-        leitosTotal: n[1].Total,
-        infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
-          ? infectedJson[n[0].toUpperCase()].confirmed
-          : 0
-      };
-      if (res.infected >= res.leitos * 0.75) {
-        res.status = 3;
-      } else if (res.infected >= res.leitos * 0.5) {
-        res.status = 2;
-      } else {
-        res.status = 1;
-      }
-      return res;
-    });
+    for (let key of Object.keys(this.locales)) {
+      this.locales[key].data = Object.entries(leitosJson[key]).map(n => {
+        let res = {
+          name: this.titleCase(n[0].toLowerCase()),
+          leitosSus: n[1].SUS,
+          leitosTotal: n[1].Total,
+          infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
+            ? infectedJson[n[0].toUpperCase()].confirmed
+            : 0
+        };
+        if (res.infected >= res.leitosTotal * 0.75) {
+          res.status = 3;
+        } else if (res.infected >= res.leitosTotal * 0.5) {
+          res.status = 2;
+        } else {
+          res.status = 1;
+        }
+        return res;
+      });
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/theme.scss";
+
+.control .button {
+  text-transform: capitalize;
+}
 
 .farol {
   $farol-colors: (

@@ -1,1 +1,974 @@
-{"estado": {"Angra dos Reis": {"Total": 347, "SUS": 265}, "Aperib\u00e9": {"Total": 35, "SUS": 35}, "Araruama": {"Total": 190, "SUS": 119}, "Areal": {"Total": 21, "SUS": 21}, "Arma\u00e7\u00e3o dos B\u00fazios": {"Total": 52, "SUS": 52}, "Arraial do Cabo": {"Total": 91, "SUS": 91}, "Barra do Pira\u00ed": {"Total": 292, "SUS": 240}, "Barra Mansa": {"Total": 352, "SUS": 198}, "Belford Roxo": {"Total": 290, "SUS": 159}, "Bom Jardim": {"Total": 62, "SUS": 57}, "Bom Jesus do Itabapoana": {"Total": 143, "SUS": 78}, "Cabo Frio": {"Total": 609, "SUS": 346}, "Cachoeiras de Macacu": {"Total": 105, "SUS": 105}, "Cambuci": {"Total": 50, "SUS": 48}, "Carapebus": {"Total": 0, "SUS": 0}, "Comendador Levy Gasparian": {"Total": 0, "SUS": 0}, "Campos dos Goytacazes": {"Total": 1931, "SUS": 1228}, "Cantagalo": {"Total": 103, "SUS": 71}, "Cardoso Moreira": {"Total": 0, "SUS": 0}, "Carmo": {"Total": 40, "SUS": 38}, "Casimiro de Abreu": {"Total": 82, "SUS": 82}, "Concei\u00e7\u00e3o de Macabu": {"Total": 36, "SUS": 36}, "Cordeiro": {"Total": 38, "SUS": 38}, "Duas Barras": {"Total": 16, "SUS": 16}, "Duque de Caxias": {"Total": 1220, "SUS": 796}, "Engenheiro Paulo de Frontin": {"Total": 32, "SUS": 23}, "Guapimirim": {"Total": 138, "SUS": 74}, "Iguaba Grande": {"Total": 0, "SUS": 0}, "Itabora\u00ed": {"Total": 334, "SUS": 314}, "Itagua\u00ed": {"Total": 171, "SUS": 90}, "Italva": {"Total": 0, "SUS": 0}, "Itaocara": {"Total": 77, "SUS": 44}, "Itaperuna": {"Total": 479, "SUS": 290}, "Itatiaia": {"Total": 36, "SUS": 36}, "Japeri": {"Total": 0, "SUS": 0}, "Laje do Muria\u00e9": {"Total": 30, "SUS": 30}, "Maca\u00e9": {"Total": 600, "SUS": 332}, "Macuco": {"Total": 0, "SUS": 0}, "Mag\u00e9": {"Total": 199, "SUS": 148}, "Mangaratiba": {"Total": 62, "SUS": 62}, "Maric\u00e1": {"Total": 146, "SUS": 113}, "Mendes": {"Total": 10, "SUS": 0}, "Mesquita": {"Total": 176, "SUS": 100}, "Miguel Pereira": {"Total": 96, "SUS": 96}, "Miracema": {"Total": 82, "SUS": 50}, "Natividade": {"Total": 50, "SUS": 46}, "Nil\u00f3polis": {"Total": 148, "SUS": 98}, "Niter\u00f3i": {"Total": 1980, "SUS": 1066}, "Nova Friburgo": {"Total": 711, "SUS": 430}, "Nova Igua\u00e7u": {"Total": 1061, "SUS": 541}, "Paracambi": {"Total": 82, "SUS": 54}, "Para\u00edba do Sul": {"Total": 137, "SUS": 113}, "Paraty": {"Total": 38, "SUS": 38}, "Paty do Alferes": {"Total": 0, "SUS": 0}, "Petr\u00f3polis": {"Total": 1827, "SUS": 1099}, "Pinheiral": {"Total": 32, "SUS": 30}, "Pira\u00ed": {"Total": 58, "SUS": 52}, "Porci\u00fancula": {"Total": 1, "SUS": 1}, "Porto Real": {"Total": 52, "SUS": 52}, "Quatis": {"Total": 34, "SUS": 34}, "Queimados": {"Total": 67, "SUS": 67}, "Quissam\u00e3": {"Total": 82, "SUS": 82}, "Resende": {"Total": 434, "SUS": 174}, "Rio Bonito": {"Total": 125, "SUS": 95}, "Rio Claro": {"Total": 42, "SUS": 42}, "Rio das Flores": {"Total": 21, "SUS": 21}, "Rio das Ostras": {"Total": 107, "SUS": 86}, "Rio de Janeiro": {"Total": 154, "SUS": 30}, "Santa Maria Madalena": {"Total": 23, "SUS": 23}, "Santo Ant\u00f4nio de P\u00e1dua": {"Total": 181, "SUS": 109}, "S\u00e3o Francisco de Itabapoana": {"Total": 30, "SUS": 30}, "S\u00e3o Fid\u00e9lis": {"Total": 115, "SUS": 104}, "S\u00e3o Gon\u00e7alo": {"Total": 1588, "SUS": 829}, "S\u00e3o Jo\u00e3o da Barra": {"Total": 40, "SUS": 40}, "S\u00e3o Jo\u00e3o de Meriti": {"Total": 186, "SUS": 111}, "S\u00e3o Jos\u00e9 de Ub\u00e1": {"Total": 0, "SUS": 0}, "S\u00e3o Jos\u00e9 do Vale do Rio Preto": {"Total": 57, "SUS": 55}, "S\u00e3o Pedro da Aldeia": {"Total": 62, "SUS": 46}, "S\u00e3o Sebasti\u00e3o do Alto": {"Total": 52, "SUS": 43}, "Sapucaia": {"Total": 0, "SUS": 0}, "Saquarema": {"Total": 143, "SUS": 143}, "Serop\u00e9dica": {"Total": 27, "SUS": 27}, "Silva Jardim": {"Total": 40, "SUS": 40}, "Sumidouro": {"Total": 23, "SUS": 23}, "Tangu\u00e1": {"Total": 214, "SUS": 43}, "Teres\u00f3polis": {"Total": 421, "SUS": 286}, "Trajano de Moraes": {"Total": 41, "SUS": 33}, "Tr\u00eas Rios": {"Total": 276, "SUS": 195}, "Valen\u00e7a": {"Total": 341, "SUS": 310}, "Varre-Sai": {"Total": 41, "SUS": 38}, "Vassouras": {"Total": 495, "SUS": 431}, "Volta Redonda": {"Total": 907, "SUS": 448}}, "municipio": {"CENTRO": {"Total": 1329, "SUS": 1220}, "BARRA DA TIJUCA": {"Total": 935, "SUS": 223}, "LAGOA": {"Total": 38, "SUS": 0}, "CAMPO GRANDE": {"Total": 323, "SUS": 168}, "TAQUARA": {"Total": 147, "SUS": 20}, "BANGU": {"Total": 422, "SUS": 315}, "PRACA SECA": {"Total": 0, "SUS": 0}, "CIDADE DE DEUS": {"Total": 0, "SUS": 0}, "COPACABANA": {"Total": 299, "SUS": 0}, "IPANEMA": {"Total": 161, "SUS": 133}, "LEBLON": {"Total": 83, "SUS": 2}, "BENFICA": {"Total": 42, "SUS": 0}, "GUADALUPE": {"Total": 0, "SUS": 0}, "BONSUCESSO": {"Total": 388, "SUS": 374}, "CACUIA": {"Total": 0, "SUS": 0}, "FREGUESIA JACAREPAGUA": {"Total": 177, "SUS": 149}, "MADUREIRA": {"Total": 58, "SUS": 46}, "TIJUCA": {"Total": 1026, "SUS": 274}, "MEIER": {"Total": 632, "SUS": 308}, "BOTAFOGO": {"Total": 966, "SUS": 308}, "CASCADURA": {"Total": 381, "SUS": 120}, "JARDIM BOTANICO": {"Total": 214, "SUS": 213}, "JACAREZINHO": {"Total": 0, "SUS": 0}, "VILA ISABEL": {"Total": 651, "SUS": 642}, "FLAMENGO": {"Total": 102, "SUS": 102}, "VICENTE DE CARVALHO": {"Total": 0, "SUS": 0}, "JARDIM GUANABARA": {"Total": 0, "SUS": 0}, "PAVUNA": {"Total": 0, "SUS": 0}, "JARDIM CARIOCA": {"Total": 0, "SUS": 0}, "FREGUESIA": {"Total": 154, "SUS": 0}, "JACAREPAGUA": {"Total": 497, "SUS": 453}, "PENHA": {"Total": 287, "SUS": 287}, "CATETE": {"Total": 1, "SUS": 1}, "TODOS OS SANTOS": {"Total": 0, "SUS": 0}, "BRAS DE PINA": {"Total": 0, "SUS": 0}, "ANDARAI": {"Total": 346, "SUS": 263}, "CURICICA": {"Total": 0, "SUS": 0}, "CACHAMBI": {"Total": 0, "SUS": 0}, "PAQUETA": {"Total": 8, "SUS": 8}, "MARACANA": {"Total": 135, "SUS": 0}, "VILA DA PENHA": {"Total": 0, "SUS": 0}, "IRAJA": {"Total": 104, "SUS": 57}, "TAUA": {"Total": 0, "SUS": 0}, "ENGENHO DE DENTRO": {"Total": 204, "SUS": 93}, "REALENGO": {"Total": 376, "SUS": 297}, "SANTA CRUZ": {"Total": 387, "SUS": 280}, "RECREIO DOS BANDEIRANTES": {"Total": 110, "SUS": 0}, "SENADOR CAMARA": {"Total": 0, "SUS": 0}, "GUARATIBA": {"Total": 0, "SUS": 0}, "CAJU": {"Total": 60, "SUS": 60}, "INHOAIBA": {"Total": 0, "SUS": 0}, "508": {"Total": 0, "SUS": 0}, "SAO CRISTOVAO": {"Total": 742, "SUS": 441}, "DEL CASTILHO": {"Total": 0, "SUS": 0}, "PILARES": {"Total": 0, "SUS": 0}, "VILA VALQUEIRE": {"Total": 90, "SUS": 60}, "COSME VELHO": {"Total": 126, "SUS": 32}, "TANQUE": {"Total": 0, "SUS": 0}, "LARANJEIRAS": {"Total": 556, "SUS": 192}, "PORTUGUESA": {"Total": 103, "SUS": 83}, "PENHA CIRCULAR": {"Total": 170, "SUS": 65}, "LEME": {"Total": 0, "SUS": 0}, "OLARIA": {"Total": 2, "SUS": 0}, "GALEAO": {"Total": 36, "SUS": 36}, "GARDENIA AZUL": {"Total": 0, "SUS": 0}, "MARECHAL HERMES": {"Total": 264, "SUS": 234}, "GRAJAU": {"Total": 48, "SUS": 0}, "ANCHIETA": {"Total": 0, "SUS": 0}, "RIO COMPRIDO": {"Total": 553, "SUS": 0}, "SAUDE": {"Total": 0, "SUS": 0}, "HONORIO GURGEL": {"Total": 0, "SUS": 0}, "ENGENHEIRO LEAL": {"Total": 0, "SUS": 0}, "VILA KOSMOS": {"Total": 0, "SUS": 0}, "BENTO RIBEIRO": {"Total": 0, "SUS": 0}, "VIDIGAL": {"Total": 0, "SUS": 0}, "PADRE MIGUEL": {"Total": 49, "SUS": 0}, "CAMORIM": {"Total": 0, "SUS": 0}, "SEPETIBA": {"Total": 0, "SUS": 0}, "ANIL": {"Total": 0, "SUS": 0}, "ROCHA MIRANDA": {"Total": 0, "SUS": 0}, "SENADOR VASCONCELOS": {"Total": 128, "SUS": 128}, "PECHINCHA": {"Total": 0, "SUS": 0}, "GAVEA": {"Total": 408, "SUS": 310}, "AGUA SANTA": {"Total": 0, "SUS": 0}, "PACIENCIA": {"Total": 0, "SUS": 0}, "VAZ LOBO": {"Total": 0, "SUS": 0}, "ENGENHO DA RAINHA": {"Total": 0, "SUS": 0}, "MANGUINHOS": {"Total": 31, "SUS": 31}, "INHAUMA": {"Total": 0, "SUS": 0}, "ENGENHO NOVO": {"Total": 57, "SUS": 0}, "RAMOS": {"Total": 9, "SUS": 9}, "GAMBOA": {"Total": 108, "SUS": 108}, "ABOLICAO": {"Total": 0, "SUS": 0}, "PIEDADE": {"Total": 139, "SUS": 139}, "COLEGIO": {"Total": 0, "SUS": 0}, "VISTA ALEGRE": {"Total": 0, "SUS": 0}, "BARROS FILHO": {"Total": 0, "SUS": 0}, "ACARI": {"Total": 251, "SUS": 233}, "SANTO CRISTO": {"Total": 83, "SUS": 83}, "COELHO NETO": {"Total": 0, "SUS": 0}, "ROCINHA": {"Total": 8, "SUS": 8}, "CIDADE NOVA": {"Total": 1, "SUS": 0}, "PARADA DE LUCAS": {"Total": 0, "SUS": 0}, "SAO CONRADO": {"Total": 0, "SUS": 0}, "PARQUE ANCHIETA": {"Total": 0, "SUS": 0}, "VARGEM PEQUENA": {"Total": 0, "SUS": 0}, "ITANHANGA": {"Total": 0, "SUS": 0}, "SANTISSIMO": {"Total": 0, "SUS": 0}, "HUMAITA": {"Total": 300, "SUS": 90}, "MAGALHAES BASTOS": {"Total": 0, "SUS": 0}, "CORDOVIL": {"Total": 48, "SUS": 0}, "MARE": {"Total": 0, "SUS": 0}, "GLORIA": {"Total": 1, "SUS": 0}, "BARRA DE GUARATIBA": {"Total": 0, "SUS": 0}, "QUINTINO BOCAIUVA": {"Total": 0, "SUS": 0}, "TURIACU": {"Total": 8, "SUS": 8}, "MANGUEIRA": {"Total": 122, "SUS": 122}, "CIDADE UNIVERSITARIA": {"Total": 394, "SUS": 394}, "COSMOS": {"Total": 0, "SUS": 0}, "RIACHUELO": {"Total": 0, "SUS": 0}, "JARDIM SULACAP": {"Total": 0, "SUS": 0}, "SAMPAIO": {"Total": 0, "SUS": 0}, "ENCANTADO": {"Total": 8, "SUS": 8}, "URCA": {"Total": 0, "SUS": 0}, "SAO FRANCISCO XAVIER": {"Total": 9, "SUS": 9}, "ESTACIO": {"Total": 195, "SUS": 0}, "VIGARIO GERAL": {"Total": 0, "SUS": 0}, "ROCHA": {"Total": 0, "SUS": 0}, "COMPLEXO DO ALEMAO": {"Total": 9, "SUS": 8}, "COSTA BARROS": {"Total": 0, "SUS": 0}, "LINS DE VASCONCELOS": {"Total": 602, "SUS": 105}, "JARDIM AMERICA": {"Total": 0, "SUS": 0}, "COCOTA": {"Total": 0, "SUS": 0}, "VILA MILITAR": {"Total": 48, "SUS": 0}, "OSVALDO CRUZ": {"Total": 0, "SUS": 0}, "SANTA TERESA": {"Total": 62, "SUS": 0}, "CATUMBI": {"Total": 0, "SUS": 0}, "HIGIENOPOLIS": {"Total": 0, "SUS": 0}, "MONERO": {"Total": 106, "SUS": 0}, "BANCARIOS": {"Total": 0, "SUS": 0}, "RICARDO DE ALBUQUERQUE": {"Total": 0, "SUS": 0}, "PRACA DA BANDEIRA": {"Total": 0, "SUS": 0}, "JACARE": {"Total": 0, "SUS": 0}, "PRAIA DA BANDEIRA": {"Total": 0, "SUS": 0}, "ALTO DA BOA VISTA": {"Total": 0, "SUS": 0}, "MARIA DA GRACA": {"Total": 0, "SUS": 0}, "PEDRA DE GUARATIBA": {"Total": 0, "SUS": 0}, "TOMAS COELHO": {"Total": 0, "SUS": 0}, "JOA": {"Total": 0, "SUS": 0}, "CAVALCANTI": {"Total": 0, "SUS": 0}, "ZUMBI": {"Total": 0, "SUS": 0}}}
+{
+  "estado": {
+    "Angra dos Reis": {
+      "Total": 347,
+      "SUS": 265
+    },
+    "Aperib\u00e9": {
+      "Total": 35,
+      "SUS": 35
+    },
+    "Araruama": {
+      "Total": 190,
+      "SUS": 119
+    },
+    "Areal": {
+      "Total": 21,
+      "SUS": 21
+    },
+    "Arma\u00e7\u00e3o dos B\u00fazios": {
+      "Total": 52,
+      "SUS": 52
+    },
+    "Arraial do Cabo": {
+      "Total": 91,
+      "SUS": 91
+    },
+    "Barra do Pira\u00ed": {
+      "Total": 292,
+      "SUS": 240
+    },
+    "Barra Mansa": {
+      "Total": 352,
+      "SUS": 198
+    },
+    "Belford Roxo": {
+      "Total": 290,
+      "SUS": 159
+    },
+    "Bom Jardim": {
+      "Total": 62,
+      "SUS": 57
+    },
+    "Bom Jesus do Itabapoana": {
+      "Total": 143,
+      "SUS": 78
+    },
+    "Cabo Frio": {
+      "Total": 609,
+      "SUS": 346
+    },
+    "Cachoeiras de Macacu": {
+      "Total": 105,
+      "SUS": 105
+    },
+    "Cambuci": {
+      "Total": 50,
+      "SUS": 48
+    },
+    "Carapebus": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Comendador Levy Gasparian": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Campos dos Goytacazes": {
+      "Total": 1931,
+      "SUS": 1228
+    },
+    "Cantagalo": {
+      "Total": 103,
+      "SUS": 71
+    },
+    "Cardoso Moreira": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Carmo": {
+      "Total": 40,
+      "SUS": 38
+    },
+    "Casimiro de Abreu": {
+      "Total": 82,
+      "SUS": 82
+    },
+    "Concei\u00e7\u00e3o de Macabu": {
+      "Total": 36,
+      "SUS": 36
+    },
+    "Cordeiro": {
+      "Total": 38,
+      "SUS": 38
+    },
+    "Duas Barras": {
+      "Total": 16,
+      "SUS": 16
+    },
+    "Duque de Caxias": {
+      "Total": 1220,
+      "SUS": 796
+    },
+    "Engenheiro Paulo de Frontin": {
+      "Total": 32,
+      "SUS": 23
+    },
+    "Guapimirim": {
+      "Total": 138,
+      "SUS": 74
+    },
+    "Iguaba Grande": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Itabora\u00ed": {
+      "Total": 334,
+      "SUS": 314
+    },
+    "Itagua\u00ed": {
+      "Total": 171,
+      "SUS": 90
+    },
+    "Italva": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Itaocara": {
+      "Total": 77,
+      "SUS": 44
+    },
+    "Itaperuna": {
+      "Total": 479,
+      "SUS": 290
+    },
+    "Itatiaia": {
+      "Total": 36,
+      "SUS": 36
+    },
+    "Japeri": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Laje do Muria\u00e9": {
+      "Total": 30,
+      "SUS": 30
+    },
+    "Maca\u00e9": {
+      "Total": 600,
+      "SUS": 332
+    },
+    "Macuco": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Mag\u00e9": {
+      "Total": 199,
+      "SUS": 148
+    },
+    "Mangaratiba": {
+      "Total": 62,
+      "SUS": 62
+    },
+    "Maric\u00e1": {
+      "Total": 146,
+      "SUS": 113
+    },
+    "Mendes": {
+      "Total": 10,
+      "SUS": 0
+    },
+    "Mesquita": {
+      "Total": 176,
+      "SUS": 100
+    },
+    "Miguel Pereira": {
+      "Total": 96,
+      "SUS": 96
+    },
+    "Miracema": {
+      "Total": 82,
+      "SUS": 50
+    },
+    "Natividade": {
+      "Total": 50,
+      "SUS": 46
+    },
+    "Nil\u00f3polis": {
+      "Total": 148,
+      "SUS": 98
+    },
+    "Niter\u00f3i": {
+      "Total": 1980,
+      "SUS": 1066
+    },
+    "Nova Friburgo": {
+      "Total": 711,
+      "SUS": 430
+    },
+    "Nova Igua\u00e7u": {
+      "Total": 1061,
+      "SUS": 541
+    },
+    "Paracambi": {
+      "Total": 82,
+      "SUS": 54
+    },
+    "Para\u00edba do Sul": {
+      "Total": 137,
+      "SUS": 113
+    },
+    "Paraty": {
+      "Total": 38,
+      "SUS": 38
+    },
+    "Paty do Alferes": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Petr\u00f3polis": {
+      "Total": 1827,
+      "SUS": 1099
+    },
+    "Pinheiral": {
+      "Total": 32,
+      "SUS": 30
+    },
+    "Pira\u00ed": {
+      "Total": 58,
+      "SUS": 52
+    },
+    "Porci\u00fancula": {
+      "Total": 1,
+      "SUS": 1
+    },
+    "Porto Real": {
+      "Total": 52,
+      "SUS": 52
+    },
+    "Quatis": {
+      "Total": 34,
+      "SUS": 34
+    },
+    "Queimados": {
+      "Total": 67,
+      "SUS": 67
+    },
+    "Quissam\u00e3": {
+      "Total": 82,
+      "SUS": 82
+    },
+    "Resende": {
+      "Total": 434,
+      "SUS": 174
+    },
+    "Rio Bonito": {
+      "Total": 125,
+      "SUS": 95
+    },
+    "Rio Claro": {
+      "Total": 42,
+      "SUS": 42
+    },
+    "Rio das Flores": {
+      "Total": 21,
+      "SUS": 21
+    },
+    "Rio das Ostras": {
+      "Total": 107,
+      "SUS": 86
+    },
+    "Rio de Janeiro": {
+      "Total": 154,
+      "SUS": 30
+    },
+    "Santa Maria Madalena": {
+      "Total": 23,
+      "SUS": 23
+    },
+    "Santo Ant\u00f4nio de P\u00e1dua": {
+      "Total": 181,
+      "SUS": 109
+    },
+    "S\u00e3o Francisco de Itabapoana": {
+      "Total": 30,
+      "SUS": 30
+    },
+    "S\u00e3o Fid\u00e9lis": {
+      "Total": 115,
+      "SUS": 104
+    },
+    "S\u00e3o Gon\u00e7alo": {
+      "Total": 1588,
+      "SUS": 829
+    },
+    "S\u00e3o Jo\u00e3o da Barra": {
+      "Total": 40,
+      "SUS": 40
+    },
+    "S\u00e3o Jo\u00e3o de Meriti": {
+      "Total": 186,
+      "SUS": 111
+    },
+    "S\u00e3o Jos\u00e9 de Ub\u00e1": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "S\u00e3o Jos\u00e9 do Vale do Rio Preto": {
+      "Total": 57,
+      "SUS": 55
+    },
+    "S\u00e3o Pedro da Aldeia": {
+      "Total": 62,
+      "SUS": 46
+    },
+    "S\u00e3o Sebasti\u00e3o do Alto": {
+      "Total": 52,
+      "SUS": 43
+    },
+    "Sapucaia": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "Saquarema": {
+      "Total": 143,
+      "SUS": 143
+    },
+    "Serop\u00e9dica": {
+      "Total": 27,
+      "SUS": 27
+    },
+    "Silva Jardim": {
+      "Total": 40,
+      "SUS": 40
+    },
+    "Sumidouro": {
+      "Total": 23,
+      "SUS": 23
+    },
+    "Tangu\u00e1": {
+      "Total": 214,
+      "SUS": 43
+    },
+    "Teres\u00f3polis": {
+      "Total": 421,
+      "SUS": 286
+    },
+    "Trajano de Moraes": {
+      "Total": 41,
+      "SUS": 33
+    },
+    "Tr\u00eas Rios": {
+      "Total": 276,
+      "SUS": 195
+    },
+    "Valen\u00e7a": {
+      "Total": 341,
+      "SUS": 310
+    },
+    "Varre-Sai": {
+      "Total": 41,
+      "SUS": 38
+    },
+    "Vassouras": {
+      "Total": 495,
+      "SUS": 431
+    },
+    "Volta Redonda": {
+      "Total": 907,
+      "SUS": 448
+    }
+  },
+  "municipio": {
+    "CENTRO": {
+      "Total": 1329,
+      "SUS": 1220
+    },
+    "BARRA DA TIJUCA": {
+      "Total": 935,
+      "SUS": 223
+    },
+    "LAGOA": {
+      "Total": 38,
+      "SUS": 0
+    },
+    "CAMPO GRANDE": {
+      "Total": 323,
+      "SUS": 168
+    },
+    "TAQUARA": {
+      "Total": 147,
+      "SUS": 20
+    },
+    "BANGU": {
+      "Total": 422,
+      "SUS": 315
+    },
+    "PRACA SECA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "CIDADE DE DEUS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "COPACABANA": {
+      "Total": 299,
+      "SUS": 0
+    },
+    "IPANEMA": {
+      "Total": 161,
+      "SUS": 133
+    },
+    "LEBLON": {
+      "Total": 83,
+      "SUS": 2
+    },
+    "BENFICA": {
+      "Total": 42,
+      "SUS": 0
+    },
+    "GUADALUPE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "BONSUCESSO": {
+      "Total": 388,
+      "SUS": 374
+    },
+    "CACUIA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "FREGUESIA JACAREPAGUA": {
+      "Total": 177,
+      "SUS": 149
+    },
+    "MADUREIRA": {
+      "Total": 58,
+      "SUS": 46
+    },
+    "TIJUCA": {
+      "Total": 1026,
+      "SUS": 274
+    },
+    "MEIER": {
+      "Total": 632,
+      "SUS": 308
+    },
+    "BOTAFOGO": {
+      "Total": 966,
+      "SUS": 308
+    },
+    "CASCADURA": {
+      "Total": 381,
+      "SUS": 120
+    },
+    "JARDIM BOTANICO": {
+      "Total": 214,
+      "SUS": 213
+    },
+    "JACAREZINHO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VILA ISABEL": {
+      "Total": 651,
+      "SUS": 642
+    },
+    "FLAMENGO": {
+      "Total": 102,
+      "SUS": 102
+    },
+    "VICENTE DE CARVALHO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "JARDIM GUANABARA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PAVUNA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "JARDIM CARIOCA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "FREGUESIA": {
+      "Total": 154,
+      "SUS": 0
+    },
+    "JACAREPAGUA": {
+      "Total": 497,
+      "SUS": 453
+    },
+    "PENHA": {
+      "Total": 287,
+      "SUS": 287
+    },
+    "CATETE": {
+      "Total": 1,
+      "SUS": 1
+    },
+    "TODOS OS SANTOS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "BRAS DE PINA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ANDARAI": {
+      "Total": 346,
+      "SUS": 263
+    },
+    "CURICICA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "CACHAMBI": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PAQUETA": {
+      "Total": 8,
+      "SUS": 8
+    },
+    "MARACANA": {
+      "Total": 135,
+      "SUS": 0
+    },
+    "VILA DA PENHA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "IRAJA": {
+      "Total": 104,
+      "SUS": 57
+    },
+    "TAUA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ENGENHO DE DENTRO": {
+      "Total": 204,
+      "SUS": 93
+    },
+    "REALENGO": {
+      "Total": 376,
+      "SUS": 297
+    },
+    "SANTA CRUZ": {
+      "Total": 387,
+      "SUS": 280
+    },
+    "RECREIO DOS BANDEIRANTES": {
+      "Total": 110,
+      "SUS": 0
+    },
+    "SENADOR CAMARA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "GUARATIBA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "CAJU": {
+      "Total": 60,
+      "SUS": 60
+    },
+    "INHOAIBA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SAO CRISTOVAO": {
+      "Total": 742,
+      "SUS": 441
+    },
+    "DEL CASTILHO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PILARES": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VILA VALQUEIRE": {
+      "Total": 90,
+      "SUS": 60
+    },
+    "COSME VELHO": {
+      "Total": 126,
+      "SUS": 32
+    },
+    "TANQUE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "LARANJEIRAS": {
+      "Total": 556,
+      "SUS": 192
+    },
+    "PORTUGUESA": {
+      "Total": 103,
+      "SUS": 83
+    },
+    "PENHA CIRCULAR": {
+      "Total": 170,
+      "SUS": 65
+    },
+    "LEME": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "OLARIA": {
+      "Total": 2,
+      "SUS": 0
+    },
+    "GALEAO": {
+      "Total": 36,
+      "SUS": 36
+    },
+    "GARDENIA AZUL": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "MARECHAL HERMES": {
+      "Total": 264,
+      "SUS": 234
+    },
+    "GRAJAU": {
+      "Total": 48,
+      "SUS": 0
+    },
+    "ANCHIETA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "RIO COMPRIDO": {
+      "Total": 553,
+      "SUS": 0
+    },
+    "SAUDE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "HONORIO GURGEL": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ENGENHEIRO LEAL": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VILA KOSMOS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "BENTO RIBEIRO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VIDIGAL": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PADRE MIGUEL": {
+      "Total": 49,
+      "SUS": 0
+    },
+    "CAMORIM": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SEPETIBA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ANIL": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ROCHA MIRANDA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SENADOR VASCONCELOS": {
+      "Total": 128,
+      "SUS": 128
+    },
+    "PECHINCHA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "GAVEA": {
+      "Total": 408,
+      "SUS": 310
+    },
+    "AGUA SANTA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PACIENCIA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VAZ LOBO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ENGENHO DA RAINHA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "MANGUINHOS": {
+      "Total": 31,
+      "SUS": 31
+    },
+    "INHAUMA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ENGENHO NOVO": {
+      "Total": 57,
+      "SUS": 0
+    },
+    "RAMOS": {
+      "Total": 9,
+      "SUS": 9
+    },
+    "GAMBOA": {
+      "Total": 108,
+      "SUS": 108
+    },
+    "ABOLICAO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PIEDADE": {
+      "Total": 139,
+      "SUS": 139
+    },
+    "COLEGIO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VISTA ALEGRE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "BARROS FILHO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ACARI": {
+      "Total": 251,
+      "SUS": 233
+    },
+    "SANTO CRISTO": {
+      "Total": 83,
+      "SUS": 83
+    },
+    "COELHO NETO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ROCINHA": {
+      "Total": 8,
+      "SUS": 8
+    },
+    "CIDADE NOVA": {
+      "Total": 1,
+      "SUS": 0
+    },
+    "PARADA DE LUCAS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SAO CONRADO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PARQUE ANCHIETA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VARGEM PEQUENA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ITANHANGA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SANTISSIMO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "HUMAITA": {
+      "Total": 300,
+      "SUS": 90
+    },
+    "MAGALHAES BASTOS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "CORDOVIL": {
+      "Total": 48,
+      "SUS": 0
+    },
+    "MARE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "GLORIA": {
+      "Total": 1,
+      "SUS": 0
+    },
+    "BARRA DE GUARATIBA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "QUINTINO BOCAIUVA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "TURIACU": {
+      "Total": 8,
+      "SUS": 8
+    },
+    "MANGUEIRA": {
+      "Total": 122,
+      "SUS": 122
+    },
+    "CIDADE UNIVERSITARIA": {
+      "Total": 394,
+      "SUS": 394
+    },
+    "COSMOS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "RIACHUELO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "JARDIM SULACAP": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SAMPAIO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ENCANTADO": {
+      "Total": 8,
+      "SUS": 8
+    },
+    "URCA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SAO FRANCISCO XAVIER": {
+      "Total": 9,
+      "SUS": 9
+    },
+    "ESTACIO": {
+      "Total": 195,
+      "SUS": 0
+    },
+    "VIGARIO GERAL": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ROCHA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "COMPLEXO DO ALEMAO": {
+      "Total": 9,
+      "SUS": 8
+    },
+    "COSTA BARROS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "LINS DE VASCONCELOS": {
+      "Total": 602,
+      "SUS": 105
+    },
+    "JARDIM AMERICA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "COCOTA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "VILA MILITAR": {
+      "Total": 48,
+      "SUS": 0
+    },
+    "OSVALDO CRUZ": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "SANTA TERESA": {
+      "Total": 62,
+      "SUS": 0
+    },
+    "CATUMBI": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "HIGIENOPOLIS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "MONERO": {
+      "Total": 106,
+      "SUS": 0
+    },
+    "BANCARIOS": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "RICARDO DE ALBUQUERQUE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PRACA DA BANDEIRA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "JACARE": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PRAIA DA BANDEIRA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ALTO DA BOA VISTA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "MARIA DA GRACA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "PEDRA DE GUARATIBA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "TOMAS COELHO": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "JOA": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "CAVALCANTI": {
+      "Total": 0,
+      "SUS": 0
+    },
+    "ZUMBI": {
+      "Total": 0,
+      "SUS": 0
+    }
+  }
+}
