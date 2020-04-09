@@ -14,12 +14,12 @@ class CovidScraperGraph():
         }
 
         # first subpanel
-        self.confirmed_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[21]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][2]"
-        self.dead_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[21]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][1]"
+        self.confirmed_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[22]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][2]"
+        self.dead_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[22]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][1]"
 
         # first subpanel
-        self.hospitalized_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[24]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][1]"
-        self.interned_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[24]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][2]"
+        self.hospitalized_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[25]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][1]"
+        self.interned_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[25]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][2]"
 
         self.dashboard = dashboard
 
@@ -60,7 +60,7 @@ class CovidScraperGraph():
 
         # iterate through tspan tags inside graph (where the numbers are)
         contents = [ tspan.text.replace(",", "") for tspan in hospitalized_graph.find_elements(By.XPATH, "*[name()='text']/*[name()='tspan']")]
-
+        print(contents)
         self.data['hospitalized'] = list(map(int, contents))
 
         return self.data['hospitalized']

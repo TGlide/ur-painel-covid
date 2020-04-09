@@ -52,6 +52,7 @@ def check_if_available():
             driver.quit()
             print("TUXI CATUM TICA TUM")
             os.system("mpg123 alarm")
+            raise KeyboardInterrupt
 
         print(last_update_str)
 

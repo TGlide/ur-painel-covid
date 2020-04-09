@@ -28,7 +28,7 @@ def dropdown_menu_set(driver, navbar, option, timeout=0):
 def change_to_right_subpanel(dashboard, subpanel_num):
 
     # get path to the right subpanel
-    path_to_subpanel = "div[29]/margin-container/full-container/div/nav/span[{}]".format(subpanel_num)
+    path_to_subpanel = "div[30]/margin-container/full-container/div/nav/span[{}]".format(subpanel_num)
 
     WebDriverWait(dashboard, 10).until(
         EC.element_to_be_clickable((By.XPATH, path_to_subpanel))
@@ -37,7 +37,17 @@ def change_to_right_subpanel(dashboard, subpanel_num):
 def change_to_bottom_subpanel(dashboard, subpanel_num):
 
     # get path to the right subpanel
-    path_to_subpanel = "div[30]/margin-container/full-container/div/nav/span[{}]".format(subpanel_num)
+    path_to_subpanel = "div[31]/margin-container/full-container/div/nav/span[{}]".format(subpanel_num)
+
+    # find it and click it
+    WebDriverWait(dashboard, 10).until(
+        EC.element_to_be_clickable((By.XPATH, path_to_subpanel))
+    ).click()
+
+def change_to_left_subpanel(dashboard, subpanel_num):
+
+    # get path to the left subpanel
+    path_to_subpanel = "div[28]/margin-container/full-container/div/nav/span[{}]".format(subpanel_num)
 
     # find it and click it
     WebDriverWait(dashboard, 10).until(

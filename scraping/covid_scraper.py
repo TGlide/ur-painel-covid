@@ -6,9 +6,8 @@ from selenium.webdriver.support.ui import WebDriverWait # wait until condition i
 from selenium.webdriver.support import expected_conditions as EC # condition to be fullfiled
 
 # custom classes imports
-from covid_scraper_total import CovidScraperTotal
+from covid_scraper_current import CovidScraperCurrent
 from covid_scraper_hood import CovidScraperHood
-from covid_scraper_public import CovidScraperPublic
 from covid_scraper_graph import CovidScraperGraph
 
 # built-in imports
@@ -21,10 +20,9 @@ class CovidScraper:
 
         # where all the data we gather will be kept
         self.data = {
-            'total': None,
-            'neighborhoods': None,
             'last_update': None,
-            'public': None,
+            'current': None,
+            'neighborhoods': None,
             'daily': None
         }
 
@@ -45,9 +43,8 @@ class CovidScraper:
             self.available=False
 
         # classes which will help us gather the data we want
-        self.total = CovidScraperTotal(self.dashboard)
+        self.current = CovidScraperCurrent(self.dashboard)
         self.hoods = CovidScraperHood(self.driver, self.navbar, self.dashboard)
-        self.public = CovidScraperPublic(self.dashboard)
         self.graph = CovidScraperGraph(self.dashboard)
 
     def is_available(self):
@@ -91,9 +88,7 @@ class CovidScraper:
     def get_all(self):
 
         print("after initialization:", self)
-        self.data['public'] = self.public.get_all()
-        print("after public:", self)
-        self.data['total'] = self.total.get_all()
+        self.data['current'] = self.current.get_all()
         print("after total:", self)
         self.data['daily'] = self.graph.get_all()
         print("after daily:", self)
@@ -113,6 +108,6 @@ class CovidScraper:
 
 # testting
 if( __name__ == "__main__" ):
-    scavanger = CovidScraper(headless=True)
+    scavanger = CovidScraper(headless=False)
     scavanger.get_all()
     scavanger.hoods.to_csv("data/bairros.csv")

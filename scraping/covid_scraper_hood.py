@@ -19,22 +19,7 @@ class CovidScraperHood():
         '''
         'neighborhood_name' = {
             'confirmed': None,
-            'dead': None,
-            'gender': {
-                # from CovidScraperCircleGraph
-                'male': {
-                    'confirmed': None,
-                    'dead': None
-                },
-                'female': {
-                    'confirmed': None,
-                    'dead': None
-                },
-                'no_info': {
-                    'confirmed': None,
-                    'dead': None
-                }
-            }
+            'dead': None
         }
         '''
 
@@ -46,7 +31,9 @@ class CovidScraperHood():
         self.timeout = timeout
 
         # path to access the list of neighborhoods
-        self.hood_list = "div[3]/margin-container/full-container/div/div[2]/nav/span"
+        self.hood_confirmed_list = "div[3]/margin-container/full-container/div/div[2]/nav/span"
+
+        self.hood_dead_list = "div[5]/margin-container/full-container/div/div[2]/nav/span"
 
     def get_neighborhood_cases(self, hood_element):
 
@@ -67,7 +54,7 @@ class CovidScraperHood():
     def get_neighborhoods_cases(self):
 
         # iterate over the neighborhood tags and gather data from each one
-        for neighborhood in self.dashboard.find_elements(By.XPATH, self.hood_list):
+        for neighborhood in self.dashboard.find_elements(By.XPATH, self.hood_confirmed_list):
 
             self.get_neighborhood_cases(neighborhood)
 
@@ -96,7 +83,7 @@ class CovidScraperHood():
         dropdown_menu_set(self.driver, self.navbar, "Óbitos confirmados")
 
         # iterate through neighborhoods and get death toll of each one
-        for neighborhood in self.dashboard.find_elements(By.XPATH, self.hood_list):
+        for neighborhood in self.dashboard.find_elements(By.XPATH, self.hood_confirmed_list):
 
             # click neighborhood tile in the list
             neighborhood.click()
@@ -112,7 +99,7 @@ class CovidScraperHood():
         dropdown_menu_set(self.driver, self.navbar, "Todos os confirmados")
 
         # click once again on the last neighborhood so we go back seeing the total cases
-        self.dashboard.find_element(By.XPATH, self.hood_list + "[last()]").click()
+        self.dashboard.find_element(By.XPATH, self.hood_confirmed_list + "[last()]").click()
 
         # wait again so we don't perform any actions without updating the panel
         sleep(self.timeout) 
