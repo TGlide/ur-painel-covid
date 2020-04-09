@@ -8,7 +8,7 @@
       sort-icon="arrow-up"
       sort-icon-size="is-small"
       paginated
-      per-page="20"
+      per-page="10"
       striped
     >
       <template slot-scope="props">
@@ -18,10 +18,17 @@
         <b-table-column field="infected" label="Infectados" numeric sortable>
           {{ props.row.infected }}
         </b-table-column>
-        <b-table-column field="leitos" label="Leitos" numeric sortable>
-          {{ props.row.leitos }}
+        <b-table-column field="leitosSus" label="Leitos (SUS)" numeric sortable>
+          {{ props.row.leitosSus }}
         </b-table-column>
-
+        <b-table-column
+          field="leitosTotal"
+          label="Leitos Totais"
+          numeric
+          sortable
+        >
+          {{ props.row.leitosTotal }}
+        </b-table-column>
         <b-table-column
           field="status"
           label="Faról"
@@ -67,7 +74,8 @@ export default {
     this.neighborhoods.data = Object.entries(leitosJson.municipio).map(n => {
       let res = {
         name: this.titleCase(n[0].toLowerCase()),
-        leitos: n[1],
+        leitosSus: n[1].SUS,
+        leitosTotal: n[1].Total,
         infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
           ? infectedJson[n[0].toUpperCase()].confirmed
           : 0
