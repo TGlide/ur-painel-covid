@@ -115,3 +115,4 @@ class CovidScraper:
 if( __name__ == "__main__" ):
     scavanger = CovidScraper(headless=True)
     scavanger.get_all()
+    scavanger.hoods.to_csv("data/bairros.csv")

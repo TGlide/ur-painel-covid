@@ -8,6 +8,9 @@ node_modules
 .env
 .env.local
 
-# ignore all files in scraping/ that are not .py
+# ignore all files in scraping/ that are not .py, in the data subfolder
+# of requirements.txt
 scraping/*
 !scraping/*.py
+!scraping/data
+!scraping/requirements.txt

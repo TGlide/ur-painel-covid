@@ -8,6 +8,7 @@ from covid_scraper_utils import dropdown_menu_set # toogle deaf/confirmed mode
 
 # built-in
 from time import sleep
+import csv
 
 class CovidScraperHood():
 
@@ -74,10 +75,10 @@ class CovidScraperHood():
 
     def get_neighborhood_deaths(self, neighborhood_key):
 
-        value = self.dashboard.find_element(
+        value = int(self.dashboard.find_element(
                     By.XPATH,
                     "div[1]/margin-container/full-container/div/div/div/div[2]"
-                ).text.replace(",", "")
+                ).text.replace(",", ""))
 
         if( isinstance( self.data.get(neighborhood_key, None), dict) ):
             self.data[neighborhood_key]['dead'] = value
@@ -117,6 +118,21 @@ class CovidScraperHood():
         sleep(self.timeout) 
 
         return self.data
+
+    def to_csv(self, filename):
+
+        with open(filename, "w") as f:
+            fieldnames = ['neighborhood', 'confirmed', 'dead']
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+
+            # write header
+            writer.writeheader()
+            for neighborhood in self.data.keys():
+                writer.writerow({
+                    'neighborhood': neighborhood,
+                    'confirmed': self.data[neighborhood]['confirmed'],
+                    'dead': self.data[neighborhood]['dead']
+                })
 
     def get_all(self):
 
