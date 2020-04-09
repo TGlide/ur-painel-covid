@@ -49,7 +49,6 @@ export default {
   },
   computed: {
     chartDataSelected() {
-      console.log(this.selectLabel, this.chartData);
       const selectedKeys = Object.keys(this.chartData.datasets).filter(key => {
         return this.selected.includes(key);
       });
@@ -67,7 +66,6 @@ export default {
         datasets: selectedDatasets
       };
 
-      console.log(this.selectLabel, data);
       return data;
     }
   },
