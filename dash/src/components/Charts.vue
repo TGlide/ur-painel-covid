@@ -24,7 +24,7 @@
       <div class="column is-8">
         <multi-chart
           :select-options="sources.confirmed.data"
-          :default-selected="['Estado']"
+          :default-selected="['Município']"
           select-label="Fonte Confirmados"
           :chart-data="sources.confirmed.chartData"
           :chart-options="sources.confirmed.chartOptions"
@@ -33,7 +33,7 @@
       <div class="column is-4">
         <multi-chart
           :select-options="sources.projected.data"
-          :default-selected="['UERJ']"
+          :default-selected="['UERJ - Otimista']"
           select-label="Fonte Projetados (Município)"
           :chart-data="sources.projected.chartData"
           :chart-options="sources.projected.chartOptions"
@@ -57,7 +57,7 @@ export default {
           chartOptions: chartsJson.confirmed.options
         },
         projected: {
-          data: ["UFRJ", "UERJ", "UFF", "PUC"],
+          data: Object.keys(chartsJson.projected.data.datasets),
           chartData: chartsJson.projected.data,
           chartOptions: chartsJson.projected.options
         }

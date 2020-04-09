@@ -115,6 +115,47 @@ export const chartsJson = {
               1602,
               1665
             ]
+          },
+          {
+            label: "Leitos (Estado)",
+            backgroundColor: "rgba(0,0,0, 0)",
+            borderColor: "rgba(254, 202, 87,1.0)",
+            pointBackgroundColor: "rgba(254, 202, 87,1.0)",
+            type: "line",
+            data: [
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319,
+              21319
+            ]
           }
         ],
         Município: [
@@ -196,6 +237,47 @@ export const chartsJson = {
               1068,
               1110
             ]
+          },
+          {
+            label: "Leitos (Municipio)",
+            backgroundColor: "rgba(0,0,0, 0)",
+            borderColor: "rgba(254, 202, 87,1.0)",
+            pointBackgroundColor: "rgba(254, 202, 87,1.0)",
+            type: "line",
+            data: [
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917,
+              16917
+            ]
           }
         ]
       }
@@ -236,37 +318,95 @@ export const chartsJson = {
         "Abr 11",
         "Abr 12",
         "Abr 13",
-        "Abr 14"
+        "Abr 14",
+        "Abr 15",
+        "Abr 16",
+        "Abr 17",
+        "Abr 18"
       ],
       datasets: {
-        UFRJ: [
-          {
-            label: "Total (UFRJ)",
-            backgroundColor: "rgba(72,219,251, 0.5)",
-            data: [87, 112, 94, 120, 100, 97, 130, 150]
-          },
-          {
-            label: "Diário (UFRJ)",
-            type: "line",
-            backgroundColor: "rgba(0, 0, 0, 0)",
-            borderColor: "rgba(72,219,251, 0.5)",
-            pointBackgroundColor: "rgba(72,219,251, 0.5)",
-            data: [1197, 1309, 1403, 1523, 1623, 1720, 1850, 2000]
-          }
-        ],
-        UERJ: [
-          {
-            label: "Total (UERJ)",
-            backgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [87, 112, 94, 120, 100, 97, 130, 150]
-          },
+        "UERJ - Otimista": [
           {
             label: "Diário (UERJ)",
+            backgroundColor: "rgba(46, 134, 222, 0.75)",
+            data: [0, 48, 49, 47, 48, 48, 48, 47, 48, 48, 47, 48]
+          },
+          {
+            label: "Total (UERJ)",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
             pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [1097, 1209, 1303, 1453, 1523, 1650, 1810, 1900]
+            data: [
+              936,
+              984,
+              1033,
+              1080,
+              1128,
+              1176,
+              1224,
+              1271,
+              1319,
+              1367,
+              1414,
+              1462
+            ]
+          }
+        ],
+        "UERJ - Esperado": [
+          {
+            label: "Diário (UERJ)",
+            backgroundColor: "rgba(46, 134, 222, 0.75)",
+            data: [0, 51, 52, 51, 51, 51, 52, 51, 51, 52, 51, 51]
+          },
+          {
+            label: "Total (UERJ)",
+            type: "line",
+            backgroundColor: "rgba(0,0,0,0)",
+            borderColor: "rgba(46, 134, 222, 0.75)",
+            pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
+            data: [
+              991,
+              1042,
+              1094,
+              1145,
+              1196,
+              1247,
+              1299,
+              1350,
+              1401,
+              1453,
+              1504,
+              1555
+            ]
+          }
+        ],
+        "UERJ - Pessimista": [
+          {
+            label: "Diário (UERJ)",
+            backgroundColor: "rgba(46, 134, 222, 0.75)",
+            data: [0, 55, 55, 54, 55, 55, 54, 55, 55, 54, 55, 55]
+          },
+          {
+            label: "Total (UERJ)",
+            type: "line",
+            backgroundColor: "rgba(0,0,0,0)",
+            borderColor: "rgba(46, 134, 222, 0.75)",
+            pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
+            data: [
+              1053,
+              1108,
+              1163,
+              1217,
+              1272,
+              1327,
+              1381,
+              1436,
+              1491,
+              1545,
+              1600,
+              1655
+            ]
           }
         ]
       }

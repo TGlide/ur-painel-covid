@@ -1,6 +1,6 @@
 <template>
   <div class="multi-chart">
-    <b-field label="Fonte Confirmados">
+    <b-field :label="selectLabel">
       <b-dropdown v-model="selected" multiple aria-role="list">
         <button class="button is-dark" type="button" slot="trigger">
           <span>Selecionado ({{ selected.length }})</span>
@@ -66,6 +66,7 @@ export default {
         labels: this.chartData.labels,
         datasets: selectedDatasets
       };
+
       console.log(this.selectLabel, data);
       return data;
     }

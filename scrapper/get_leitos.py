@@ -37,6 +37,8 @@ for index, row in df1.iterrows():
             data['municipio'][row['Bairro (cidade Rio de Janeiro)']
                               ]['SUS'] += row['Total Leitos SUS (excluindo neonatal)']
 
+print(sum([a['Total'] for a in data['estado'].values()]))
+print(sum([a['Total'] for a in data['municipio'].values()]))
 # jsonUau = df2.to_json()
-with open(write_path, 'w') as f:
-    json.dump(data, f)
+# with open(write_path, 'w') as f:
+#     json.dump(data, f)
