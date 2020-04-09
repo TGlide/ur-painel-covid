@@ -5,8 +5,8 @@ node_modules
 .vscode
 
 # ignore environmental variables
-.env
-.env.local
+.env*
+*/.env*
 
 # ignore all files in scraping/ that are not .py, in the data subfolder
 # of requirements.txt

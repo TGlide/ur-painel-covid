@@ -5,18 +5,27 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-08,AC,Porto Acre,city,1,0,True,18504,1200807,5.40424,
 2020-04-08,AC,Rio Branco,city,45,1,True,407319,1200401,11.04785,0.0222
 2020-04-08,AC,,state,58,1,True,881935,12,6.57645,0.0172
+2020-04-08,AL,Importados/Indefinidos,city,6,1,True,,,,0.1667
+2020-04-08,AL,Maceió,city,27,2,True,1018948,2704302,2.64979,0.0741
+2020-04-08,AL,Marechal Deodoro,city,2,0,True,51901,2704708,3.85349,
+2020-04-08,AL,Palmeira dos Índios,city,1,0,True,73218,2706307,1.36578,
+2020-04-08,AL,Porto Real do Colégio,city,1,0,True,20066,2707503,4.98355,
+2020-04-08,AL,,state,37,3,True,3337357,27,1.10866,0.0811
 2020-04-08,AM,Anori,city,1,0,True,21010,1300102,4.75964,
 2020-04-08,AM,Boca do Acre,city,1,0,True,34308,1300706,2.91477,
 2020-04-08,AM,Careiro da Várzea,city,2,0,True,30225,1301159,6.61704,
+2020-04-08,AM,Importados/Indefinidos,city,0,0,True,,,,
 2020-04-08,AM,Iranduba,city,9,0,True,48296,1301852,18.63508,
 2020-04-08,AM,Itacoatiara,city,11,0,True,101337,1301902,10.85487,
+2020-04-08,AM,Jutaí,city,0,0,True,14317,1302306,,
 2020-04-08,AM,Manacapuru,city,44,3,True,97377,1302504,45.18521,0.0682
 2020-04-08,AM,Manaus,city,712,25,True,2182763,1302603,32.61921,0.0351
 2020-04-08,AM,Manicoré,city,1,0,True,55751,1302702,1.79369,
-2020-04-08,AM,Novo Airão,city,1,0,True,19454,1303205,5.14033,
+2020-04-08,AM,Novo Airão,city,1,1,True,19454,1303205,5.14033,1.0
 2020-04-08,AM,Parintins,city,6,1,True,114273,1303403,5.25058,0.1667
 2020-04-08,AM,Presidente Figueiredo,city,2,0,True,36279,1303536,5.51283,
 2020-04-08,AM,Santo Antônio do Içá,city,7,0,True,21602,1303700,32.40441,
+2020-04-08,AM,São Gabriel da Cachoeira,city,0,0,True,45564,1303809,,
 2020-04-08,AM,São Paulo de Olivença,city,3,0,True,39299,1303908,7.63378,
 2020-04-08,AM,Tabatinga,city,1,0,True,65844,1304062,1.51874,
 2020-04-08,AM,Tonantins,city,3,0,True,18755,1304237,15.99573,
@@ -248,6 +257,7 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-08,MT,Cáceres,city,2,0,True,94376,5102504,2.11918,
 2020-04-08,MT,Campo Novo do Parecis,city,1,0,True,35360,5102637,2.82805,
 2020-04-08,MT,Canarana,city,1,0,True,21579,5102702,4.63414,
+2020-04-08,MT,Chapada dos Guimarães,city,0,0,True,19752,5103007,,
 2020-04-08,MT,Cuiabá,city,50,0,True,612547,5103403,8.16264,
 2020-04-08,MT,Importados/Indefinidos,city,2,0,True,,,,
 2020-04-08,MT,Lambari D'Oeste,city,1,0,True,6121,5105234,16.3372,
@@ -401,11 +411,85 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-08,RN,Tenente Ananias,city,1,1,True,10786,2414100,9.27128,1.0
 2020-04-08,RN,Tibau,city,1,,True,4106,2411056,24.3546,
 2020-04-08,RN,,state,261,11,True,3506853,24,7.44257,0.0421
+2020-04-08,RO,Jaru,city,1,0,True,51775,1100114,1.93143,
+2020-04-08,RO,Ji-Paraná,city,1,0,True,128969,1100122,0.77538,
+2020-04-08,RO,Ouro Preto do Oeste,city,1,0,True,36035,1100155,2.77508,
+2020-04-08,RO,Porto Velho,city,21,1,True,529544,1100205,3.96568,0.0476
+2020-04-08,RO,Rolim de Moura,city,1,0,True,55058,1100288,1.81627,
+2020-04-08,RO,Vilhena,city,1,0,True,99854,1100304,1.00146,
+2020-04-08,RO,,state,26,1,True,1777225,11,1.46295,0.0385
 2020-04-08,RR,Alto Alegre,city,1,0,True,15510,1400050,6.44745,
 2020-04-08,RR,Boa Vista,city,45,1,True,399213,1400100,11.27218,0.0222
 2020-04-08,RR,Bonfim,city,3,0,True,12409,1400159,24.176,
 2020-04-08,RR,Cantá,city,3,0,True,18335,1400175,16.36215,
 2020-04-08,RR,,state,52,1,True,605761,14,8.58424,0.0192
+2020-04-08,SC,Águas Mornas,city,1,0,True,6469,4200606,15.45834,
+2020-04-08,SC,Anita Garibaldi,city,1,0,True,7133,4201000,14.01935,
+2020-04-08,SC,Antônio Carlos,city,9,2,True,8513,4201208,105.72066,0.2222
+2020-04-08,SC,Araranguá,city,4,0,True,68228,4201406,5.8627,
+2020-04-08,SC,Balneário Arroio do Silva,city,1,0,True,13071,4201950,7.65052,
+2020-04-08,SC,Balneário Camboriú,city,24,0,True,142295,4202008,16.86637,
+2020-04-08,SC,Balneário Gaivota,city,1,1,True,10979,4202073,9.1083,1.0
+2020-04-08,SC,Biguaçu,city,2,0,True,68481,4202305,2.92052,
+2020-04-08,SC,Blumenau,city,55,0,True,357199,4202404,15.39758,
+2020-04-08,SC,Botuverá,city,1,0,True,5246,4202701,19.06214,
+2020-04-08,SC,Braço do Norte,city,17,0,True,33450,4202800,50.82212,
+2020-04-08,SC,Brusque,city,10,0,True,134723,4202909,7.42264,
+2020-04-08,SC,Camboriú,city,12,0,True,82989,4203204,14.45975,
+2020-04-08,SC,Canelinha,city,1,0,True,12240,4203709,8.16993,
+2020-04-08,SC,Chapecó,city,6,0,True,220367,4204202,2.72273,
+2020-04-08,SC,Criciúma,city,30,3,True,215186,4204608,13.94143,0.1
+2020-04-08,SC,Florianópolis,city,123,3,True,500973,4205407,24.55222,0.0244
+2020-04-08,SC,Forquilhinha,city,1,0,True,26793,4205456,3.73232,
+2020-04-08,SC,Gaspar,city,5,1,True,69639,4205902,7.17988,0.2
+2020-04-08,SC,Governador Celso Ramos,city,3,0,True,14471,4206009,20.73112,
+2020-04-08,SC,Gravatal,city,5,0,True,11501,4206207,43.47448,
+2020-04-08,SC,Guabiruba,city,1,0,True,23832,4206306,4.19604,
+2020-04-08,SC,Içara,city,1,0,True,56421,4207007,1.77239,
+2020-04-08,SC,Imbituba,city,6,0,True,44853,4207304,13.37703,
+2020-04-08,SC,Importados/Indefinidos,city,11,0,True,,,,
+2020-04-08,SC,Indaial,city,2,0,True,69425,4207502,2.88081,
+2020-04-08,SC,Irati,city,1,0,True,1930,4207858,51.81347,
+2020-04-08,SC,Itajaí,city,26,1,True,219536,4208203,11.84316,0.0385
+2020-04-08,SC,Itapema,city,3,0,True,65312,4208302,4.59334,
+2020-04-08,SC,Itapiranga,city,1,0,True,16872,4208401,5.92698,
+2020-04-08,SC,Jaguaruna,city,2,0,True,20024,4208807,9.98801,
+2020-04-08,SC,Jaraguá do Sul,city,6,0,True,177697,4208906,3.37653,
+2020-04-08,SC,Joaçaba,city,1,0,True,30118,4209003,3.32027,
+2020-04-08,SC,Joinville,city,30,1,True,590466,4209102,5.08073,0.0333
+2020-04-08,SC,Lages,city,5,0,True,157544,4209300,3.17372,
+2020-04-08,SC,Laguna,city,3,0,True,45814,4209409,6.54822,
+2020-04-08,SC,Mafra,city,1,0,True,56292,4210100,1.77645,
+2020-04-08,SC,Morro da Fumaça,city,1,0,True,17796,4211207,5.61924,
+2020-04-08,SC,Navegantes,city,4,0,True,81475,4211306,4.90948,
+2020-04-08,SC,Palhoça,city,4,1,True,171797,4211900,2.32833,0.25
+2020-04-08,SC,Papanduva,city,2,0,True,19320,4212205,10.35197,
+2020-04-08,SC,Paulo Lopes,city,2,0,True,7494,4212304,26.68802,
+2020-04-08,SC,Pedras Grandes,city,1,1,True,3976,4212403,25.15091,1.0
+2020-04-08,SC,Pescaria Brava,city,1,0,True,10091,4212650,9.90982,
+2020-04-08,SC,Pomerode,city,1,0,True,33447,4213203,2.9898,
+2020-04-08,SC,Porto Belo,city,4,0,True,21388,4213500,18.70208,
+2020-04-08,SC,Rancho Queimado,city,2,0,True,2878,4214300,69.4927,
+2020-04-08,SC,Sangão,city,1,0,True,12678,4215455,7.88768,
+2020-04-08,SC,Santa Rosa de Lima,city,1,0,True,2142,4215604,46.68534,
+2020-04-08,SC,Santo Amaro da Imperatriz,city,1,0,True,23245,4215703,4.302,
+2020-04-08,SC,São Bento do Sul,city,1,0,True,84507,4215802,1.18333,
+2020-04-08,SC,São Domingos,city,1,0,True,9445,4216107,10.58761,
+2020-04-08,SC,São Francisco do Sul,city,2,0,True,52721,4216206,3.79355,
+2020-04-08,SC,São José,city,20,1,True,246586,4216602,8.11076,0.05
+2020-04-08,SC,São Lourenço do Oeste,city,1,0,True,24076,4216909,4.15351,
+2020-04-08,SC,São Ludgero,city,3,1,True,13410,4217006,22.37136,0.3333
+2020-04-08,SC,São Pedro de Alcântara,city,1,0,True,5823,4217253,17.17328,
+2020-04-08,SC,Siderópolis,city,4,0,True,14007,4217600,28.55715,
+2020-04-08,SC,Sombrio,city,3,0,True,30374,4217709,9.87687,
+2020-04-08,SC,Tangará,city,1,0,True,8676,4217907,11.52605,
+2020-04-08,SC,Tijucas,city,2,0,True,38407,4218004,5.20738,
+2020-04-08,SC,Timbé do Sul,city,1,0,True,5348,4218103,18.69858,
+2020-04-08,SC,Timbó,city,1,0,True,44238,4218202,2.2605,
+2020-04-08,SC,Tubarão,city,19,1,True,105686,4218707,17.97778,0.0526
+2020-04-08,SC,Urussanga,city,2,0,True,21268,4219002,9.4038,
+2020-04-08,SC,Videira,city,1,0,True,53065,4219309,1.88448,
+2020-04-08,SC,,state,501,17,True,7164788,42,6.99253,0.0339
 2020-04-08,SE,Aracaju,city,32,4,True,657013,2800308,4.87053,0.125
 2020-04-08,SE,Capela,city,1,0,True,34213,2801306,2.92287,
 2020-04-08,SE,Itabaiana,city,1,0,True,95427,2802908,1.04792,
@@ -564,23 +648,25 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-07,AC,Porto Acre,city,1,0,False,18504,1200807,5.40424,
 2020-04-07,AC,Rio Branco,city,39,1,False,407319,1200401,9.57481,0.0256
 2020-04-07,AC,,state,50,1,False,881935,12,5.66935,0.02
-2020-04-07,AL,Importados/Indefinidos,city,6,0,True,,,,
-2020-04-07,AL,Maceió,city,24,2,True,1018948,2704302,2.35537,0.0833
-2020-04-07,AL,Marechal Deodoro,city,2,0,True,51901,2704708,3.85349,
-2020-04-07,AL,Palmeira dos Índios,city,1,0,True,73218,2706307,1.36578,
-2020-04-07,AL,Porto Real do Colégio,city,1,0,True,20066,2707503,4.98355,
-2020-04-07,AL,,state,34,2,True,3337357,27,1.01877,0.0588
+2020-04-07,AL,Importados/Indefinidos,city,6,0,False,,,,
+2020-04-07,AL,Maceió,city,24,2,False,1018948,2704302,2.35537,0.0833
+2020-04-07,AL,Marechal Deodoro,city,2,0,False,51901,2704708,3.85349,
+2020-04-07,AL,Palmeira dos Índios,city,1,0,False,73218,2706307,1.36578,
+2020-04-07,AL,Porto Real do Colégio,city,1,0,False,20066,2707503,4.98355,
+2020-04-07,AL,,state,34,2,False,3337357,27,1.01877,0.0588
 2020-04-07,AM,Anori,city,1,0,False,21010,1300102,4.75964,
 2020-04-07,AM,Boca do Acre,city,1,0,False,34308,1300706,2.91477,
 2020-04-07,AM,Careiro da Várzea,city,2,0,False,30225,1301159,6.61704,
+2020-04-07,AM,Importados/Indefinidos,city,0,0,False,,,,
 2020-04-07,AM,Iranduba,city,3,0,False,48296,1301852,6.21169,
 2020-04-07,AM,Itacoatiara,city,9,0,False,101337,1301902,8.88126,
+2020-04-07,AM,Jutaí,city,0,0,False,14317,1302306,,
 2020-04-07,AM,Manacapuru,city,42,3,False,97377,1302504,43.13133,0.0714
 2020-04-07,AM,Manaus,city,560,19,False,2182763,1302603,25.65556,0.0339
 2020-04-07,AM,Novo Airão,city,1,0,False,19454,1303205,5.14033,
 2020-04-07,AM,Parintins,city,4,1,False,114273,1303403,3.50039,0.25
 2020-04-07,AM,Santo Antônio do Içá,city,7,0,False,21602,1303700,32.40441,
-2020-04-07,AM,São Gabriel da Cachoeira,city,1,0,True,45564,1303809,2.19472,
+2020-04-07,AM,São Gabriel da Cachoeira,city,1,0,False,45564,1303809,2.19472,
 2020-04-07,AM,São Paulo de Olivença,city,2,0,False,39299,1303908,5.08919,
 2020-04-07,AM,Tonantins,city,3,0,False,18755,1304237,15.99573,
 2020-04-07,AM,,state,636,23,False,4144597,13,15.34528,0.0362
@@ -832,7 +918,7 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-07,MT,Cáceres,city,2,0,False,94376,5102504,2.11918,
 2020-04-07,MT,Campo Novo do Parecis,city,1,0,False,35360,5102637,2.82805,
 2020-04-07,MT,Canarana,city,1,0,False,21579,5102702,4.63414,
-2020-04-07,MT,Chapada dos Guimarães,city,1,0,True,19752,5103007,5.06278,
+2020-04-07,MT,Chapada dos Guimarães,city,1,0,False,19752,5103007,5.06278,
 2020-04-07,MT,Cuiabá,city,43,0,False,612547,5103403,7.01987,
 2020-04-07,MT,Importados/Indefinidos,city,2,0,False,,,,
 2020-04-07,MT,Lucas do Rio Verde,city,1,1,False,65534,5105259,1.52593,1.0
@@ -1054,12 +1140,12 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-07,RN,Tenente Ananias,city,1,1,False,10786,2414100,9.27128,1.0
 2020-04-07,RN,Tibau,city,1,0,False,4106,2411056,24.3546,
 2020-04-07,RN,,state,254,8,False,3506853,24,7.24296,0.0315
-2020-04-07,RO,Jaru,city,1,0,True,51775,1100114,1.93143,
-2020-04-07,RO,Ji-Paraná,city,1,0,True,128969,1100122,0.77538,
-2020-04-07,RO,Porto Velho,city,19,1,True,529544,1100205,3.58799,0.0526
-2020-04-07,RO,Rolim de Moura,city,1,0,True,55058,1100288,1.81627,
-2020-04-07,RO,Vilhena,city,1,0,True,99854,1100304,1.00146,
-2020-04-07,RO,,state,23,1,True,1777225,11,1.29415,0.0435
+2020-04-07,RO,Jaru,city,1,0,False,51775,1100114,1.93143,
+2020-04-07,RO,Ji-Paraná,city,1,0,False,128969,1100122,0.77538,
+2020-04-07,RO,Porto Velho,city,19,1,False,529544,1100205,3.58799,0.0526
+2020-04-07,RO,Rolim de Moura,city,1,0,False,55058,1100288,1.81627,
+2020-04-07,RO,Vilhena,city,1,0,False,99854,1100304,1.00146,
+2020-04-07,RO,,state,23,1,False,1777225,11,1.29415,0.0435
 2020-04-07,RR,Alto Alegre,city,1,0,False,15510,1400050,6.44745,
 2020-04-07,RR,Boa Vista,city,42,1,False,399213,1400100,10.5207,0.0238
 2020-04-07,RR,Bonfim,city,3,0,False,12409,1400159,24.176,
@@ -1137,69 +1223,69 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-07,RS,Viamão,city,8,0,True,255224,4323002,3.1345,
 2020-04-07,RS,Vila Maria,city,1,0,True,4358,4323408,22.94631,
 2020-04-07,RS,,state,555,8,True,11377239,43,4.87816,0.0144
-2020-04-07,SC,Águas Mornas,city,1,0,True,6469,4200606,15.45834,
-2020-04-07,SC,Anita Garibaldi,city,1,0,True,7133,4201000,14.01935,
-2020-04-07,SC,Antônio Carlos,city,9,1,True,8513,4201208,105.72066,0.1111
-2020-04-07,SC,Araranguá,city,4,0,True,68228,4201406,5.8627,
-2020-04-07,SC,Balneário Arroio do Silva,city,1,0,True,13071,4201950,7.65052,
-2020-04-07,SC,Balneário Camboriú,city,16,0,True,142295,4202008,11.24425,
-2020-04-07,SC,Balneário Gaivota,city,1,1,True,10979,4202073,9.1083,1.0
-2020-04-07,SC,Biguaçu,city,1,0,True,68481,4202305,1.46026,
-2020-04-07,SC,Blumenau,city,52,0,True,357199,4202404,14.55771,
-2020-04-07,SC,Botuverá,city,1,0,True,5246,4202701,19.06214,
-2020-04-07,SC,Braço do Norte,city,16,0,True,33450,4202800,47.83259,
-2020-04-07,SC,Brusque,city,10,0,True,134723,4202909,7.42264,
-2020-04-07,SC,Camboriú,city,8,0,True,82989,4203204,9.63983,
-2020-04-07,SC,Canelinha,city,1,0,True,12240,4203709,8.16993,
-2020-04-07,SC,Chapecó,city,6,0,True,220367,4204202,2.72273,
-2020-04-07,SC,Criciúma,city,29,2,True,215186,4204608,13.47671,0.069
-2020-04-07,SC,Florianópolis,city,114,3,True,500973,4205407,22.75572,0.0263
-2020-04-07,SC,Gaspar,city,5,1,True,69639,4205902,7.17988,0.2
-2020-04-07,SC,Governador Celso Ramos,city,2,0,True,14471,4206009,13.82074,
-2020-04-07,SC,Gravatal,city,5,0,True,11501,4206207,43.47448,
-2020-04-07,SC,Içara,city,1,0,True,56421,4207007,1.77239,
-2020-04-07,SC,Imbituba,city,6,0,True,44853,4207304,13.37703,
-2020-04-07,SC,Importados/Indefinidos,city,10,0,True,,,,
-2020-04-07,SC,Indaial,city,2,0,True,69425,4207502,2.88081,
-2020-04-07,SC,Irati,city,1,0,True,1930,4207858,51.81347,
-2020-04-07,SC,Itajaí,city,23,1,True,219536,4208203,10.47664,0.0435
-2020-04-07,SC,Itapema,city,3,0,True,65312,4208302,4.59334,
-2020-04-07,SC,Itapiranga,city,1,0,True,16872,4208401,5.92698,
-2020-04-07,SC,Jaguaruna,city,2,0,True,20024,4208807,9.98801,
-2020-04-07,SC,Jaraguá do Sul,city,6,0,True,177697,4208906,3.37653,
-2020-04-07,SC,Joaçaba,city,1,0,True,30118,4209003,3.32027,
-2020-04-07,SC,Joinville,city,26,1,True,590466,4209102,4.4033,0.0385
-2020-04-07,SC,Lages,city,4,0,True,157544,4209300,2.53897,
-2020-04-07,SC,Laguna,city,3,0,True,45814,4209409,6.54822,
-2020-04-07,SC,Mafra,city,1,0,True,56292,4210100,1.77645,
-2020-04-07,SC,Morro da Fumaça,city,1,0,True,17796,4211207,5.61924,
-2020-04-07,SC,Navegantes,city,4,0,True,81475,4211306,4.90948,
-2020-04-07,SC,Palhoça,city,3,1,True,171797,4211900,1.74625,0.3333
-2020-04-07,SC,Papanduva,city,2,0,True,19320,4212205,10.35197,
-2020-04-07,SC,Paulo Lopes,city,2,0,True,7494,4212304,26.68802,
-2020-04-07,SC,Pedras Grandes,city,1,1,True,3976,4212403,25.15091,1.0
-2020-04-07,SC,Pescaria Brava,city,1,0,True,10091,4212650,9.90982,
-2020-04-07,SC,Pomerode,city,1,0,True,33447,4213203,2.9898,
-2020-04-07,SC,Porto Belo,city,4,0,True,21388,4213500,18.70208,
-2020-04-07,SC,Rancho Queimado,city,2,0,True,2878,4214300,69.4927,
-2020-04-07,SC,Sangão,city,1,0,True,12678,4215455,7.88768,
-2020-04-07,SC,Santa Rosa de Lima,city,1,0,True,2142,4215604,46.68534,
-2020-04-07,SC,Santo Amaro da Imperatriz,city,1,0,True,23245,4215703,4.302,
-2020-04-07,SC,São Domingos,city,1,0,True,9445,4216107,10.58761,
-2020-04-07,SC,São Francisco do Sul,city,2,0,True,52721,4216206,3.79355,
-2020-04-07,SC,São José,city,19,1,True,246586,4216602,7.70522,0.0526
-2020-04-07,SC,São Lourenço do Oeste,city,1,0,True,24076,4216909,4.15351,
-2020-04-07,SC,São Ludgero,city,3,1,True,13410,4217006,22.37136,0.3333
-2020-04-07,SC,São Pedro de Alcântara,city,1,0,True,5823,4217253,17.17328,
-2020-04-07,SC,Siderópolis,city,4,0,True,14007,4217600,28.55715,
-2020-04-07,SC,Sombrio,city,3,0,True,30374,4217709,9.87687,
-2020-04-07,SC,Tijucas,city,2,0,True,38407,4218004,5.20738,
-2020-04-07,SC,Timbé do Sul,city,1,0,True,5348,4218103,18.69858,
-2020-04-07,SC,Timbó,city,1,0,True,44238,4218202,2.2605,
-2020-04-07,SC,Tubarão,city,19,1,True,105686,4218707,17.97778,0.0526
-2020-04-07,SC,Urussanga,city,2,0,True,21268,4219002,9.4038,
-2020-04-07,SC,Videira,city,1,0,True,53065,4219309,1.88448,
-2020-04-07,SC,,state,457,15,True,7164788,42,6.37842,0.0328
+2020-04-07,SC,Águas Mornas,city,1,0,False,6469,4200606,15.45834,
+2020-04-07,SC,Anita Garibaldi,city,1,0,False,7133,4201000,14.01935,
+2020-04-07,SC,Antônio Carlos,city,9,1,False,8513,4201208,105.72066,0.1111
+2020-04-07,SC,Araranguá,city,4,0,False,68228,4201406,5.8627,
+2020-04-07,SC,Balneário Arroio do Silva,city,1,0,False,13071,4201950,7.65052,
+2020-04-07,SC,Balneário Camboriú,city,16,0,False,142295,4202008,11.24425,
+2020-04-07,SC,Balneário Gaivota,city,1,1,False,10979,4202073,9.1083,1.0
+2020-04-07,SC,Biguaçu,city,1,0,False,68481,4202305,1.46026,
+2020-04-07,SC,Blumenau,city,52,0,False,357199,4202404,14.55771,
+2020-04-07,SC,Botuverá,city,1,0,False,5246,4202701,19.06214,
+2020-04-07,SC,Braço do Norte,city,16,0,False,33450,4202800,47.83259,
+2020-04-07,SC,Brusque,city,10,0,False,134723,4202909,7.42264,
+2020-04-07,SC,Camboriú,city,8,0,False,82989,4203204,9.63983,
+2020-04-07,SC,Canelinha,city,1,0,False,12240,4203709,8.16993,
+2020-04-07,SC,Chapecó,city,6,0,False,220367,4204202,2.72273,
+2020-04-07,SC,Criciúma,city,29,2,False,215186,4204608,13.47671,0.069
+2020-04-07,SC,Florianópolis,city,114,3,False,500973,4205407,22.75572,0.0263
+2020-04-07,SC,Gaspar,city,5,1,False,69639,4205902,7.17988,0.2
+2020-04-07,SC,Governador Celso Ramos,city,2,0,False,14471,4206009,13.82074,
+2020-04-07,SC,Gravatal,city,5,0,False,11501,4206207,43.47448,
+2020-04-07,SC,Içara,city,1,0,False,56421,4207007,1.77239,
+2020-04-07,SC,Imbituba,city,6,0,False,44853,4207304,13.37703,
+2020-04-07,SC,Importados/Indefinidos,city,10,0,False,,,,
+2020-04-07,SC,Indaial,city,2,0,False,69425,4207502,2.88081,
+2020-04-07,SC,Irati,city,1,0,False,1930,4207858,51.81347,
+2020-04-07,SC,Itajaí,city,23,1,False,219536,4208203,10.47664,0.0435
+2020-04-07,SC,Itapema,city,3,0,False,65312,4208302,4.59334,
+2020-04-07,SC,Itapiranga,city,1,0,False,16872,4208401,5.92698,
+2020-04-07,SC,Jaguaruna,city,2,0,False,20024,4208807,9.98801,
+2020-04-07,SC,Jaraguá do Sul,city,6,0,False,177697,4208906,3.37653,
+2020-04-07,SC,Joaçaba,city,1,0,False,30118,4209003,3.32027,
+2020-04-07,SC,Joinville,city,26,1,False,590466,4209102,4.4033,0.0385
+2020-04-07,SC,Lages,city,4,0,False,157544,4209300,2.53897,
+2020-04-07,SC,Laguna,city,3,0,False,45814,4209409,6.54822,
+2020-04-07,SC,Mafra,city,1,0,False,56292,4210100,1.77645,
+2020-04-07,SC,Morro da Fumaça,city,1,0,False,17796,4211207,5.61924,
+2020-04-07,SC,Navegantes,city,4,0,False,81475,4211306,4.90948,
+2020-04-07,SC,Palhoça,city,3,1,False,171797,4211900,1.74625,0.3333
+2020-04-07,SC,Papanduva,city,2,0,False,19320,4212205,10.35197,
+2020-04-07,SC,Paulo Lopes,city,2,0,False,7494,4212304,26.68802,
+2020-04-07,SC,Pedras Grandes,city,1,1,False,3976,4212403,25.15091,1.0
+2020-04-07,SC,Pescaria Brava,city,1,0,False,10091,4212650,9.90982,
+2020-04-07,SC,Pomerode,city,1,0,False,33447,4213203,2.9898,
+2020-04-07,SC,Porto Belo,city,4,0,False,21388,4213500,18.70208,
+2020-04-07,SC,Rancho Queimado,city,2,0,False,2878,4214300,69.4927,
+2020-04-07,SC,Sangão,city,1,0,False,12678,4215455,7.88768,
+2020-04-07,SC,Santa Rosa de Lima,city,1,0,False,2142,4215604,46.68534,
+2020-04-07,SC,Santo Amaro da Imperatriz,city,1,0,False,23245,4215703,4.302,
+2020-04-07,SC,São Domingos,city,1,0,False,9445,4216107,10.58761,
+2020-04-07,SC,São Francisco do Sul,city,2,0,False,52721,4216206,3.79355,
+2020-04-07,SC,São José,city,19,1,False,246586,4216602,7.70522,0.0526
+2020-04-07,SC,São Lourenço do Oeste,city,1,0,False,24076,4216909,4.15351,
+2020-04-07,SC,São Ludgero,city,3,1,False,13410,4217006,22.37136,0.3333
+2020-04-07,SC,São Pedro de Alcântara,city,1,0,False,5823,4217253,17.17328,
+2020-04-07,SC,Siderópolis,city,4,0,False,14007,4217600,28.55715,
+2020-04-07,SC,Sombrio,city,3,0,False,30374,4217709,9.87687,
+2020-04-07,SC,Tijucas,city,2,0,False,38407,4218004,5.20738,
+2020-04-07,SC,Timbé do Sul,city,1,0,False,5348,4218103,18.69858,
+2020-04-07,SC,Timbó,city,1,0,False,44238,4218202,2.2605,
+2020-04-07,SC,Tubarão,city,19,1,False,105686,4218707,17.97778,0.0526
+2020-04-07,SC,Urussanga,city,2,0,False,21268,4219002,9.4038,
+2020-04-07,SC,Videira,city,1,0,False,53065,4219309,1.88448,
+2020-04-07,SC,,state,457,15,False,7164788,42,6.37842,0.0328
 2020-04-07,SE,Aracaju,city,30,4,False,657013,2800308,4.56612,0.1333
 2020-04-07,SE,Capela,city,1,0,False,34213,2801306,2.92287,
 2020-04-07,SE,Itabaiana,city,1,0,False,95427,2802908,1.04792,
@@ -1350,10 +1436,10 @@ date,state,city,place_type,confirmed,deaths,is_last,estimated_population_2019,ci
 2020-04-06,AM,Anori,city,1,0,False,21010,1300102,4.75964,
 2020-04-06,AM,Boca do Acre,city,1,0,False,34308,1300706,2.91477,
 2020-04-06,AM,Careiro da Várzea,city,1,0,False,30225,1301159,3.30852,
-2020-04-06,AM,Importados/Indefinidos,city,0,4,True,,,,
+2020-04-06,AM,Importados/Indefinidos,city,0,4,False,,,,
 2020-04-06,AM,Iranduba,city,3,0,False,48296,1301852,6.21169,
 2020-04-06,AM,Itacoatiara,city,8,0,False,101337,1301902,7.89445,
-2020-04-06,AM,Jutaí,city,1,0,True,14317,1302306,6.9847,
+2020-04-06,AM,Jutaí,city,1,0,False,14317,1302306,6.9847,
 2020-04-06,AM,Manacapuru,city,28,3,False,97377,1302504,28.75422,0.1071
 2020-04-06,AM,Manaus,city,473,11,False,2182763,1302603,21.66978,0.0233
 2020-04-06,AM,Novo Airão,city,1,0,False,19454,1303205,5.14033,
