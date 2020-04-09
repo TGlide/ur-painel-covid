@@ -39,7 +39,7 @@ export const chartsJson = {
         Estado: [
           {
             label: "Diários (Estado)",
-            backgroundColor: "rgba(183, 21, 64,0.75)",
+            backgroundColor: "rgba(238, 82, 83,1.0)",
             data: [
               6,
               8,
@@ -78,8 +78,8 @@ export const chartsJson = {
           {
             label: "Total (Estado)",
             backgroundColor: "rgba(254, 202, 87, 0)",
-            borderColor: "rgba(183, 21, 64,0.75)",
-            pointBackgroundColor: "rgba(183, 21, 64,0.75)",
+            borderColor: "rgba(238, 82, 83,1.0)",
+            pointBackgroundColor: "rgba(238, 82, 83,1.0)",
             type: "line",
             data: [
               6,

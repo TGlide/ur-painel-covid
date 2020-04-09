@@ -119,7 +119,7 @@
           <!-- Neighborhoods -->
           <div class="column is-7">
             <div class="box">
-              <h4 class="title is-4">Bairros</h4>
+              <h4 class="title is-4">Locais</h4>
               <b-table
                 :data="neighborhoods.data"
                 default-sort-direction="desc"
@@ -127,13 +127,13 @@
                 sort-icon="arrow-up"
                 sort-icon-size="is-small"
                 paginated
-                per-page="5"
+                per-page="20"
                 striped
               >
                 <template slot-scope="props">
                   <b-table-column
                     field="name"
-                    label="Bairro"
+                    label="Local"
                     width="250"
                     sortable
                   >
@@ -176,6 +176,9 @@
           <div class="column is-5">
             <div class="box stats">
               <h4 class="title is-4">Tipos de Casos</h4>
+
+              <br />
+              <h5 class="title is-5">Estado</h5>
               <div class="stat">
                 <span class="type"
                   ><span class="status danger" /> Total Confirmados:</span
@@ -194,7 +197,43 @@
                 >
                 <span class="value gray">{{ this.fatal }}</span>
               </div>
+
+              <div class="stat">
+                <span class="type"
+                  ><span class="status blue" /> Hospitalizados:</span
+                >
+                <span class="value blue">253</span>
+              </div>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status dark-blue" /> Em UTI:</span
+                >
+                <span class="value dark-blue">91</span>
+              </div>
+
+              <br />
               <hr />
+              <br />
+
+              <h5 class="title is-5">Município</h5>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status danger" /> Total Confirmados:</span
+                >
+                <span class="value danger">{{ this.confirmed }}</span>
+              </div>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status warning" /> Casos prováveis:</span
+                >
+                <span class="value warning">4,471</span>
+              </div>
+              <div class="stat">
+                <span class="type"
+                  ><span class="status gray" /> Casos fatais:</span
+                >
+                <span class="value gray">{{ this.fatal }}</span>
+              </div>
               <div class="stat">
                 <span class="type"
                   ><span class="status blue" /> Hospitalizados:</span
@@ -314,7 +353,7 @@ export default {
         leitos: n[1],
         infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
           ? infectedJson[n[0].toUpperCase()].confirmed
-          : NaN
+          : 0
       };
       if (res.infected >= res.leitos * 0.75) {
         res.status = 3;
