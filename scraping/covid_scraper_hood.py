@@ -147,7 +147,7 @@ class CovidScraperHood():
     def to_csv(self, filename):
 
         with open(filename, "w") as f:
-            fieldnames = ['neighborhood', 'confirmed', 'dead']
+            fieldnames = ['neighborhood', 'confirmed', 'dead', 'recovered']
             writer = csv.DictWriter(f, fieldnames=fieldnames)
 
             # write header
@@ -156,7 +156,8 @@ class CovidScraperHood():
                 writer.writerow({
                     'neighborhood': neighborhood,
                     'confirmed': self.data[neighborhood]['confirmed'],
-                    'dead': self.data[neighborhood]['dead']
+                    'dead': self.data[neighborhood]['dead'],
+                    'recovered': self.data[neighborhood]['recovered']
                 })
 
     def get_all(self):

@@ -6,6 +6,7 @@ from covid_scraper_utils import change_to_right_subpanel
 
 # built-in imports
 from time import sleep # hacky, but sometimes the only option (i won't overdo it i swear)
+import csv
 
 class CovidScraperCurrent():
 
@@ -15,10 +16,10 @@ class CovidScraperCurrent():
         self.data = {
             'confirmed': None,
             'recovered': None,
+            'dead': None,
             'sus': {
                 'hospitalized': None,
-                'uti': None,
-                'dead': None
+                'uti': None
             },
             'municipal': {
                 'hospitalized': None,
@@ -129,17 +130,17 @@ class CovidScraperCurrent():
 
         return self.data['sus']['uti']
 
-    def get_sus_dead(self):
+    def get_dead(self):
 
         # get total number of deaths and convert it to a number
-        self.data['sus']['dead'] = int(
+        self.data['dead'] = int(
             self.dashboard.find_element(
                 By.XPATH,
                 "div[21]/margin-container/full-container/div/div/div/div[2]"
             ).text.replace(".", "").replace(",", "")
         )
 
-        return self.data['sus']['dead']
+        return self.data['dead']
 
     def get_all(self):
 
@@ -148,6 +149,7 @@ class CovidScraperCurrent():
         # total
         self.get_confirmed()
         self.get_recovered()
+        self.get_dead()
 
         # total at municipal health system
         self.get_municipal_hospitalized()
@@ -157,6 +159,5 @@ class CovidScraperCurrent():
         # total at sus
         self.get_sus_hospitalized()
         self.get_sus_uti()
-        self.get_sus_dead()
 
         return self.data

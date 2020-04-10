@@ -45,7 +45,7 @@ class CovidScraper:
         # classes which will help us gather the data we want
         self.current = CovidScraperCurrent(self.dashboard)
         self.hoods = CovidScraperHood(self.driver, self.navbar, self.dashboard)
-        self.graph = CovidScraperGraph(self.dashboard)
+        self.graph = CovidScraperGraph(self.dashboard, self.data['last_update'])
 
     def is_available(self):
         # check if page is available
@@ -85,16 +85,6 @@ class CovidScraper:
 
         return last_update
 
-    def get_all(self):
-
-        print("after initialization:", self)
-        self.data['current'] = self.current.get_all()
-        print("after total:", self)
-        self.data['daily'] = self.graph.get_all()
-        print("after daily:", self)
-        self.data['neighborhoods'] = self.hoods.get_all()
-        print("after neighborhoods:", self)
-
     def __del__(self):
 
         # close driver
@@ -106,8 +96,19 @@ class CovidScraper:
 
         return string
 
+    def get_all(self):
+
+        print("after initialization:", self)
+        self.data['current'] = self.current.get_all()
+        print("after total:", self)
+        self.data['daily'] = self.graph.get_all()
+        print("after daily:", self)
+        self.data['neighborhoods'] = self.hoods.get_all()
+        print("after neighborhoods:", self)
+
 # testting
 if( __name__ == "__main__" ):
-    scavanger = CovidScraper(headless=False)
+    scavanger = CovidScraper(headless=True)
     scavanger.get_all()
     scavanger.hoods.to_csv("data/bairros.csv")
+    scavanger.graph.to_csv("data/sequence.csv")
