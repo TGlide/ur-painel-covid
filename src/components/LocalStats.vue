@@ -56,7 +56,7 @@
         </b-table-column>
         <b-table-column
           field="status"
-          label="Faról"
+          label="Farol"
           width="40"
           centered
           sortable

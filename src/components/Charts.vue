@@ -48,8 +48,9 @@
 </template>
 
 <script>
-import { chartsJson } from "@/data/charts.js";
+import chartsJson from "@/data/charts.json";
 import MultiChart from "@/components/shared/MultiChart";
+
 export default {
   components: { MultiChart },
   data() {
