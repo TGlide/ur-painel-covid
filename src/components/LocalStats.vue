@@ -65,6 +65,7 @@
         </b-table-column>
       </template>
     </b-table>
+    <p>* Leitos estimados com uma taxa de ocupação de 60%</p>
   </div>
 </template>
 
