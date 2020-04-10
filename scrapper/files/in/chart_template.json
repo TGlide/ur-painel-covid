@@ -63,6 +63,89 @@
           }
         ]
       }
+    },
+    "projected": {
+      "data": {
+        "labels": [],
+        "datasets": {
+          "UERJ - Otimista": [
+            {
+              "label": "Di\u00e1rio (UERJ - Otimista)",
+              "backgroundColor": "rgba(16, 172, 132,1.0)",
+              "data": []
+            },
+            {
+              "label": "Total (UERJ - Otimista)",
+              "type": "line",
+              "backgroundColor": "rgba(0,0,0,0)",
+              "borderColor": "rgba(16, 172, 132,1.0)",
+              "pointBackgroundColor": "rgba(16, 172, 132,1.0)",
+              "data": []
+            }
+          ],
+          "UERJ - Esperado": [
+            {
+              "label": "Di\u00e1rio (UERJ - Esperado)",
+              "backgroundColor": "rgba(254, 202, 87,1.0)",
+              "data": []
+            },
+            {
+              "label": "Total (UERJ - Esperado)",
+              "type": "line",
+              "backgroundColor": "rgba(0,0,0,0)",
+              "borderColor": "rgba(254, 202, 87,1.0)",
+              "pointBackgroundColor": "rgba(254, 202, 87,1.0)",
+              "data": []
+            }
+          ],
+          "UERJ - Pessimista": [
+            {
+              "label": "Di\u00e1rio (UERJ - Pessimista)",
+              "backgroundColor": "rgba(238, 82, 83,1.0)",
+              "data": []
+            },
+            {
+              "label": "Total (UERJ - Pessimista)",
+              "type": "line",
+              "backgroundColor": "rgba(0,0,0,0)",
+              "borderColor": "rgba(238, 82, 83,1.0)",
+              "pointBackgroundColor": "rgba(238, 82, 83,1.0)",
+              "data": []
+            }
+          ]
+        }
+      },
+      "options": {
+        "responsive": true,
+        "maintainAspectRatio": false,
+        "legend": {
+          "display": false
+        },
+        "scales": {
+          "xAxes": [
+            {
+              "gridLines": {
+                "display": false
+              },
+              "ticks": {
+                "autoSkip": true,
+                "maxRotation": 45,
+                "minRotation": 45
+              }
+            }
+          ],
+          "yAxes": [
+            {
+              "ticks": {
+                "beginAtZero": true,
+                "max": 2000,
+                "min": 0,
+                "display": false
+              }
+            }
+          ]
+        }
+      }
     }
   },
   "hospitalized": {
@@ -212,89 +295,6 @@
             "ticks": {
               "max": 2000,
               "min": 0
-            }
-          }
-        ]
-      }
-    }
-  },
-  "projected": {
-    "data": {
-      "labels": [],
-      "datasets": {
-        "UERJ - Otimista": [
-          {
-            "label": "Di\u00e1rio (UERJ - Otimista)",
-            "backgroundColor": "rgba(16, 172, 132,1.0)",
-            "data": []
-          },
-          {
-            "label": "Total (UERJ - Otimista)",
-            "type": "line",
-            "backgroundColor": "rgba(0,0,0,0)",
-            "borderColor": "rgba(16, 172, 132,1.0)",
-            "pointBackgroundColor": "rgba(16, 172, 132,1.0)",
-            "data": []
-          }
-        ],
-        "UERJ - Esperado": [
-          {
-            "label": "Di\u00e1rio (UERJ - Esperado)",
-            "backgroundColor": "rgba(254, 202, 87,1.0)",
-            "data": []
-          },
-          {
-            "label": "Total (UERJ - Esperado)",
-            "type": "line",
-            "backgroundColor": "rgba(0,0,0,0)",
-            "borderColor": "rgba(254, 202, 87,1.0)",
-            "pointBackgroundColor": "rgba(254, 202, 87,1.0)",
-            "data": []
-          }
-        ],
-        "UERJ - Pessimista": [
-          {
-            "label": "Di\u00e1rio (UERJ - Pessimista)",
-            "backgroundColor": "rgba(238, 82, 83,1.0)",
-            "data": []
-          },
-          {
-            "label": "Total (UERJ - Pessimista)",
-            "type": "line",
-            "backgroundColor": "rgba(0,0,0,0)",
-            "borderColor": "rgba(238, 82, 83,1.0)",
-            "pointBackgroundColor": "rgba(238, 82, 83,1.0)",
-            "data": []
-          }
-        ]
-      }
-    },
-    "options": {
-      "responsive": true,
-      "maintainAspectRatio": false,
-      "legend": {
-        "display": false
-      },
-      "scales": {
-        "xAxes": [
-          {
-            "gridLines": {
-              "display": false
-            },
-            "ticks": {
-              "autoSkip": true,
-              "maxRotation": 45,
-              "minRotation": 45
-            }
-          }
-        ],
-        "yAxes": [
-          {
-            "ticks": {
-              "beginAtZero": true,
-              "max": 2000,
-              "min": 0,
-              "display": false
             }
           }
         ]

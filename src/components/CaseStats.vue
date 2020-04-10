@@ -22,7 +22,7 @@
       <span class="type"
         ><span class="status danger" /> Total Confirmados:</span
       >
-      <span class="value danger">1663</span>
+      <span class="value danger">{{ sources.confirmed }}</span>
     </div>
     <!-- <div class="stat">
       <span class="type"><span class="status warning" /> Casos prováveis:</span>
@@ -30,35 +30,41 @@
     </div> -->
     <div class="stat">
       <span class="type"><span class="status gray" /> Casos fatais:</span>
-      <span class="value gray">82</span>
+      <span class="value gray">{{ sources.fatal }}</span>
     </div>
 
-    <!-- <div class="stat">
+    <div class="stat">
       <span class="type"><span class="status blue" /> Hospitalizados:</span>
-      <span class="value blue">253</span>
+      <span class="value blue">{{ sources.hospitalized }}</span>
     </div>
     <div class="stat">
       <span class="type"><span class="status dark-blue" /> Em UTI:</span>
-      <span class="value dark-blue">91</span>
-    </div> -->
+      <span class="value dark-blue">{{ sources.uti }}</span>
+    </div>
   </div>
 </template>
 
 <script>
-import infectedJson from "@/data/infected.json";
+// import infectedJson from "@/data/infected.json";
+import chartsJson from "@/data/charts.json";
+
 export default {
   data() {
     return {
-      locales: ["Municipio", "Estado"],
-      selected: "Municipio",
-      confirmed: 0,
-      fatal: 0
+      locales: ["Município", "Estado"],
+      selected: "Município",
+      sources: {
+        confirmed: 0,
+        fatal: 0,
+        hospitalized: 0,
+        uti: 0
+      }
     };
   },
   mounted() {
-    for (let a of Object.entries(infectedJson)) {
-      this.confirmed += a[1].confirmed;
-      this.fatal += parseInt(a[1].dead);
+    for (let key of Object.keys(this.sources)) {
+      const chartData = chartsJson[key].data.datasets[this.selected][1].data;
+      this.sources[key] = chartData[chartData.length - 1];
     }
   }
 };

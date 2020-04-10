@@ -42,7 +42,7 @@
     <line-chart
       :chartdata="chartDataSelected"
       :options="chartOptions"
-      v-if="selected && selected.length > 0"
+      v-if="selected && selected.length > 0 && chartData"
     >
     </line-chart>
     <div class="no-content-container" v-else>
@@ -73,6 +73,7 @@ export default {
   },
   computed: {
     chartDataSelected() {
+      if (!this.chartData) return {};
       const selectedKeys = Object.keys(this.chartData.datasets).filter(key => {
         return this.selected.includes(key);
       });
@@ -93,6 +94,7 @@ export default {
       return data;
     },
     legends() {
+      if (!this.chartData) return [];
       const res = [];
 
       for (let ds of this.chartDataSelected.datasets) {
@@ -118,7 +120,14 @@ export default {
     }
   },
   mounted() {
-    this.selected = this.defaultSelected;
+    this.selected = [];
+    if (this.defaultSelected) this.selected = this.defaultSelected;
+  },
+  watch: {
+    defaultSelected: function() {
+      this.selected = [];
+      if (this.defaultSelected) this.selected = this.defaultSelected;
+    }
   }
 };
 </script>

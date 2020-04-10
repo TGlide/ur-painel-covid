@@ -45,6 +45,11 @@ def getHistoricFromKey(key, df, reverse=True):
     return getHistoricFromList(df[key], reverse=reverse)
 
 
+def getUpperBound(num):
+    n_digits = math.floor(math.log10(num))
+    return math.ceil(num/10**n_digits)*(10**n_digits)
+
+
 CHART_TEMPLATE = os.path.join(
     os.getcwd(), "scrapper", "files", "in", "chart_template.json")
 HISTORIC_DATA = os.path.join(
@@ -75,14 +80,20 @@ template['confirmed']['data']['datasets']['Município'][1]['data'] = data['confi
 template['hospitalized']['data']['labels'] = data['days']
 template['hospitalized']['data']['datasets']['Município'][0]['data'] = data['hospitalized']['daily']
 template['hospitalized']['data']['datasets']['Município'][1]['data'] = data['hospitalized']['total']
+template['hospitalized']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+    max(data['hospitalized']['total']))
 
 template['uti']['data']['labels'] = data['days']
 template['uti']['data']['datasets']['Município'][0]['data'] = data['uti']['daily']
 template['uti']['data']['datasets']['Município'][1]['data'] = data['uti']['total']
+template['uti']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+    max(data['uti']['total']))
 
 template['fatal']['data']['labels'] = data['days']
 template['fatal']['data']['datasets']['Município'][0]['data'] = data['fatal']['daily']
 template['fatal']['data']['datasets']['Município'][1]['data'] = data['fatal']['total']
+template['fatal']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+    max(data['fatal']['total']))
 
 
 projectionDF = pd.read_excel(PROJECTION_DATA)
@@ -101,18 +112,28 @@ projData = {
 
 projData['otimista']['daily'][0] = projData['otimista']['total'][0] - \
     data['confirmed']['total'][-1]
+
 projData['esperado']['daily'][0] = projData['esperado']['total'][0] - \
     data['confirmed']['total'][-1]
+
 projData['pessimista']['daily'][0] = projData['pessimista']['total'][0] - \
     data['confirmed']['total'][-1]
 
-template['projected']['data']['labels'] = projectionDays[starting_point:]
-template['projected']['data']['datasets']['UERJ - Otimista'][0]['data'] = projData['otimista']['daily']
-template['projected']['data']['datasets']['UERJ - Otimista'][1]['data'] = projData['otimista']['total']
-template['projected']['data']['datasets']['UERJ - Esperado'][0]['data'] = projData['esperado']['daily']
-template['projected']['data']['datasets']['UERJ - Esperado'][1]['data'] = projData['esperado']['total']
-template['projected']['data']['datasets']['UERJ - Pessimista'][0]['data'] = projData['pessimista']['daily']
-template['projected']['data']['datasets']['UERJ - Pessimista'][1]['data'] = projData['pessimista']['total']
+template['confirmed']['projected']['data']['labels'] = projectionDays[starting_point:]
+
+template['confirmed']['projected']['data']['datasets']['UERJ - Otimista'][0]['data'] = projData['otimista']['daily']
+template['confirmed']['projected']['data']['datasets']['UERJ - Otimista'][1]['data'] = projData['otimista']['total']
+
+template['confirmed']['projected']['data']['datasets']['UERJ - Esperado'][0]['data'] = projData['esperado']['daily']
+template['confirmed']['projected']['data']['datasets']['UERJ - Esperado'][1]['data'] = projData['esperado']['total']
+
+template['confirmed']['projected']['data']['datasets']['UERJ - Pessimista'][0]['data'] = projData['pessimista']['daily']
+template['confirmed']['projected']['data']['datasets']['UERJ - Pessimista'][1]['data'] = projData['pessimista']['total']
+
+template['confirmed']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+    max(projData['pessimista']['total']))
+template['confirmed']['projected']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+    max(projData['pessimista']['total']))
 
 
 with open(WRITE_PATH, 'w') as f:

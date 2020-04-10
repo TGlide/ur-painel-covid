@@ -4,43 +4,64 @@
       <div class="column">
         <h4 class="title is-4">Evolução qnt. casos</h4>
       </div>
-      <!-- <div class="column">
+      <div class="column">
         <b-field>
           <p class="control">
-            <b-button class="button is-primary is-light">
+            <b-button
+              class="button is-primary is-light"
+              :outlined="mainChartSelection !== 'confirmed'"
+              @click="mainChartSelection = 'confirmed'"
+            >
               Infectados
             </b-button>
           </p>
           <p class="control">
-            <b-button class="button is-primary" outlined>
+            <b-button
+              class="button is-primary"
+              :outlined="mainChartSelection !== 'hospitalized'"
+              @click="mainChartSelection = 'hospitalized'"
+            >
               Hospitalizados
             </b-button>
           </p>
           <p class="control">
-            <b-button class="button is-primary" outlined>
+            <b-button
+              class="button is-primary"
+              :outlined="mainChartSelection !== 'uti'"
+              @click="mainChartSelection = 'uti'"
+            >
               UTIs
             </b-button>
           </p>
+          <p class="control">
+            <b-button
+              class="button is-primary"
+              :outlined="mainChartSelection !== 'fatal'"
+              @click="mainChartSelection = 'fatal'"
+            >
+              Fatais
+            </b-button>
+          </p>
         </b-field>
-      </div> -->
+      </div>
     </div>
     <div class="columns charts">
       <div class="column is-8">
         <multi-chart
-          :select-options="sources.confirmed.data"
+          :select-options="sources[mainChartSelection].data"
           :default-selected="['Município']"
           select-label="Fonte Confirmados"
-          :chart-data="sources.confirmed.chartData"
-          :chart-options="sources.confirmed.chartOptions"
+          :chart-data="sources[mainChartSelection].chartData"
+          :chart-options="sources[mainChartSelection].chartOptions"
         />
       </div>
       <div class="column is-4">
         <multi-chart
-          :select-options="sources.projected.data"
-          :default-selected="['UERJ - Otimista']"
+          :select-options="sources[mainChartSelection].projected.data"
+          :default-selected="sources[mainChartSelection].projected.default"
           select-label="Fonte Projetados (Município)"
-          :chart-data="sources.projected.chartData"
-          :chart-options="sources.projected.chartOptions"
+          :chart-data="sources[mainChartSelection].projected.chartData"
+          :chart-options="sources[mainChartSelection].projected.chartOptions"
         />
       </div>
     </div>
@@ -55,16 +76,51 @@ export default {
   components: { MultiChart },
   data() {
     return {
+      mainChartSelection: "confirmed",
       sources: {
         confirmed: {
           data: ["Município"],
           chartData: chartsJson.confirmed.data,
-          chartOptions: chartsJson.confirmed.options
+          chartOptions: chartsJson.confirmed.options,
+          projected: {
+            default: [],
+            data: Object.keys(chartsJson.confirmed.projected.data.datasets),
+            chartData: chartsJson.confirmed.projected.data,
+            chartOptions: chartsJson.confirmed.projected.options
+          }
         },
-        projected: {
-          data: Object.keys(chartsJson.projected.data.datasets),
-          chartData: chartsJson.projected.data,
-          chartOptions: chartsJson.projected.options
+        hospitalized: {
+          data: ["Município"],
+          chartData: chartsJson.hospitalized.data,
+          chartOptions: chartsJson.hospitalized.options,
+          projected: {
+            default: [],
+            data: [],
+            chartData: undefined,
+            chartOptions: undefined
+          }
+        },
+        uti: {
+          data: ["Município"],
+          chartData: chartsJson.uti.data,
+          chartOptions: chartsJson.uti.options,
+          projected: {
+            default: [],
+            data: undefined,
+            chartData: undefined,
+            chartOptions: undefined
+          }
+        },
+        fatal: {
+          data: ["Município"],
+          chartData: chartsJson.fatal.data,
+          chartOptions: chartsJson.fatal.options,
+          projected: {
+            default: [],
+            data: undefined,
+            chartData: undefined,
+            chartOptions: undefined
+          }
         }
       }
     };
