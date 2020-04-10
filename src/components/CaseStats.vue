@@ -1,19 +1,22 @@
 <template>
   <div class="box stats">
-    <div class="box-header">
-      <h4 class="title is-4">Tipos de Casos</h4>
-
-      <b-field>
-        <p class="control" v-for="locale in locales" :key="locale">
-          <b-button
-            class="button is-primary"
-            @click="selected = locale"
-            :outlined="selected != locale"
-          >
-            {{ locale }}
-          </b-button>
-        </p>
-      </b-field>
+    <div class="columns box-header">
+      <div class="column">
+        <h4 class="title is-4">Tipos de Casos</h4>
+      </div>
+      <!-- <div class="column">
+        <b-field>
+          <p class="control" v-for="locale in locales" :key="locale">
+            <b-button
+              class="button is-primary"
+              @click="selected = locale"
+              :outlined="selected != locale"
+            >
+              {{ locale }}
+            </b-button>
+          </p>
+        </b-field>
+      </div> -->
     </div>
     <div class="stat">
       <span class="type"
@@ -21,23 +24,23 @@
       >
       <span class="value danger">{{ this.confirmed }}</span>
     </div>
-    <div class="stat">
+    <!-- <div class="stat">
       <span class="type"><span class="status warning" /> Casos prováveis:</span>
       <span class="value warning">4,471</span>
-    </div>
+    </div> -->
     <div class="stat">
       <span class="type"><span class="status gray" /> Casos fatais:</span>
       <span class="value gray">{{ this.fatal }}</span>
     </div>
 
-    <div class="stat">
+    <!-- <div class="stat">
       <span class="type"><span class="status blue" /> Hospitalizados:</span>
       <span class="value blue">253</span>
     </div>
     <div class="stat">
       <span class="type"><span class="status dark-blue" /> Em UTI:</span>
       <span class="value dark-blue">91</span>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -40,13 +40,19 @@ export default {
 
   .box-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     .title {
       margin-bottom: 0 !important;
+    }
+
+    .column:last-child {
+      &:not(:first-child) {
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
 }

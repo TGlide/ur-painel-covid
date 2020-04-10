@@ -1,24 +1,28 @@
 <template>
   <div class="box">
-    <div class="box-header">
-      <h4 class="title is-4">Evolução qnt. casos</h4>
-      <b-field>
-        <p class="control">
-          <b-button class="button is-primary is-light">
-            Infectados
-          </b-button>
-        </p>
-        <p class="control">
-          <b-button class="button is-primary" outlined>
-            Hospitalizados
-          </b-button>
-        </p>
-        <p class="control">
-          <b-button class="button is-primary" outlined>
-            UTIs
-          </b-button>
-        </p>
-      </b-field>
+    <div class="columns box-header">
+      <div class="column">
+        <h4 class="title is-4">Evolução qnt. casos</h4>
+      </div>
+      <!-- <div class="column">
+        <b-field>
+          <p class="control">
+            <b-button class="button is-primary is-light">
+              Infectados
+            </b-button>
+          </p>
+          <p class="control">
+            <b-button class="button is-primary" outlined>
+              Hospitalizados
+            </b-button>
+          </p>
+          <p class="control">
+            <b-button class="button is-primary" outlined>
+              UTIs
+            </b-button>
+          </p>
+        </b-field>
+      </div> -->
     </div>
     <div class="columns charts">
       <div class="column is-8">
@@ -52,7 +56,7 @@ export default {
     return {
       sources: {
         confirmed: {
-          data: ["Estado", "Município"],
+          data: ["Município"],
           chartData: chartsJson.confirmed.data,
           chartOptions: chartsJson.confirmed.options
         },

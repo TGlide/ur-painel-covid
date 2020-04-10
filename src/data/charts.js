@@ -2,10 +2,10 @@ export const chartsJson = {
   confirmed: {
     data: {
       labels: [
-        "Mar 6",
-        "Mar 7",
-        "Mar 8",
-        "Mar 9",
+        "Mar 06",
+        "Mar 07",
+        "Mar 08",
+        "Mar 09",
         "Mar 10",
         "Mar 11",
         "Mar 12",
@@ -33,7 +33,10 @@ export const chartsJson = {
         "Abr 03",
         "Abr 04",
         "Abr 05",
-        "Abr 06"
+        "Abr 06",
+        "Abr 07",
+        "Abr 08",
+        "Abr 09"
       ],
       datasets: {
         Estado: [
@@ -175,8 +178,8 @@ export const chartsJson = {
               6,
               3,
               9,
-              0,
               3,
+              0,
               31,
               9,
               67,
@@ -194,7 +197,10 @@ export const chartsJson = {
               60,
               115,
               86,
-              42
+              42,
+              141,
+              198,
+              184
             ]
           },
           {
@@ -216,7 +222,7 @@ export const chartsJson = {
               48,
               51,
               60,
-              60,
+              63,
               63,
               94,
               103,
@@ -235,50 +241,53 @@ export const chartsJson = {
               867,
               982,
               1068,
-              1110
-            ]
-          },
-          {
-            label: "Leitos (Municipio)",
-            backgroundColor: "rgba(0,0,0, 0)",
-            borderColor: "rgba(254, 202, 87,1.0)",
-            pointBackgroundColor: "rgba(254, 202, 87,1.0)",
-            type: "line",
-            data: [
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917,
-              16917
+              1110,
+              1251,
+              1449,
+              1633
             ]
           }
+          // {
+          //   label: "Leitos (Municipio)",
+          //   backgroundColor: "rgba(0,0,0, 0)",
+          //   borderColor: "rgba(254, 202, 87,1.0)",
+          //   pointBackgroundColor: "rgba(254, 202, 87,1.0)",
+          //   type: "line",
+          //   data: [
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917,
+          //     16917
+          //   ]
+          // }
         ]
       }
     },
@@ -311,9 +320,6 @@ export const chartsJson = {
   projected: {
     data: {
       labels: [
-        "Abr 07",
-        "Abr 08",
-        "Abr 09",
         "Abr 10",
         "Abr 11",
         "Abr 12",
@@ -329,7 +335,7 @@ export const chartsJson = {
           {
             label: "Diário (UERJ)",
             backgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [0, 48, 49, 47, 48, 48, 48, 47, 48, 48, 47, 48]
+            data: [47, 48, 48, 48, 47, 48, 48, 47, 48]
           },
           {
             label: "Total (UERJ)",
@@ -337,27 +343,14 @@ export const chartsJson = {
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
             pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [
-              936,
-              984,
-              1033,
-              1080,
-              1128,
-              1176,
-              1224,
-              1271,
-              1319,
-              1367,
-              1414,
-              1462
-            ]
+            data: [1080, 1128, 1176, 1224, 1271, 1319, 1367, 1414, 1462]
           }
         ],
         "UERJ - Esperado": [
           {
             label: "Diário (UERJ)",
             backgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [0, 51, 52, 51, 51, 51, 52, 51, 51, 52, 51, 51]
+            data: [51, 51, 51, 52, 51, 51, 52, 51, 51]
           },
           {
             label: "Total (UERJ)",
@@ -365,27 +358,14 @@ export const chartsJson = {
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
             pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [
-              991,
-              1042,
-              1094,
-              1145,
-              1196,
-              1247,
-              1299,
-              1350,
-              1401,
-              1453,
-              1504,
-              1555
-            ]
+            data: [1145, 1196, 1247, 1299, 1350, 1401, 1453, 1504, 1555]
           }
         ],
         "UERJ - Pessimista": [
           {
             label: "Diário (UERJ)",
             backgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [0, 55, 55, 54, 55, 55, 54, 55, 55, 54, 55, 55]
+            data: [54, 55, 55, 54, 55, 55, 54, 55, 55]
           },
           {
             label: "Total (UERJ)",
@@ -393,20 +373,7 @@ export const chartsJson = {
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
             pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
-            data: [
-              1053,
-              1108,
-              1163,
-              1217,
-              1272,
-              1327,
-              1381,
-              1436,
-              1491,
-              1545,
-              1600,
-              1655
-            ]
+            data: [1217, 1272, 1327, 1381, 1436, 1491, 1545, 1600, 1655]
           }
         ]
       }

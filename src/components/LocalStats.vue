@@ -1,19 +1,28 @@
 <template>
   <div class="box">
-    <div class="box-header">
-      <h4 class="title is-4">Locais</h4>
-      <b-field>
-        <p class="control" v-for="locale in Object.keys(locales)" :key="locale">
-          <b-button
-            class="button is-primary"
-            @click="selected = locale"
-            :outlined="selected != locale"
+    <div class="columns box-header">
+      <div class="column">
+        <h4 class="title is-4">Locais</h4>
+      </div>
+      <!-- <div class="column">
+        <b-field>
+          <p
+            class="control"
+            v-for="locale in Object.keys(locales)"
+            :key="locale"
           >
-            {{ locale }}
-          </b-button>
-        </p>
-      </b-field>
+            <b-button
+              class="button is-primary"
+              @click="selected = locale"
+              :outlined="selected != locale"
+            >
+              {{ locale }}
+            </b-button>
+          </p>
+        </b-field>
+      </div> -->
     </div>
+
     <b-table
       :data="locales[selected].data"
       default-sort-direction="desc"
@@ -94,8 +103,8 @@ export default {
       this.locales[key].data = Object.entries(leitosJson[key]).map(n => {
         let res = {
           name: this.titleCase(n[0].toLowerCase()),
-          leitosSus: n[1].SUS,
-          leitosTotal: n[1].Total,
+          leitosSus: Math.ceil(n[1].UTI_SUS * 0.4),
+          leitosTotal: Math.ceil(n[1].UTI * 0.4),
           infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
             ? infectedJson[n[0].toUpperCase()].confirmed
             : 0
