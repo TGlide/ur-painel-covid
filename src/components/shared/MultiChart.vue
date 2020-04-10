@@ -28,7 +28,11 @@
           <span>{{ legend.label }}</span>
         </div>
       </div>
-      <div class="arrow" @click="scrollLegendsLeft">
+      <div
+        class="arrow"
+        @click="scrollLegendsLeft"
+        v-if="legendsContainerTranslate < 0"
+      >
         <b-icon icon="chevron-circle-left"></b-icon>
       </div>
       <div class="arrow right" @click="scrollLegendsRight">
@@ -105,11 +109,12 @@ export default {
 
   methods: {
     scrollLegendsLeft() {
-      this.legendsContainerTranslate -= 50;
-      // if (this.legendsContainerTranslate < 0) this.legendsContainerTranslate = 0;
+      this.legendsContainerTranslate += 50;
+      if (this.legendsContainerTranslate > 0)
+        this.legendsContainerTranslate = 0;
     },
     scrollLegendsRight() {
-      this.legendsContainerTranslate += 50;
+      this.legendsContainerTranslate -= 50;
     }
   },
   mounted() {
@@ -157,7 +162,7 @@ export default {
 
   &:hover {
     .arrow {
-      opacity: 0.5;
+      opacity: 0.75;
     }
   }
 

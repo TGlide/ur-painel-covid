@@ -164,7 +164,7 @@ export const chartsJson = {
         Município: [
           {
             label: "Diários (Município)",
-            backgroundColor: "rgb(255, 99, 132)",
+            backgroundColor: "rgba(255, 107, 107,1.0)",
             data: [
               4,
               5,
@@ -206,8 +206,8 @@ export const chartsJson = {
           {
             label: "Total (Município)",
             backgroundColor: "rgba(0,0,0, 0)",
-            borderColor: "rgb(255, 99, 132)",
-            pointBackgroundColor: "rgb(255, 99, 132)",
+            borderColor: "rgba(255, 107, 107,1.0)",
+            pointBackgroundColor: "rgba(255, 107, 107,1.0)",
             type: "line",
             data: [
               4,
@@ -336,46 +336,46 @@ export const chartsJson = {
       datasets: {
         "UERJ - Otimista": [
           {
-            label: "Diário (UERJ) O",
-            backgroundColor: "rgba(46, 134, 222, 0.75)",
+            label: "Diário (UERJ - Otimista)",
+            backgroundColor: "rgba(16, 172, 132,1.0)",
             data: [47, 48, 48, 48, 47, 48, 48, 47, 48]
           },
           {
-            label: "Total (UERJ) O",
+            label: "Total (UERJ - Otimista)",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
-            borderColor: "rgba(46, 134, 222, 0.75)",
-            pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
+            borderColor: "rgba(16, 172, 132,1.0)",
+            pointBackgroundColor: "rgba(16, 172, 132,1.0)",
             data: [1080, 1128, 1176, 1224, 1271, 1319, 1367, 1414, 1462]
           }
         ],
         "UERJ - Esperado": [
           {
-            label: "Diário (UERJ) E",
-            backgroundColor: "rgba(46, 134, 222, 0.75)",
+            label: "Diário (UERJ - Esperado)",
+            backgroundColor: "rgba(254, 202, 87,1.0)",
             data: [51, 51, 51, 52, 51, 51, 52, 51, 51]
           },
           {
-            label: "Total (UERJ) E",
+            label: "Total (UERJ - Esperado)",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
-            borderColor: "rgba(46, 134, 222, 0.75)",
-            pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
+            borderColor: "rgba(254, 202, 87,1.0)",
+            pointBackgroundColor: "rgba(254, 202, 87,1.0)",
             data: [1145, 1196, 1247, 1299, 1350, 1401, 1453, 1504, 1555]
           }
         ],
         "UERJ - Pessimista": [
           {
-            label: "Diário (UERJ) P",
-            backgroundColor: "rgba(46, 134, 222, 0.75)",
+            label: "Diário (UERJ - Pessimista)",
+            backgroundColor: "rgba(238, 82, 83,1.0)",
             data: [54, 55, 55, 54, 55, 55, 54, 55, 55]
           },
           {
-            label: "Total (UERJ) P",
+            label: "Total (UERJ - Pessimista)",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
-            borderColor: "rgba(46, 134, 222, 0.75)",
-            pointBackgroundColor: "rgba(46, 134, 222, 0.75)",
+            borderColor: "rgba(238, 82, 83,1.0)",
+            pointBackgroundColor: "rgba(238, 82, 83,1.0)",
             data: [1217, 1272, 1327, 1381, 1436, 1491, 1545, 1600, 1655]
           }
         ]
