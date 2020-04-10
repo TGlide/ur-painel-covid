@@ -83,7 +83,9 @@ export default {
           chartData: chartsJson.confirmed.data,
           chartOptions: chartsJson.confirmed.options,
           projected: {
-            default: [],
+            default: [
+              Object.keys(chartsJson.confirmed.projected.data.datasets)[0]
+            ],
             data: Object.keys(chartsJson.confirmed.projected.data.datasets),
             chartData: chartsJson.confirmed.projected.data,
             chartOptions: chartsJson.confirmed.projected.options
