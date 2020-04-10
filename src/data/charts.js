@@ -294,6 +294,9 @@ export const chartsJson = {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
       scales: {
         xAxes: [
           {
@@ -333,12 +336,12 @@ export const chartsJson = {
       datasets: {
         "UERJ - Otimista": [
           {
-            label: "Diário (UERJ)",
+            label: "Diário (UERJ) O",
             backgroundColor: "rgba(46, 134, 222, 0.75)",
             data: [47, 48, 48, 48, 47, 48, 48, 47, 48]
           },
           {
-            label: "Total (UERJ)",
+            label: "Total (UERJ) O",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
@@ -348,12 +351,12 @@ export const chartsJson = {
         ],
         "UERJ - Esperado": [
           {
-            label: "Diário (UERJ)",
+            label: "Diário (UERJ) E",
             backgroundColor: "rgba(46, 134, 222, 0.75)",
             data: [51, 51, 51, 52, 51, 51, 52, 51, 51]
           },
           {
-            label: "Total (UERJ)",
+            label: "Total (UERJ) E",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
@@ -363,12 +366,12 @@ export const chartsJson = {
         ],
         "UERJ - Pessimista": [
           {
-            label: "Diário (UERJ)",
+            label: "Diário (UERJ) P",
             backgroundColor: "rgba(46, 134, 222, 0.75)",
             data: [54, 55, 55, 54, 55, 55, 54, 55, 55]
           },
           {
-            label: "Total (UERJ)",
+            label: "Total (UERJ) P",
             type: "line",
             backgroundColor: "rgba(0,0,0,0)",
             borderColor: "rgba(46, 134, 222, 0.75)",
@@ -381,6 +384,9 @@ export const chartsJson = {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
       scales: {
         xAxes: [
           {
