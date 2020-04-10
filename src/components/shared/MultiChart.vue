@@ -21,7 +21,7 @@
       <div
         class="container"
         ref="legendsContainer"
-        :style="{ transform: `translateX(${legendsContainerTranslate}px)` }"
+        :style="{ transform: `translateX(${legendsContainerTranslate}%)` }"
       >
         <div class="legend" v-for="legend in legends" :key="legend.label">
           <span class="color" :style="{ backgroundColor: legend.color }" />

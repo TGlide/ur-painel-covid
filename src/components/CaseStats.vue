@@ -22,7 +22,7 @@
       <span class="type"
         ><span class="status danger" /> Total Confirmados:</span
       >
-      <span class="value danger">{{ this.confirmed }}</span>
+      <span class="value danger">1663</span>
     </div>
     <!-- <div class="stat">
       <span class="type"><span class="status warning" /> Casos prováveis:</span>
@@ -30,7 +30,7 @@
     </div> -->
     <div class="stat">
       <span class="type"><span class="status gray" /> Casos fatais:</span>
-      <span class="value gray">{{ this.fatal }}</span>
+      <span class="value gray">82</span>
     </div>
 
     <!-- <div class="stat">
