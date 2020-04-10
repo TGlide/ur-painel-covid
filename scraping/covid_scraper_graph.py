@@ -10,7 +10,7 @@ class CovidScraperGraph():
             'dead': None,
             'confirmed': None,
             'hospitalized': None,
-            'interned': None
+            'uti': None
         }
 
         # first subpanel
@@ -19,7 +19,7 @@ class CovidScraperGraph():
 
         # first subpanel
         self.hospitalized_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[25]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][1]"
-        self.interned_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[25]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][2]"
+        self.uti_graph_path = "/html/body/div/div/div[2]/div/div/div/margin-container/full-container/div[25]/margin-container/full-container/div/div[2]/div/div/div[1]/*[name()='svg']/*[name()='g'][12]/*[name()='g'][2]"
 
         self.dashboard = dashboard
 
@@ -60,30 +60,30 @@ class CovidScraperGraph():
 
         # iterate through tspan tags inside graph (where the numbers are)
         contents = [ tspan.text.replace(",", "") for tspan in hospitalized_graph.find_elements(By.XPATH, "*[name()='text']/*[name()='tspan']")]
-        print(contents)
+
         self.data['hospitalized'] = list(map(int, contents))
 
         return self.data['hospitalized']
 
-    def get_interned(self):
+    def get_uti(self):
 
         change_to_bottom_subpanel(self.dashboard, 4)
 
         # numbers will come separated by space, parse them and then convert each one to int
-        interned_graph = self.dashboard.find_element(By.XPATH, self.interned_graph_path)
+        uti_graph = self.dashboard.find_element(By.XPATH, self.uti_graph_path)
 
         # iterate through tspan tags inside graph (where the numbers are)
-        contents = [ tspan.text.replace(",", "") for tspan in interned_graph.find_elements(By.XPATH, "*[name()='text']/*[name()='tspan']")]
+        contents = [ tspan.text.replace(",", "") for tspan in uti_graph.find_elements(By.XPATH, "*[name()='text']/*[name()='tspan']")]
 
-        self.data['interned'] = list(map(int, contents))
+        self.data['uti'] = list(map(int, contents))
 
-        return self.data['interned']
+        return self.data['uti']
 
     def get_all(self):
 
         self.get_dead()
         self.get_confirmed()
         self.get_hospitalized()
-        self.get_interned()
+        self.get_uti()
 
         return self.data
