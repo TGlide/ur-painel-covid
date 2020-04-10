@@ -34,6 +34,9 @@
       striped
     >
       <template slot-scope="props">
+        <b-table-column field="ap" label="AP" sortable>
+          {{ props.row.ap }}
+        </b-table-column>
         <b-table-column field="name" label="Local" width="250" sortable>
           {{ props.row.name }}
         </b-table-column>
@@ -72,13 +75,15 @@
 <script>
 import leitosJson from "@/data/leitos.json";
 import infectedJson from "@/data/infected.json";
+import apJson from "@/data/ap.json";
 
 export default {
   data() {
     return {
       locales: {
         municipio: {
-          data: []
+          data: [],
+          aps: {}
         },
         estado: {
           data: []
@@ -97,12 +102,18 @@ export default {
       }
 
       return splitStr.join(" ");
+    },
+    getStatus(infected, leitos) {
+      if (infected >= leitos * 0.75) return 3;
+      if (infected >= leitos * 0.5) return 2;
+      return 1;
     }
   },
   mounted() {
     for (let key of Object.keys(this.locales)) {
       this.locales[key].data = Object.entries(leitosJson[key]).map(n => {
         let res = {
+          ap: apJson[n[0].toLowerCase()],
           name: this.titleCase(n[0].toLowerCase()),
           leitosSus: Math.ceil(n[1].UTI_SUS * 0.4),
           leitosTotal: Math.ceil(n[1].UTI * 0.4),
@@ -110,16 +121,33 @@ export default {
             ? infectedJson[n[0].toUpperCase()].confirmed
             : 0
         };
-        if (res.infected >= res.leitosTotal * 0.75) {
-          res.status = 3;
-        } else if (res.infected >= res.leitosTotal * 0.5) {
-          res.status = 2;
-        } else {
-          res.status = 1;
-        }
+
         return res;
       });
     }
+
+    let aps = new Set(this.locales.municipio.data.map(obj => obj.ap));
+    for (let ap of aps) {
+      let apLocales = this.locales.municipio.data.filter(obj => obj.ap === ap);
+      let apInfected = apLocales.reduce(
+        (total, obj) => total + obj.infected,
+        0
+      );
+
+      let apLeitos = apLocales.reduce(
+        (total, obj) => total + obj.leitosTotal,
+        0
+      );
+
+      this.locales.municipio.aps[ap] = {
+        infected: apInfected,
+        leitos: apLeitos,
+        status: this.getStatus(apInfected, apLeitos)
+      };
+    }
+    this.locales.municipio.data = this.locales.municipio.data.map(obj => {
+      return { ...obj, status: this.locales.municipio.aps[obj.ap].status };
+    });
   }
 };
 </script>
