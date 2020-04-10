@@ -39,7 +39,7 @@
               :outlined="mainChartSelection !== 'fatal'"
               @click="mainChartSelection = 'fatal'"
             >
-              Fatais
+              Óbitos
             </b-button>
           </p>
         </b-field>
