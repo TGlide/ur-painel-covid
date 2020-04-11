@@ -39,7 +39,6 @@ export default {
   height: 100%;
 
   .box-header {
-    display: flex;
     align-items: center;
 
     margin-bottom: 1rem;
@@ -48,10 +47,14 @@ export default {
       margin-bottom: 0 !important;
     }
 
+    .column:first-child {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+
     .column:last-child {
       &:not(:first-child) {
-        display: flex;
-        justify-content: flex-end;
+        flex-grow: 0;
       }
     }
   }

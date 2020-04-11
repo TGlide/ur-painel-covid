@@ -6,62 +6,44 @@
       </div>
       <div class="column">
         <b-field>
-          <p class="control">
-            <b-button
-              class="button is-primary is-light"
-              :outlined="mainChartSelection !== 'confirmed'"
-              @click="mainChartSelection = 'confirmed'"
+          <b-dropdown v-model="mainChart.selected" aria-role="list">
+            <button
+              class="button is-primary is-outlined"
+              type="button"
+              slot="trigger"
             >
-              Infectados
-            </b-button>
-          </p>
-          <p class="control">
-            <b-button
-              class="button is-primary"
-              :outlined="mainChartSelection !== 'hospitalized'"
-              @click="mainChartSelection = 'hospitalized'"
+              <span>{{ mainChart.options[mainChart.selected] }}</span>
+            </button>
+
+            <b-dropdown-item
+              v-for="key in Object.keys(mainChart.options)"
+              :key="key"
+              :value="key"
+              aria-role="listitem"
             >
-              Hospitalizados
-            </b-button>
-          </p>
-          <p class="control">
-            <b-button
-              class="button is-primary"
-              :outlined="mainChartSelection !== 'uti'"
-              @click="mainChartSelection = 'uti'"
-            >
-              UTIs
-            </b-button>
-          </p>
-          <p class="control">
-            <b-button
-              class="button is-primary"
-              :outlined="mainChartSelection !== 'fatal'"
-              @click="mainChartSelection = 'fatal'"
-            >
-              Óbitos
-            </b-button>
-          </p>
+              <span>{{ mainChart.options[key] }}</span>
+            </b-dropdown-item>
+          </b-dropdown>
         </b-field>
       </div>
     </div>
     <div class="columns charts">
       <div class="column is-8">
         <multi-chart
-          :select-options="sources[mainChartSelection].data"
+          :select-options="sources[mainChart.selected].data"
           :default-selected="['Município']"
           select-label="Fonte Confirmados"
-          :chart-data="sources[mainChartSelection].chartData"
-          :chart-options="sources[mainChartSelection].chartOptions"
+          :chart-data="sources[mainChart.selected].chartData"
+          :chart-options="sources[mainChart.selected].chartOptions"
         />
       </div>
       <div class="column is-4">
         <multi-chart
-          :select-options="sources[mainChartSelection].projected.data"
-          :default-selected="sources[mainChartSelection].projected.default"
+          :select-options="sources[mainChart.selected].projected.data"
+          :default-selected="sources[mainChart.selected].projected.default"
           select-label="Fonte Projetados (Município)"
-          :chart-data="sources[mainChartSelection].projected.chartData"
-          :chart-options="sources[mainChartSelection].projected.chartOptions"
+          :chart-data="sources[mainChart.selected].projected.chartData"
+          :chart-options="sources[mainChart.selected].projected.chartOptions"
         />
       </div>
     </div>
@@ -76,7 +58,15 @@ export default {
   components: { MultiChart },
   data() {
     return {
-      mainChartSelection: "confirmed",
+      mainChart: {
+        selected: "confirmed",
+        options: {
+          confirmed: "Infectados",
+          hospitalized: "Hospitalizados",
+          uti: "UTI",
+          fatal: "Óbitos"
+        }
+      },
       sources: {
         confirmed: {
           data: ["Município"],
