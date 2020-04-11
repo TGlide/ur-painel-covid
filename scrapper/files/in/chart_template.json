@@ -168,6 +168,100 @@
           ]
         }
       }
+    },
+    "projected - est": {
+      "data": {
+        "labels": [],
+        "datasets": {
+          "SP - Otimista": [
+            {
+              "label": "Di\u00e1rio (SP - Otimista)",
+              "backgroundColor": "rgba(36, 202, 162,1.0)",
+              "data": []
+            },
+            {
+              "label": "Total (SP - Otimista)",
+              "type": "line",
+              "backgroundColor": "rgba(0,0,0,0)",
+              "borderColor": "rgba(36, 202, 162,1.0)",
+              "pointBackgroundColor": "rgba(36, 202, 162,1.0)",
+              "data": []
+            }
+          ],
+          "SP - Esperado": [
+            {
+              "label": "Di\u00e1rio (SP - Esperado)",
+              "backgroundColor": "rgba(254, 222, 107,1.0)",
+              "data": []
+            },
+            {
+              "label": "Total (SP - Esperado)",
+              "type": "line",
+              "backgroundColor": "rgba(0,0,0,0)",
+              "borderColor": "rgba(254, 222, 107,1.0)",
+              "pointBackgroundColor": "rgba(254, 222, 107,1.0)",
+              "data": []
+            }
+          ],
+          "SP - Pessimista": [
+            {
+              "label": "Di\u00e1rio (SP - Pessimista)",
+              "backgroundColor": "rgba(258, 102, 103,1.0)",
+              "data": []
+            },
+            {
+              "label": "Total (SP - Pessimista)",
+              "type": "line",
+              "backgroundColor": "rgba(0,0,0,0)",
+              "borderColor": "rgba(258, 102, 103,1.0)",
+              "pointBackgroundColor": "rgba(258, 102, 103,1.0)",
+              "data": []
+            }
+          ]
+        }
+      },
+      "options": {
+        "tooltips": {
+          "mode": "x-axis"
+        },
+        "plugins": {
+          "datalabels": {
+            "color": "#ffffff",
+            "anchor": "end",
+            "align": "end",
+            "display": "auto"
+          }
+        },
+        "responsive": true,
+        "maintainAspectRatio": false,
+        "legend": {
+          "display": false
+        },
+        "scales": {
+          "xAxes": [
+            {
+              "gridLines": {
+                "display": false
+              },
+              "ticks": {
+                "autoSkip": true,
+                "maxRotation": 45,
+                "minRotation": 45
+              }
+            }
+          ],
+          "yAxes": [
+            {
+              "ticks": {
+                "beginAtZero": true,
+                "max": 2000,
+                "min": 0,
+                "display": false
+              }
+            }
+          ]
+        }
+      }
     }
   },
   "hospitalized": {

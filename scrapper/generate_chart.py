@@ -56,6 +56,8 @@ HISTORIC_DATA = os.path.join(
     os.getcwd(), "scrapper", "files", "in", "sequence.csv")
 PROJECTION_DATA = os.path.join(
     os.getcwd(), "scrapper", "files", "in", "prevUERJ.xlsx")
+PROJECTION_SP_DATA = os.path.join(
+    os.getcwd(), "scrapper", "files", "in", "prevBaseSP.xlsx")
 WRITE_PATH = os.path.join(
     os.getcwd(), "src", "data",  "charts.json")
 
@@ -131,10 +133,51 @@ template['confirmed']['projected']['data']['datasets']['UERJ - Esperado'][1]['da
 template['confirmed']['projected']['data']['datasets']['UERJ - Pessimista'][0]['data'] = projData['pessimista']['daily']
 template['confirmed']['projected']['data']['datasets']['UERJ - Pessimista'][1]['data'] = projData['pessimista']['total']
 
-template['confirmed']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
-    max(projData['pessimista']['total']))
-template['confirmed']['projected']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
-    max(projData['pessimista']['total']))
+projectionSpDf = pd.read_excel(PROJECTION_SP_DATA)
+
+print(projectionSpDf)
+
+projectionSPDays = [date_to_str(str(dt)) for dt in projectionSpDf['data']]
+starting_point = projectionSPDays.index(data['days'][-1]) + 1
+print(projectionSPDays[starting_point:])
+
+projSpData = {
+    'otimista': getHistoricFromList(
+        list(projectionSpDf['lwr'][starting_point:]), reverse=False),
+    'esperado': getHistoricFromList(
+        list(projectionSpDf['fit'][starting_point:]), reverse=False),
+    'pessimista': getHistoricFromList(
+        list(projectionSpDf['upr'][starting_point:]), reverse=False),
+}
+
+pp(projSpData)
+
+
+projSpData['otimista']['daily'][0] = projSpData['otimista']['total'][0] - \
+    data['confirmed']['total'][-1]
+
+projSpData['esperado']['daily'][0] = projSpData['esperado']['total'][0] - \
+    data['confirmed']['total'][-1]
+
+projSpData['pessimista']['daily'][0] = projSpData['pessimista']['total'][0] - \
+    data['confirmed']['total'][-1]
+
+template['confirmed']['projected - est']['data']['labels'] = sorted(list(
+    set(projectionSPDays[starting_point:])))
+
+template['confirmed']['projected - est']['data']['datasets']['SP - Otimista'][0]['data'] = projSpData['otimista']['daily']
+template['confirmed']['projected - est']['data']['datasets']['SP - Otimista'][1]['data'] = projSpData['otimista']['total']
+
+template['confirmed']['projected - est']['data']['datasets']['SP - Esperado'][0]['data'] = projSpData['esperado']['daily']
+template['confirmed']['projected - est']['data']['datasets']['SP - Esperado'][1]['data'] = projSpData['esperado']['total']
+
+template['confirmed']['projected - est']['data']['datasets']['SP - Pessimista'][0]['data'] = projSpData['pessimista']['daily']
+template['confirmed']['projected - est']['data']['datasets']['SP - Pessimista'][1]['data'] = projSpData['pessimista']['total']
+
+# template['confirmed']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+#     max(projData['pessimista']['total'] + projSpData['pessimista']['total']))
+# template['confirmed']['projected']['options']['scales']['yAxes'][0]['ticks']['max'] = getUpperBound(
+#     max(projData['pessimista']['total'] + projSpData['pessimista']['total']))
 
 
 with open(WRITE_PATH, 'w') as f:
