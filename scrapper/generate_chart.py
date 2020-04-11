@@ -57,7 +57,8 @@ HISTORIC_DATA = os.path.join(
 PROJECTION_DATA = os.path.join(
     os.getcwd(), "scrapper", "files", "in", "prevUERJ.xlsx")
 WRITE_PATH = os.path.join(
-    os.getcwd(), "scrapper", "files", "out", "charts.json")
+    os.getcwd(), "src", "data",  "charts.json")
+
 
 f = open(CHART_TEMPLATE, 'r')
 template = json.load(f)

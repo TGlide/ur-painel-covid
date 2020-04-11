@@ -36,6 +36,17 @@
       }
     },
     "options": {
+      "tooltips": {
+        "mode": "x-axis"
+      },
+      "plugins": {
+        "datalabels": {
+          "color": "#ffffff",
+          "anchor": "end",
+          "align": "end",
+          "display": "auto"
+        }
+      },
       "responsive": true,
       "maintainAspectRatio": false,
       "legend": {
@@ -116,6 +127,17 @@
         }
       },
       "options": {
+        "tooltips": {
+          "mode": "x-axis"
+        },
+        "plugins": {
+          "datalabels": {
+            "color": "#ffffff",
+            "anchor": "end",
+            "align": "end",
+            "display": "auto"
+          }
+        },
         "responsive": true,
         "maintainAspectRatio": false,
         "legend": {
@@ -170,6 +192,17 @@
       }
     },
     "options": {
+      "tooltips": {
+        "mode": "x-axis"
+      },
+      "plugins": {
+        "datalabels": {
+          "color": "#ffffff",
+          "anchor": "end",
+          "align": "end",
+          "display": "auto"
+        }
+      },
       "responsive": true,
       "maintainAspectRatio": false,
       "legend": {
@@ -221,6 +254,17 @@
       }
     },
     "options": {
+      "tooltips": {
+        "mode": "x-axis"
+      },
+      "plugins": {
+        "datalabels": {
+          "color": "#ffffff",
+          "anchor": "end",
+          "align": "end",
+          "display": "auto"
+        }
+      },
       "responsive": true,
       "maintainAspectRatio": false,
       "legend": {
@@ -272,6 +316,17 @@
       }
     },
     "options": {
+      "tooltips": {
+        "mode": "x-axis"
+      },
+      "plugins": {
+        "datalabels": {
+          "color": "#ffffff",
+          "anchor": "end",
+          "align": "end",
+          "display": "auto"
+        }
+      },
       "responsive": true,
       "maintainAspectRatio": false,
       "legend": {

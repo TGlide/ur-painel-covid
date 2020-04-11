@@ -6,6 +6,7 @@ import store from "./store";
 import "./styles/theme.scss";
 
 import Buefy from "buefy";
+import ChartJsPluginDataLabels from "chartjs-plugin-datalabels";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -49,6 +50,8 @@ library.add(
   faChevronCircleRight
 );
 Vue.component("vue-fontawesome", FontAwesomeIcon);
+
+Vue.component(ChartJsPluginDataLabels);
 
 Vue.use(Buefy, {
   defaultIconComponent: "vue-fontawesome",
