@@ -4,27 +4,32 @@
       <div class="column">
         <h4 class="title is-4">Locais</h4>
       </div>
-      <!-- <div class="column">
+      <div class="column">
         <b-field>
-          <p
-            class="control"
-            v-for="locale in Object.keys(locales)"
-            :key="locale"
-          >
-            <b-button
-              class="button is-primary"
-              @click="selected = locale"
-              :outlined="selected != locale"
+          <b-dropdown v-model="locales.selected" aria-role="list">
+            <button
+              class="button is-primary is-outlined"
+              type="button"
+              slot="trigger"
             >
-              {{ locale }}
-            </b-button>
-          </p>
+              <span>{{ titleCase(locales.selected) }}</span>
+            </button>
+
+            <b-dropdown-item
+              v-for="opt in locales.options"
+              :key="opt"
+              :value="opt"
+              aria-role="listitem"
+            >
+              <span>{{ titleCase(opt) }}</span>
+            </b-dropdown-item>
+          </b-dropdown>
         </b-field>
-      </div> -->
+      </div>
     </div>
 
     <b-table
-      :data="locales[selected].data"
+      :data="sources[locales.selected]"
       default-sort-direction="desc"
       default-sort="leitos"
       sort-icon="arrow-up"
@@ -35,10 +40,17 @@
     >
       <template slot-scope="props">
         <b-table-column field="ap" label="AP" sortable>
-          {{ props.row.ap }}
+          <span v-if="props.row.ap">
+            {{ props.row.ap }}
+          </span>
+          <span v-else>
+            ?
+          </span>
         </b-table-column>
         <b-table-column field="name" label="Local" width="250" sortable>
-          {{ props.row.name }}
+          <span v-if="props.row.name">
+            {{ titleCase(props.row.name) }}
+          </span>
         </b-table-column>
         <b-table-column field="infected" label="Infectados" numeric sortable>
           {{ props.row.infected }}
@@ -63,7 +75,7 @@
         >
           <div
             class="farol"
-            :class="['green', 'yellow', 'red'][props.row.status - 1]"
+            :class="['green', 'yellow', 'red', 'none'][props.row.status - 1]"
           />
         </b-table-column>
       </template>
@@ -73,23 +85,18 @@
 </template>
 
 <script>
-import leitosJson from "@/data/leitos.json";
-import infectedJson from "@/data/infected.json";
-import apJson from "@/data/ap.json";
+import localStatsData from "@/data/local_stats.json";
 
 export default {
   data() {
     return {
       locales: {
-        municipio: {
-          data: [],
-          aps: {}
-        },
-        estado: {
-          data: []
-        }
+        options: [...Object.keys(localStatsData)],
+        selected: "municipio"
       },
-      selected: "municipio"
+      sources: {
+        ...localStatsData
+      }
     };
   },
 
@@ -102,52 +109,12 @@ export default {
       }
 
       return splitStr.join(" ");
-    },
-    getStatus(infected, leitos) {
-      if (infected >= leitos * 0.75) return 3;
-      if (infected >= leitos * 0.5) return 2;
-      return 1;
     }
   },
   mounted() {
-    for (let key of Object.keys(this.locales)) {
-      this.locales[key].data = Object.entries(leitosJson[key]).map(n => {
-        let res = {
-          ap: apJson[n[0].toLowerCase()],
-          name: this.titleCase(n[0].toLowerCase()),
-          leitosSus: Math.ceil(n[1].UTI_SUS * 0.4),
-          leitosTotal: Math.ceil(n[1].UTI * 0.4),
-          infected: Object.keys(infectedJson).includes(n[0].toUpperCase())
-            ? infectedJson[n[0].toUpperCase()].confirmed
-            : 0
-        };
-
-        return res;
-      });
-    }
-
-    let aps = new Set(this.locales.municipio.data.map(obj => obj.ap));
-    for (let ap of aps) {
-      let apLocales = this.locales.municipio.data.filter(obj => obj.ap === ap);
-      let apInfected = apLocales.reduce(
-        (total, obj) => total + obj.infected,
-        0
-      );
-
-      let apLeitos = apLocales.reduce(
-        (total, obj) => total + obj.leitosTotal,
-        0
-      );
-
-      this.locales.municipio.aps[ap] = {
-        infected: apInfected,
-        leitos: apLeitos,
-        status: this.getStatus(apInfected, apLeitos)
-      };
-    }
-    this.locales.municipio.data = this.locales.municipio.data.map(obj => {
-      return { ...obj, status: this.locales.municipio.aps[obj.ap].status };
-    });
+    console.log(this.sources);
+    console.log(this.sources[this.locales.selected]);
+    console.log(this.locales.options);
   }
 };
 </script>
@@ -163,7 +130,8 @@ export default {
   $farol-colors: (
     "green": rgba($success, 0.75),
     "yellow": rgba($warning, 0.75),
-    "red": rgba($danger, 0.75)
+    "red": rgba($danger, 0.75),
+    "none": rgba($gray, 0.75)
   );
 
   $size: 1rem;

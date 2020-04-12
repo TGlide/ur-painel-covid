@@ -45,7 +45,6 @@
 </template>
 
 <script>
-// import infectedJson from "@/data/infected.json";
 import chartsJson from "@/data/charts.json";
 
 export default {

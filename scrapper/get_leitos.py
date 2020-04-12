@@ -5,8 +5,9 @@ from pandas import ExcelWriter
 from pandas import ExcelFile
 import math
 
-file_path = os.path.join(os.getcwd(), "scrapper", "leitos.xlsx")
-write_path = os.path.join(os.getcwd(), "scrapper", "leitos.json")
+file_path = os.path.join(os.getcwd(), "scrapper", "files", "in", "leitos.xlsx")
+write_path = os.path.join(os.getcwd(), "scrapper",
+                          "files", "out", "leitos.json")
 df = pd.read_excel(file_path)
 df1 = df[['UF', 'Cidade', 'Total Leitos (excluindo neonatal)',
           'Total Leitos SUS (excluindo neonatal)', 'Bairro (cidade Rio de Janeiro)', 'Leitos de UTI (excluindo neonatal)', 'Leitos de UTI SUS (excluindo neonatal)']]
@@ -27,18 +28,21 @@ for index, row in df1.iterrows():
 
     if type(row['Bairro (cidade Rio de Janeiro)']) == float:
         if row['Cidade'] not in data['estado']:
-            data['estado'][row['Cidade']] = {key: row[value] for key, value in rows_to_get.items()}
+            data['estado'][row['Cidade']] = {
+                key: row[value] for key, value in rows_to_get.items()}
         else:
             for key, value in rows_to_get.items():
                 data['estado'][row['Cidade']][key] += row[value]
 
     else:
         if row['Bairro (cidade Rio de Janeiro)'] not in data['municipio']:
-            data['municipio'][row['Bairro (cidade Rio de Janeiro)']] = {key: row[value] for key, value in rows_to_get.items()}
+            data['municipio'][row['Bairro (cidade Rio de Janeiro)']] = {
+                key: row[value] for key, value in rows_to_get.items()}
         else:
             for key, value in rows_to_get.items():
-                data['municipio'][row['Bairro (cidade Rio de Janeiro)']][key] += row[value]
-        
+                data['municipio'][row['Bairro (cidade Rio de Janeiro)']
+                                  ][key] += row[value]
+
 
 # print(sum([a['Total'] for a in data['estado'].values()]))
 # print(sum([a['Total'] for a in data['municipio'].values()]))

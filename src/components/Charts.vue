@@ -85,34 +85,19 @@ export default {
           data: ["Município"],
           chartData: chartsJson.hospitalized.data,
           chartOptions: chartsJson.hospitalized.options,
-          projected: {
-            default: [],
-            data: [],
-            chartData: undefined,
-            chartOptions: undefined
-          }
+          projected: {}
         },
         uti: {
           data: ["Município"],
           chartData: chartsJson.uti.data,
           chartOptions: chartsJson.uti.options,
-          projected: {
-            default: [],
-            data: undefined,
-            chartData: undefined,
-            chartOptions: undefined
-          }
+          projected: {}
         },
         fatal: {
           data: ["Município"],
           chartData: chartsJson.fatal.data,
           chartOptions: chartsJson.fatal.options,
-          projected: {
-            default: [],
-            data: undefined,
-            chartData: undefined,
-            chartOptions: undefined
-          }
+          projected: {}
         }
       }
     };
