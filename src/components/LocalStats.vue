@@ -112,9 +112,9 @@ export default {
     }
   },
   mounted() {
-    console.log(this.sources);
-    console.log(this.sources[this.locales.selected]);
-    console.log(this.locales.options);
+    // console.log(this.sources);
+    // console.log(this.sources[this.locales.selected]);
+    // console.log(this.locales.options);
   }
 };
 </script>

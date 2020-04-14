@@ -22,15 +22,15 @@ export default new Vuex.Store({
   },
   actions: {
     setCityData() {
-      console.log("uau");
+      // console.log("uau");
       axios
         .get(`${process.env.VUE_APP_API_URL}rio_city`, {
           headers: {
             "Access-Control-Allow-Origin": "*"
           }
         })
-        .then(res => console.log(res))
-        .catch(err => console.error(err));
+        .then(res => res)
+        .catch(err => err);
     }
   },
   modules: {},
