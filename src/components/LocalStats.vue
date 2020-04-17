@@ -12,24 +12,23 @@
               type="button"
               slot="trigger"
             >
-              <span>{{ titleCase(locales.selected) }}</span>
+              <span>{{ locales.options[locales.selected] }}</span>
             </button>
 
             <b-dropdown-item
-              v-for="opt in locales.options"
+              v-for="opt in Object.keys(locales.options)"
               :key="opt"
               :value="opt"
               aria-role="listitem"
             >
-              <span>{{ titleCase(opt) }}</span>
+              <span>{{ locales.options[opt] }}</span>
             </b-dropdown-item>
           </b-dropdown>
         </b-field>
       </div>
     </div>
-
     <b-table
-      :data="sources[locales.selected]"
+      :data="$store.getters.locales[locales.selected]"
       default-sort-direction="desc"
       default-sort="leitos"
       sort-icon="arrow-up"
@@ -52,8 +51,8 @@
             {{ titleCase(props.row.name) }}
           </span>
         </b-table-column>
-        <b-table-column field="infected" label="Infectados" numeric sortable>
-          {{ props.row.infected }}
+        <b-table-column field="cases" label="Infectados" numeric sortable>
+          {{ props.row.cases }}
         </b-table-column>
         <b-table-column field="leitosSus" label="Leitos (SUS)" numeric sortable>
           {{ props.row.leitosSus }}
@@ -85,17 +84,12 @@
 </template>
 
 <script>
-import localStatsData from "@/data/local_stats.json";
-
 export default {
   data() {
     return {
       locales: {
-        options: [...Object.keys(localStatsData)],
-        selected: "municipio"
-      },
-      sources: {
-        ...localStatsData
+        options: { state: "Estado", city: "Municipio", aps: "APs" },
+        selected: "city"
       }
     };
   },
@@ -110,11 +104,6 @@ export default {
 
       return splitStr.join(" ");
     }
-  },
-  mounted() {
-    // console.log(this.sources);
-    // console.log(this.sources[this.locales.selected]);
-    // console.log(this.locales.options);
   }
 };
 </script>

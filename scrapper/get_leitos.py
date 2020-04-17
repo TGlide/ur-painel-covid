@@ -4,6 +4,12 @@ import json
 from pandas import ExcelWriter
 from pandas import ExcelFile
 import math
+from unidecode import unidecode
+
+
+def clean_string(s):
+    return unidecode(s.lower())
+
 
 file_path = os.path.join(os.getcwd(), "scrapper", "files", "in", "leitos.xlsx")
 write_path = os.path.join(os.getcwd(), "scrapper",
@@ -27,20 +33,20 @@ rows_to_get = {
 for index, row in df1.iterrows():
 
     if type(row['Bairro (cidade Rio de Janeiro)']) == float:
-        if row['Cidade'] not in data['estado']:
-            data['estado'][row['Cidade']] = {
+        if clean_string(row['Cidade']) not in data['estado']:
+            data['estado'][clean_string(row['Cidade'])] = {
                 key: row[value] for key, value in rows_to_get.items()}
         else:
             for key, value in rows_to_get.items():
-                data['estado'][row['Cidade']][key] += row[value]
+                data['estado'][clean_string(row['Cidade'])][key] += row[value]
 
     else:
-        if row['Bairro (cidade Rio de Janeiro)'] not in data['municipio']:
-            data['municipio'][row['Bairro (cidade Rio de Janeiro)']] = {
+        if clean_string(row['Bairro (cidade Rio de Janeiro)']) not in data['municipio']:
+            data['municipio'][clean_string(row['Bairro (cidade Rio de Janeiro)'])] = {
                 key: row[value] for key, value in rows_to_get.items()}
         else:
             for key, value in rows_to_get.items():
-                data['municipio'][row['Bairro (cidade Rio de Janeiro)']
+                data['municipio'][clean_string(row['Bairro (cidade Rio de Janeiro)'])
                                   ][key] += row[value]
 
 

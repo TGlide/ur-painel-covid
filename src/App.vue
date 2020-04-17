@@ -11,7 +11,7 @@ import Navbar from "@/components/shared/Navbar";
 export default {
   components: { Navbar },
   mounted() {
-    this.$store.dispatch("setCityData");
+    this.$store.dispatch("setAllData");
   }
 };
 </script>

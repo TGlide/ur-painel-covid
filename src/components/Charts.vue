@@ -27,23 +27,21 @@
         </b-field>
       </div>
     </div>
-    <div class="columns charts">
+    <div class="columns charts" v-if="!$store.getters.loading">
       <div class="column is-8">
         <multi-chart
-          :select-options="sources[mainChart.selected].data"
-          :default-selected="['Município']"
-          select-label="Fonte Confirmados"
-          :chart-data="sources[mainChart.selected].chartData"
-          :chart-options="sources[mainChart.selected].chartOptions"
+          :default-selected="['cases']"
+          select-label="Tipo de Dado"
+          :chart-data="$store.getters.charts[mainChart.selected].factual"
+          :chart-options="$store.getters.charts[mainChart.selected].options"
         />
       </div>
       <div class="column is-4">
         <multi-chart
-          :select-options="sources[mainChart.selected].projected.data"
-          :default-selected="sources[mainChart.selected].projected.default"
-          select-label="Fonte Projetados (Município)"
-          :chart-data="sources[mainChart.selected].projected.chartData"
-          :chart-options="sources[mainChart.selected].projected.chartOptions"
+          :default-selected="[]"
+          select-label="Fonte Projetados"
+          :chart-data="undefined"
+          :chart-options="$store.getters.charts[mainChart.selected].options"
         />
       </div>
     </div>
@@ -51,7 +49,6 @@
 </template>
 
 <script>
-import chartsJson from "@/data/charts.json";
 import MultiChart from "@/components/shared/MultiChart";
 
 export default {
@@ -59,45 +56,10 @@ export default {
   data() {
     return {
       mainChart: {
-        selected: "confirmed",
+        selected: "city",
         options: {
-          confirmed: "Infectados",
-          hospitalized: "Hospitalizados",
-          uti: "UTI",
-          fatal: "Óbitos"
-        }
-      },
-      sources: {
-        confirmed: {
-          data: ["Município"],
-          chartData: chartsJson.confirmed.data,
-          chartOptions: chartsJson.confirmed.options,
-          projected: {
-            default: [
-              Object.keys(chartsJson.confirmed.projected.data.datasets)[0]
-            ],
-            data: Object.keys(chartsJson.confirmed.projected.data.datasets),
-            chartData: chartsJson.confirmed.projected.data,
-            chartOptions: chartsJson.confirmed.projected.options
-          }
-        },
-        hospitalized: {
-          data: ["Município"],
-          chartData: chartsJson.hospitalized.data,
-          chartOptions: chartsJson.hospitalized.options,
-          projected: {}
-        },
-        uti: {
-          data: ["Município"],
-          chartData: chartsJson.uti.data,
-          chartOptions: chartsJson.uti.options,
-          projected: {}
-        },
-        fatal: {
-          data: ["Município"],
-          chartData: chartsJson.fatal.data,
-          chartOptions: chartsJson.fatal.options,
-          projected: {}
+          city: "Municipio",
+          state: "Estado"
         }
       }
     };

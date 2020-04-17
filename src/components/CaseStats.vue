@@ -4,67 +4,66 @@
       <div class="column">
         <h4 class="title is-4">Tipos de Casos</h4>
       </div>
-      <!-- <div class="column">
+      <div class="column">
         <b-field>
-          <p class="control" v-for="locale in locales" :key="locale">
-            <b-button
-              class="button is-primary"
-              @click="selected = locale"
-              :outlined="selected != locale"
+          <b-dropdown v-model="selected" aria-role="list">
+            <button
+              class="button is-primary is-outlined"
+              type="button"
+              slot="trigger"
             >
-              {{ locale }}
-            </b-button>
-          </p>
+              <span>{{ locales[selected] }}</span>
+            </button>
+
+            <b-dropdown-item
+              v-for="key in Object.keys(locales)"
+              :key="key"
+              :value="key"
+              aria-role="listitem"
+            >
+              <span>{{ locales[key] }}</span>
+            </b-dropdown-item>
+          </b-dropdown>
         </b-field>
-      </div> -->
+      </div>
     </div>
     <div class="stat">
       <span class="type"
         ><span class="status danger" /> Total Confirmados:</span
       >
-      <span class="value danger">{{ sources.confirmed }}</span>
+      <span class="value danger">{{
+        $store.getters[selected].current.cases || "-"
+      }}</span>
     </div>
-    <!-- <div class="stat">
-      <span class="type"><span class="status warning" /> Casos prováveis:</span>
-      <span class="value warning">4,471</span>
-    </div> -->
     <div class="stat">
       <span class="type"><span class="status gray" /> Casos fatais:</span>
-      <span class="value gray">{{ sources.fatal }}</span>
+      <span class="value gray">{{
+        $store.getters[selected].current.dead || "-"
+      }}</span>
     </div>
 
     <div class="stat">
       <span class="type"><span class="status blue" /> Hospitalizados:</span>
-      <span class="value blue">{{ sources.hospitalized }}</span>
+      <span class="value blue">{{
+        $store.getters[selected].current.hospitalized || "-"
+      }}</span>
     </div>
     <div class="stat">
       <span class="type"><span class="status dark-blue" /> Em UTI:</span>
-      <span class="value dark-blue">{{ sources.uti }}</span>
+      <span class="value dark-blue">{{
+        $store.getters[selected].current.uti || "-"
+      }}</span>
     </div>
   </div>
 </template>
 
 <script>
-import chartsJson from "@/data/charts.json";
-
 export default {
   data() {
     return {
-      locales: ["Município", "Estado"],
-      selected: "Município",
-      sources: {
-        confirmed: 0,
-        fatal: 0,
-        hospitalized: 0,
-        uti: 0
-      }
+      locales: { city: "Município", state: "Estado" },
+      selected: "city"
     };
-  },
-  mounted() {
-    for (let key of Object.keys(this.sources)) {
-      const chartData = chartsJson[key].data.datasets[this.selected][1].data;
-      this.sources[key] = chartData[chartData.length - 1];
-    }
   }
 };
 </script>

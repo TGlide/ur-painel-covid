@@ -9,14 +9,15 @@
 
         <b-dropdown-item
           v-for="option in selectOptions"
-          :key="option"
-          :value="option"
+          :key="option.key"
+          :value="option.value"
           aria-role="listitem"
         >
-          <span>{{ option }}</span>
+          <span>{{ option.label }}</span>
         </b-dropdown-item>
       </b-dropdown>
     </b-field>
+
     <div class="legends" ref="legends">
       <div
         class="container"
@@ -39,9 +40,10 @@
         <b-icon icon="chevron-circle-right"></b-icon>
       </div>
     </div>
+
     <line-chart
       :chartdata="chartDataSelected"
-      :options="chartOptions"
+      :options="options"
       v-if="selected && selected.length > 0 && chartData"
     >
     </line-chart>
@@ -55,41 +57,47 @@
 import LineChart from "@/components/shared/LineChart";
 import NoContent from "@/components/shared/NoContent";
 
+import { getMaxValueFromDatasets, getUpperBound } from "@/helpers/chart.js";
+
 export default {
   components: { LineChart, NoContent },
-  props: [
-    "selectOptions",
-    "selectLabel",
-    "defaultSelected",
-    "chartData",
-    "chartOptions"
-  ],
+  props: ["selectLabel", "defaultSelected", "chartData", "chartOptions"],
   data() {
     return {
       selected: [],
       legendsContainerTranslate: 0,
-      legendsContainerWidth: 0
+      legendsContainerWidth: 0,
+      options: this.chartOptions
     };
   },
   computed: {
+    selectOptions() {
+      if (!this.chartData) return [];
+      let res = [];
+      for (let key of Object.keys(this.chartData)) {
+        res.push({
+          value: key,
+          label: this.chartData[key].name || key
+        });
+      }
+      return res;
+    },
     chartDataSelected() {
-      if (!this.chartData) return {};
-      const selectedKeys = Object.keys(this.chartData.datasets).filter(key => {
+      if (!this.chartData) return undefined;
+
+      const selectedKeys = Object.keys(this.chartData).filter(key => {
         return this.selected.includes(key);
       });
 
-      let selectedDatasets = [];
-      for (let key of selectedKeys) {
-        selectedDatasets = [
-          ...selectedDatasets,
-          ...this.chartData.datasets[key]
-        ];
-      }
-
       const data = {
-        labels: this.chartData.labels,
-        datasets: selectedDatasets
+        labels: [],
+        datasets: []
       };
+
+      for (let key of selectedKeys) {
+        data.datasets = [...data.datasets, ...this.chartData[key].datasets];
+        data.labels = this.chartData[key].labels;
+      }
 
       return data;
     },
@@ -127,6 +135,11 @@ export default {
     defaultSelected: function() {
       this.selected = [];
       if (this.defaultSelected) this.selected = this.defaultSelected;
+    },
+    chartDataSelected: function() {
+      this.options.scales.yAxes[0].ticks.max = getUpperBound(
+        getMaxValueFromDatasets(this.chartDataSelected.datasets)
+      );
     }
   }
 };
