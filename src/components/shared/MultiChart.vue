@@ -142,7 +142,6 @@ export default {
       this.defaultMaxTick = this.chartOptions.scales.yAxes[0].ticks.max;
     },
     chartDataSelected: function() {
-      console.log(this.defaultMaxTick);
       if (this.selected.includes("cases")) {
         this.options.scales.yAxes[0].ticks.max = this.defaultMaxTick;
       } else {

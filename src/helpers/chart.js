@@ -73,7 +73,5 @@ export function getStateCharts(stateData) {
   );
 
   res.options.scales.yAxes[0].ticks.max = Math.max(...bounds);
-  console.log(res.options);
-
   return res;
 }
