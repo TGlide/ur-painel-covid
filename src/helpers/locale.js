@@ -31,8 +31,6 @@ function localeArrayToObject(neighborhoods) {
 export function getLocaleData(neighborhoods, cities) {
   const neighborhoodsObj = localeArrayToObject(neighborhoods);
   const citiesObj = localeArrayToObject(cities);
-  console.log(citiesObj);
-
   let res = {
     estado: [],
     municipio: [],
