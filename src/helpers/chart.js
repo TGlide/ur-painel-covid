@@ -39,6 +39,10 @@ export function getCityCharts(cityData) {
       getUpperBound(getMaxValueFromDatasets(res.factual[key].datasets))
     );
   }
+  bounds.push(
+    getUpperBound(getMaxValueFromDatasets(res.projected.cases.datasets))
+  );
+
   res.options.scales.yAxes[0].ticks.max = Math.max(...bounds);
 
   return res;
@@ -64,7 +68,12 @@ export function getStateCharts(stateData) {
       getUpperBound(getMaxValueFromDatasets(res.factual[key].datasets))
     );
   }
+  bounds.push(
+    getUpperBound(getMaxValueFromDatasets(res.projected.cases.datasets))
+  );
+
   res.options.scales.yAxes[0].ticks.max = Math.max(...bounds);
+  console.log(res.options);
 
   return res;
 }

@@ -67,7 +67,8 @@ export default {
       selected: [],
       legendsContainerTranslate: 0,
       legendsContainerWidth: 0,
-      options: this.chartOptions
+      options: this.chartOptions,
+      defaultMaxTick: this.chartOptions.scales.yAxes[0].ticks.max
     };
   },
   computed: {
@@ -136,10 +137,19 @@ export default {
       this.selected = [];
       if (this.defaultSelected) this.selected = this.defaultSelected;
     },
+    chartOptions: function() {
+      this.options = this.chartOptions;
+      this.defaultMaxTick = this.chartOptions.scales.yAxes[0].ticks.max;
+    },
     chartDataSelected: function() {
-      this.options.scales.yAxes[0].ticks.max = getUpperBound(
-        getMaxValueFromDatasets(this.chartDataSelected.datasets)
-      );
+      console.log(this.defaultMaxTick);
+      if (this.selected.includes("cases")) {
+        this.options.scales.yAxes[0].ticks.max = this.defaultMaxTick;
+      } else {
+        this.options.scales.yAxes[0].ticks.max = getUpperBound(
+          getMaxValueFromDatasets(this.chartDataSelected.datasets)
+        );
+      }
     }
   }
 };

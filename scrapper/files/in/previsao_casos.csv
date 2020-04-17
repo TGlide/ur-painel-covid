@@ -1,0 +1,338 @@
+date;city;casos;tipo
+2020-04-25;Belford Roxo; 164;previsao
+2020-04-25;Duque de Caxias; 303;previsao
+2020-04-25;Niteroi; 316;previsao
+2020-04-25;Petropolis;  87;previsao
+2020-04-25;Rio de Janeiro;4953;previsao
+2020-04-25;Sao Goncalo; 298;previsao
+2020-04-25;Volta Redonda; 288;previsao
+2020-04-24;Barra Mansa;  27;previsao
+2020-04-24;Belford Roxo; 144;previsao
+2020-04-24;Duque de Caxias; 290;previsao
+2020-04-24;Estado RJ;6898;previsao
+2020-04-24;Niteroi; 294;previsao
+2020-04-24;Petropolis;  78;previsao
+2020-04-24;Rio de Janeiro;4327;previsao
+2020-04-24;Sao Goncalo; 258;previsao
+2020-04-24;Volta Redonda; 277;previsao
+2020-04-23;Barra Mansa;  24;previsao
+2020-04-23;Belford Roxo; 134;previsao
+2020-04-23;Duque de Caxias; 261;previsao
+2020-04-23;Estado RJ;5980;previsao
+2020-04-23;Niteroi; 264;previsao
+2020-04-23;Petropolis;  69;previsao
+2020-04-23;Rio de Janeiro;4149;previsao
+2020-04-23;Sao Goncalo; 246;previsao
+2020-04-23;Volta Redonda; 252;previsao
+2020-04-22;Barra Mansa;  23;previsao
+2020-04-22;Belford Roxo; 115;previsao
+2020-04-22;Duque de Caxias; 228;previsao
+2020-04-22;Estado RJ;5719;previsao
+2020-04-22;Niteroi; 253;previsao
+2020-04-22;Petropolis;  62;previsao
+2020-04-22;Rio de Janeiro;4097;previsao
+2020-04-22;Sao Goncalo; 220;previsao
+2020-04-22;Volta Redonda; 224;previsao
+2020-04-21;Barra Mansa;  22;previsao
+2020-04-21;Belford Roxo; 100;previsao
+2020-04-21;Duque de Caxias; 212;previsao
+2020-04-21;Estado RJ;5642;previsao
+2020-04-21;Niteroi; 236;previsao
+2020-04-21;Petropolis;  60;previsao
+2020-04-21;Rio de Janeiro;3971;previsao
+2020-04-21;Sao Goncalo; 190;previsao
+2020-04-21;Volta Redonda; 210;previsao
+2020-04-20;Barra Mansa;  22;previsao
+2020-04-20;Belford Roxo;  94;previsao
+2020-04-20;Duque de Caxias; 180;previsao
+2020-04-20;Estado RJ;5458;previsao
+2020-04-20;Niteroi; 226;previsao
+2020-04-20;Petropolis;  55;previsao
+2020-04-20;Rio de Janeiro;3895;previsao
+2020-04-20;Sao Goncalo; 176;previsao
+2020-04-20;Volta Redonda; 183;previsao
+2020-04-19;Barra Mansa;  21;previsao
+2020-04-19;Belford Roxo;  87;previsao
+2020-04-19;Duque de Caxias; 156;previsao
+2020-04-19;Estado RJ;5346;previsao
+2020-04-19;Niteroi; 207;previsao
+2020-04-19;Petropolis;  49;previsao
+2020-04-19;Rio de Janeiro;3620;previsao
+2020-04-19;Sao Goncalo; 148;previsao
+2020-04-19;Volta Redonda; 162;previsao
+2020-04-18;Barra Mansa;  19;previsao
+2020-04-18;Belford Roxo;  82;previsao
+2020-04-18;Duque de Caxias; 146;previsao
+2020-04-18;Estado RJ;4942;previsao
+2020-04-18;Niteroi; 194;previsao
+2020-04-18;Petropolis;  46;previsao
+2020-04-18;Rio de Janeiro;3331;previsao
+2020-04-18;Sao Goncalo; 126;previsao
+2020-04-18;Volta Redonda; 154;previsao
+2020-04-17;Barra Mansa;  18;previsao
+2020-04-17;Belford Roxo;  75;previsao
+2020-04-17;Duque de Caxias; 135;previsao
+2020-04-17;Estado RJ;4519;previsao
+2020-04-17;Niteroi; 186;previsao
+2020-04-17;Petropolis;  41;previsao
+2020-04-17;Rio de Janeiro;2947;previsao
+2020-04-17;Sao Goncalo; 117;previsao
+2020-04-17;Volta Redonda; 144;previsao
+2020-04-16;Barra Mansa;  15;previsao
+2020-04-16;Belford Roxo;  66;previsao
+2020-04-16;Duque de Caxias; 127;previsao
+2020-04-16;Estado RJ;3955;previsao
+2020-04-16;Niteroi; 173;previsao
+2020-04-16;Petropolis;  36;previsao
+2020-04-16;Rio de Janeiro;2802;previsao
+2020-04-16;Sao Goncalo; 107;previsao
+2020-04-16;Volta Redonda; 137;previsao
+2020-04-15;Barra Mansa;  13;real
+2020-04-15;Belford Roxo;  54;real
+2020-04-15;Duque de Caxias; 121;real
+2020-04-15;Estado RJ;3743;real
+2020-04-15;Niteroi; 167;real
+2020-04-15;Petropolis;  42;real
+2020-04-15;Rio de Janeiro;2519;real
+2020-04-15;Sao Goncalo;  93;real
+2020-04-15;Volta Redonda; 122;real
+2020-04-14;Barra Mansa;  13;real
+2020-04-14;Belford Roxo;  52;real
+2020-04-14;Duque de Caxias;  94;real
+2020-04-14;Estado RJ;3410;real
+2020-04-14;Niteroi; 148;real
+2020-04-14;Petropolis;  28;real
+2020-04-14;Rio de Janeiro;2393;real
+2020-04-14;Sao Goncalo;  88;real
+2020-04-14;Volta Redonda; 113;real
+2020-04-13;Barra Mansa;  12;real
+2020-04-13;Belford Roxo;  47;real
+2020-04-13;Duque de Caxias;  83;real
+2020-04-13;Estado RJ;3221;real
+2020-04-13;Niteroi; 124;real
+2020-04-13;Petropolis;  28;real
+2020-04-13;Rio de Janeiro;2322;real
+2020-04-13;Sao Goncalo;  79;real
+2020-04-13;Volta Redonda; 112;real
+2020-04-12;Barra Mansa;  11;real
+2020-04-12;Belford Roxo;  46;real
+2020-04-12;Duque de Caxias;  81;real
+2020-04-12;Estado RJ;2855;real
+2020-04-12;Niteroi; 120;real
+2020-04-12;Petropolis;  28;real
+2020-04-12;Rio de Janeiro;1996;real
+2020-04-12;Sao Goncalo;  76;real
+2020-04-12;Volta Redonda; 107;real
+2020-04-11;Barra Mansa;  11;real
+2020-04-11;Belford Roxo;  29;real
+2020-04-11;Duque de Caxias;  62;real
+2020-04-11;Estado RJ;2607;real
+2020-04-11;Niteroi; 120;real
+2020-04-11;Petropolis;  27;real
+2020-04-11;Rio de Janeiro;1905;real
+2020-04-11;Sao Goncalo;  64;real
+2020-04-11;Volta Redonda;  71;real
+2020-04-10;Barra Mansa;  11;real
+2020-04-10;Belford Roxo;  28;real
+2020-04-10;Duque de Caxias;  62;real
+2020-04-10;Estado RJ;2464;real
+2020-04-10;Niteroi; 117;real
+2020-04-10;Petropolis;  26;real
+2020-04-10;Rio de Janeiro;1808;real
+2020-04-10;Sao Goncalo;  35;real
+2020-04-10;Volta Redonda;  71;real
+2020-04-09;Barra Mansa;   8;real
+2020-04-09;Belford Roxo;  28;real
+2020-04-09;Duque de Caxias;  48;real
+2020-04-09;Estado RJ;2216;real
+2020-04-09;Niteroi; 117;real
+2020-04-09;Petropolis;  22;real
+2020-04-09;Rio de Janeiro;1633;real
+2020-04-09;Sao Goncalo;  31;real
+2020-04-09;Volta Redonda;  63;real
+2020-04-08;Barra Mansa;   8;real
+2020-04-08;Belford Roxo;  23;real
+2020-04-08;Duque de Caxias;  38;real
+2020-04-08;Estado RJ;1938;real
+2020-04-08;Niteroi; 106;real
+2020-04-08;Petropolis;  22;real
+2020-04-08;Rio de Janeiro;1449;real
+2020-04-08;Sao Goncalo;  26;real
+2020-04-08;Volta Redonda;  58;real
+2020-04-07;Barra Mansa;   8;real
+2020-04-07;Belford Roxo;  19;real
+2020-04-07;Duque de Caxias;  33;real
+2020-04-07;Estado RJ;1688;real
+2020-04-07;Niteroi;  94;real
+2020-04-07;Petropolis;  20;real
+2020-04-07;Rio de Janeiro;1251;real
+2020-04-07;Sao Goncalo;  22;real
+2020-04-07;Volta Redonda;  58;real
+2020-04-06;Barra Mansa;   3;real
+2020-04-06;Belford Roxo;  14;real
+2020-04-06;Duque de Caxias;  21;real
+2020-04-06;Estado RJ;1461;real
+2020-04-06;Niteroi;  92;real
+2020-04-06;Petropolis;  16;real
+2020-04-06;Rio de Janeiro;1110;real
+2020-04-06;Sao Goncalo;  13;real
+2020-04-06;Volta Redonda;  55;real
+2020-04-05;Barra Mansa;   3;real
+2020-04-05;Belford Roxo;  15;real
+2020-04-05;Duque de Caxias;  20;real
+2020-04-05;Estado RJ;1394;real
+2020-04-05;Niteroi;  87;real
+2020-04-05;Petropolis;  13;real
+2020-04-05;Rio de Janeiro;1068;real
+2020-04-05;Sao Goncalo;  13;real
+2020-04-05;Volta Redonda;  45;real
+2020-04-04;Barra Mansa;   3;real
+2020-04-04;Belford Roxo;   7;real
+2020-04-04;Duque de Caxias;  13;real
+2020-04-04;Estado RJ;1246;real
+2020-04-04;Niteroi;  79;real
+2020-04-04;Petropolis;  13;real
+2020-04-04;Rio de Janeiro; 982;real
+2020-04-04;Sao Goncalo;  10;real
+2020-04-04;Volta Redonda;  45;real
+2020-04-03;Barra Mansa;   3;real
+2020-04-03;Belford Roxo;   3;real
+2020-04-03;Duque de Caxias;   9;real
+2020-04-03;Estado RJ;1074;real
+2020-04-03;Niteroi;  65;real
+2020-04-03;Petropolis;  13;real
+2020-04-03;Rio de Janeiro; 867;real
+2020-04-03;Sao Goncalo;  10;real
+2020-04-03;Volta Redonda;  44;real
+2020-04-02;Barra Mansa;   2;real
+2020-04-02;Belford Roxo;   3;real
+2020-04-02;Duque de Caxias;   9;real
+2020-04-02;Estado RJ; 992;real
+2020-04-02;Niteroi;  63;real
+2020-04-02;Petropolis;  13;real
+2020-04-02;Rio de Janeiro; 798;real
+2020-04-02;Sao Goncalo;  10;real
+2020-04-02;Volta Redonda;  43;real
+2020-04-01;Barra Mansa;   2;real
+2020-04-01;Belford Roxo;   3;real
+2020-04-01;Duque de Caxias;   6;real
+2020-04-01;Estado RJ; 832;real
+2020-04-01;Niteroi;  62;real
+2020-04-01;Petropolis;   5;real
+2020-04-01;Rio de Janeiro; 697;real
+2020-04-01;Sao Goncalo;  11;real
+2020-04-01;Volta Redonda;  12;real
+2020-03-31;Barra Mansa;   2;real
+2020-03-31;Belford Roxo;   2;real
+2020-03-31;Duque de Caxias;   5;real
+2020-03-31;Estado RJ; 708;real
+2020-03-31;Niteroi;  57;real
+2020-03-31;Petropolis;   5;real
+2020-03-31;Rio de Janeiro; 586;real
+2020-03-31;Sao Goncalo;   9;real
+2020-03-31;Volta Redonda;  12;real
+2020-03-30;Barra Mansa;   1;real
+2020-03-30;Belford Roxo;   2;real
+2020-03-30;Duque de Caxias;   5;real
+2020-03-30;Estado RJ; 657;real
+2020-03-30;Niteroi;  47;real
+2020-03-30;Petropolis;   4;real
+2020-03-30;Rio de Janeiro; 553;real
+2020-03-30;Sao Goncalo;   7;real
+2020-03-30;Volta Redonda;  11;real
+2020-03-29;Barra Mansa;   1;real
+2020-03-29;Belford Roxo;   2;real
+2020-03-29;Duque de Caxias;   5;real
+2020-03-29;Estado RJ; 600;real
+2020-03-29;Niteroi;  39;real
+2020-03-29;Petropolis;   4;real
+2020-03-29;Rio de Janeiro; 516;real
+2020-03-29;Sao Goncalo;   6;real
+2020-03-29;Volta Redonda;  11;real
+2020-03-28;Barra Mansa;   1;real
+2020-03-28;Belford Roxo;   1;real
+2020-03-28;Duque de Caxias;   3;real
+2020-03-28;Estado RJ; 558;real
+2020-03-28;Niteroi;  37;real
+2020-03-28;Petropolis;   3;real
+2020-03-28;Rio de Janeiro; 489;real
+2020-03-28;Sao Goncalo;   4;real
+2020-03-28;Volta Redonda;  11;real
+2020-03-27;Barra Mansa;   1;real
+2020-03-27;Belford Roxo;   1;real
+2020-03-27;Duque de Caxias;   3;real
+2020-03-27;Estado RJ; 493;real
+2020-03-27;Niteroi;  36;real
+2020-03-27;Petropolis;   3;real
+2020-03-27;Rio de Janeiro; 431;real
+2020-03-27;Sao Goncalo;   4;real
+2020-03-27;Volta Redonda;   9;real
+2020-03-26;Barra Mansa;   1;real
+2020-03-26;Belford Roxo;   1;real
+2020-03-26;Duque de Caxias;   2;real
+2020-03-26;Estado RJ; 421;real
+2020-03-26;Niteroi;  31;real
+2020-03-26;Petropolis;   3;real
+2020-03-26;Rio de Janeiro; 368;real
+2020-03-26;Sao Goncalo;   3;real
+2020-03-26;Volta Redonda;   7;real
+2020-03-25;Barra Mansa;   1;real
+2020-03-25;Duque de Caxias;   2;real
+2020-03-25;Estado RJ; 370;real
+2020-03-25;Niteroi;  19;real
+2020-03-25;Petropolis;   3;real
+2020-03-25;Rio de Janeiro; 331;real
+2020-03-25;Sao Goncalo;   3;real
+2020-03-25;Volta Redonda;   6;real
+2020-03-24;Barra Mansa;   1;real
+2020-03-24;Duque de Caxias;   1;real
+2020-03-24;Estado RJ; 305;real
+2020-03-24;Niteroi;  12;real
+2020-03-24;Petropolis;   3;real
+2020-03-24;Rio de Janeiro; 276;real
+2020-03-24;Sao Goncalo;   3;real
+2020-03-24;Volta Redonda;   4;real
+2020-03-23;Barra Mansa;   1;real
+2020-03-23;Estado RJ; 233;real
+2020-03-23;Niteroi;  10;real
+2020-03-23;Petropolis;   3;real
+2020-03-23;Rio de Janeiro; 212;real
+2020-03-23;Sao Goncalo;   3;real
+2020-03-22;Barra Mansa;   1;real
+2020-03-22;Estado RJ; 186;real
+2020-03-22;Niteroi;  10;real
+2020-03-22;Petropolis;   3;real
+2020-03-22;Rio de Janeiro; 168;real
+2020-03-21;Barra Mansa;   1;real
+2020-03-21;Estado RJ; 119;real
+2020-03-21;Niteroi;  10;real
+2020-03-21;Petropolis;   3;real
+2020-03-21;Rio de Janeiro;  99;real
+2020-03-19;Barra Mansa;   1;real
+2020-03-19;Estado RJ;  66;real
+2020-03-19;Niteroi;   7;real
+2020-03-19;Rio de Janeiro;  56;real
+2020-03-18;Barra Mansa;   1;real
+2020-03-18;Estado RJ;  63;real
+2020-03-18;Niteroi;   6;real
+2020-03-18;Rio de Janeiro;  55;real
+2020-03-16;Barra Mansa;   1;real
+2020-03-16;Estado RJ;  25;real
+2020-03-16;Niteroi;   1;real
+2020-03-16;Rio de Janeiro;  23;real
+2020-03-15;Barra Mansa;   1;real
+2020-03-15;Estado RJ;  24;real
+2020-03-15;Niteroi;   1;real
+2020-03-15;Rio de Janeiro;  22;real
+2020-03-12;Barra Mansa;   1;real
+2020-03-12;Estado RJ;  15;real
+2020-03-12;Niteroi;   1;real
+2020-03-12;Rio de Janeiro;  13;real
+2020-03-08;Barra Mansa;   1;real
+2020-03-08;Estado RJ;   3;real
+2020-03-08;Rio de Janeiro;   2;real
+2020-03-06;Barra Mansa;   1;real
+2020-03-06;Estado RJ;   2;real
+2020-03-06;Rio de Janeiro;   1;real
+2020-03-05;Barra Mansa;   1;real
+2020-03-05;Estado RJ;   1;real

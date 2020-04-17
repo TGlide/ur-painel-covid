@@ -38,9 +38,9 @@
       </div>
       <div class="column is-4">
         <multi-chart
-          :default-selected="[]"
+          :default-selected="['cases']"
           select-label="Fonte Projetados"
-          :chart-data="undefined"
+          :chart-data="$store.getters.charts[mainChart.selected].projected"
           :chart-options="$store.getters.charts[mainChart.selected].options"
         />
       </div>

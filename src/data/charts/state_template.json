@@ -39,7 +39,51 @@
       ]
     }
   },
-  "projected": {},
+  "projected": {
+    "cases": {
+      "name": "Casos Totais",
+      "labels": [
+        "Abr 18",
+        "Abr 19",
+        "Abr 20",
+        "Abr 21",
+        "Abr 22",
+        "Abr 23",
+        "Abr 24"
+      ],
+      "datasets": [
+        {
+          "label": "Casos Di\u00e1rios",
+          "backgroundColor": "rgba(255, 107, 107,1.0)",
+          "data": [
+            423,
+            404,
+            112,
+            184,
+            77,
+            261,
+            918
+          ]
+        },
+        {
+          "label": "Casos Totais",
+          "backgroundColor": "rgba(255, 107, 107, 0.1)",
+          "borderColor": "rgba(255, 107, 107,1.0)",
+          "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
+          "type": "line",
+          "data": [
+            4942,
+            5346,
+            5458,
+            5642,
+            5719,
+            5980,
+            6898
+          ]
+        }
+      ]
+    }
+  },
   "options": {
     "tooltips": {
       "mode": "x-axis"
