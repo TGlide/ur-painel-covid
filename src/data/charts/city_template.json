@@ -29,7 +29,7 @@
           "data": []
         },
         {
-          "label": "Hospitalizados Totais",
+          "label": "Hospitalizados Atuais",
           "backgroundColor": "rgba(10, 189, 227, 0.1)",
           "borderColor": "rgba(10, 189, 227, 1)",
           "pointBackgroundColor": "rgba(10, 189, 227, 1)",
@@ -48,7 +48,7 @@
           "data": []
         },
         {
-          "label": "UTI Total",
+          "label": "UTI Atuais",
           "backgroundColor": "rgba(46, 134, 222, 0.1)",
           "borderColor": "rgba(46, 134, 222, 1)",
           "pointBackgroundColor": "rgba(46, 134, 222, 1)",
