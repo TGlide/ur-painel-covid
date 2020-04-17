@@ -50,7 +50,6 @@ export default new Vuex.Store({
         city: payload.city || {},
         state: payload.state || {}
       };
-      console.log(state);
     },
 
     setStateData(state, payload) {
