@@ -88,10 +88,18 @@ export default new Vuex.Store({
       const neighborhoodPromise = axios.get(
         `${process.env.VUE_APP_API_URL}api/neighborhoods`
       );
+      const citiesPromise = axios.get(
+        `${process.env.VUE_APP_API_URL}api/cities`
+      );
 
-      Promise.all([cityPromise, statePromise, neighborhoodPromise])
+      Promise.all([
+        cityPromise,
+        statePromise,
+        neighborhoodPromise,
+        citiesPromise
+      ])
         .then(values => {
-          const [cityRes, stateRes, neighborhoodRes] = values;
+          const [cityRes, stateRes, neighborhoodRes, citiesRes] = values;
 
           let city = {
             historic: [],
@@ -121,7 +129,10 @@ export default new Vuex.Store({
           const stateCharts = getStateCharts(state);
           commit("setCharts", { city: cityCharts, state: stateCharts });
 
-          const localeData = getLocaleData(neighborhoodRes.data);
+          const localeData = getLocaleData(
+            neighborhoodRes.data,
+            citiesRes.data
+          );
           commit("setLocaleData", localeData);
         })
         .catch(error => {

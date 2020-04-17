@@ -10,11 +10,16 @@ function getStatus(cases, leitos) {
   return 1;
 }
 
-function neighborhoodsToObject(neighborhoods) {
+function localeArrayToObject(neighborhoods) {
   const res = {};
 
   for (let n of neighborhoods) {
-    res[n.name.toLowerCase()] = {
+    res[
+      n.name
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+    ] = {
       cases: n.cases,
       dead: n.dead
     };
@@ -23,8 +28,10 @@ function neighborhoodsToObject(neighborhoods) {
   return res;
 }
 
-export function getLocaleData(neighborhoods) {
-  const neighborhoodsObj = neighborhoodsToObject(neighborhoods);
+export function getLocaleData(neighborhoods, cities) {
+  const neighborhoodsObj = localeArrayToObject(neighborhoods);
+  const citiesObj = localeArrayToObject(cities);
+  console.log(citiesObj);
 
   let res = {
     estado: [],
@@ -35,10 +42,15 @@ export function getLocaleData(neighborhoods) {
   for (let [key, entry] of Object.entries(leitos.estado)) {
     res.estado.push({
       name: key,
-      cases: 0,
+      cases: citiesObj[key.toLowerCase()]
+        ? citiesObj[key.toLowerCase()].cases
+        : 0,
       leitosTotal: Math.round(entry.UTI * BED_RETENTION_RATE),
       leitosSus: Math.round(entry.UTI_SUS * BED_RETENTION_RATE),
-      status: getStatus(entry.Total, entry.UTI * BED_RETENTION_RATE)
+      status: getStatus(
+        citiesObj[key.toLowerCase()] ? citiesObj[key.toLowerCase()].cases : 0,
+        entry.UTI * BED_RETENTION_RATE
+      )
     });
   }
 
