@@ -142,7 +142,7 @@ export default {
       this.defaultMaxTick = this.chartOptions.scales.yAxes[0].ticks.max;
     },
     chartDataSelected: function() {
-      if (this.selected.includes("cases")) {
+      if (this.selected.includes("cases") || this.selected.length === 0) {
         this.options.scales.yAxes[0].ticks.max = this.defaultMaxTick;
       } else {
         this.options.scales.yAxes[0].ticks.max = getUpperBound(
