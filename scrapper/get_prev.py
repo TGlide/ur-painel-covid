@@ -77,10 +77,15 @@ for i in range(len(df) - 1, -1, -1):
     data[city]["total"].append(int(casos))
     data[city]["daily"].append(int(diario))
 
-print(data['state']['labels'].index('Abr 18'))
-print(data['state']['daily'][36:])
-print(data['state']['total'][36:])
-print(data['state']['labels'][36:])
+print(data['state']['labels'].index('Abr 16'))
+print(data['state']['daily'][34:])
+print(data['state']['total'][34:])
+print(data['state']['labels'][34:])
+print()
+print(data['city']['labels'].index('Abr 16'))
+print(data['city']['daily'][33:])
+print(data['city']['total'][33:])
+print(data['city']['labels'][33:])
 
 with open(write_path, 'w') as f:
     json.dump(data, f)

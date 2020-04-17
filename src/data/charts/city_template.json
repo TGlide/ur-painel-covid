@@ -81,6 +81,8 @@
     "cases": {
       "name": "Casos Totais",
       "labels": [
+        "Abr 16",
+        "Abr 17",
         "Abr 18",
         "Abr 19",
         "Abr 20",
@@ -95,6 +97,8 @@
           "label": "Casos Di\u00e1rios",
           "backgroundColor": "rgba(255, 107, 107,1.0)",
           "data": [
+            283,
+            145,
             384,
             289,
             275,
@@ -112,6 +116,8 @@
           "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
           "type": "line",
           "data": [
+            2802,
+            2947,
             3331,
             3620,
             3895,
