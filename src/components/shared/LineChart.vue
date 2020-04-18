@@ -28,7 +28,7 @@ export default {
           if (
             !(
               chartData.datasets[dsIdx].type &&
-              chartData.datasets[dsIdx].type == "line"
+              chartData.datasets[dsIdx].type === "line"
             )
           )
             chartData.datasets[dsIdx].backgroundColor = this.gradient;
