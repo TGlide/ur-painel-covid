@@ -1,0 +1,1972 @@
+{
+  "estado": [
+    {
+      "name": "Angra dos Reis",
+      "infected": 0,
+      "leitosSus": 3,
+      "leitosTotal": 9,
+      "status": 3
+    },
+    {
+      "name": "Aperib\u00e9",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Araruama",
+      "infected": 0,
+      "leitosSus": 5,
+      "leitosTotal": 8,
+      "status": 3
+    },
+    {
+      "name": "Areal",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Arma\u00e7\u00e3o dos B\u00fazios",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Arraial do Cabo",
+      "infected": 0,
+      "leitosSus": 4,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Barra do Pira\u00ed",
+      "infected": 0,
+      "leitosSus": 3,
+      "leitosTotal": 6,
+      "status": 3
+    },
+    {
+      "name": "Barra Mansa",
+      "infected": 0,
+      "leitosSus": 4,
+      "leitosTotal": 20,
+      "status": 3
+    },
+    {
+      "name": "Belford Roxo",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Bom Jardim",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Bom Jesus do Itabapoana",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Cabo Frio",
+      "infected": 0,
+      "leitosSus": 9,
+      "leitosTotal": 23,
+      "status": 3
+    },
+    {
+      "name": "Cachoeiras de Macacu",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Cambuci",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 2,
+      "status": 3
+    },
+    {
+      "name": "Carapebus",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Comendador Levy Gasparian",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Campos dos Goytacazes",
+      "infected": 0,
+      "leitosSus": 38,
+      "leitosTotal": 94,
+      "status": 3
+    },
+    {
+      "name": "Cantagalo",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 8,
+      "status": 3
+    },
+    {
+      "name": "Cardoso Moreira",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Carmo",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Casimiro de Abreu",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Concei\u00e7\u00e3o de Macabu",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Cordeiro",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Duas Barras",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Duque de Caxias",
+      "infected": 0,
+      "leitosSus": 12,
+      "leitosTotal": 84,
+      "status": 3
+    },
+    {
+      "name": "Engenheiro Paulo de Frontin",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Guapimirim",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Iguaba Grande",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Itabora\u00ed",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 7,
+      "status": 3
+    },
+    {
+      "name": "Itagua\u00ed",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Italva",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Itaocara",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 2,
+      "status": 3
+    },
+    {
+      "name": "Itaperuna",
+      "infected": 0,
+      "leitosSus": 27,
+      "leitosTotal": 38,
+      "status": 3
+    },
+    {
+      "name": "Itatiaia",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Japeri",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Laje do Muria\u00e9",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Maca\u00e9",
+      "infected": 0,
+      "leitosSus": 10,
+      "leitosTotal": 34,
+      "status": 3
+    },
+    {
+      "name": "Macuco",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Mag\u00e9",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Mangaratiba",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Maric\u00e1",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Mendes",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Mesquita",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Miguel Pereira",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Miracema",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Natividade",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Nil\u00f3polis",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 7,
+      "status": 3
+    },
+    {
+      "name": "Niter\u00f3i",
+      "infected": 0,
+      "leitosSus": 27,
+      "leitosTotal": 113,
+      "status": 3
+    },
+    {
+      "name": "Nova Friburgo",
+      "infected": 0,
+      "leitosSus": 7,
+      "leitosTotal": 11,
+      "status": 3
+    },
+    {
+      "name": "Nova Igua\u00e7u",
+      "infected": 0,
+      "leitosSus": 14,
+      "leitosTotal": 41,
+      "status": 3
+    },
+    {
+      "name": "Paracambi",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Para\u00edba do Sul",
+      "infected": 0,
+      "leitosSus": 3,
+      "leitosTotal": 3,
+      "status": 3
+    },
+    {
+      "name": "Paraty",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Paty do Alferes",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Petr\u00f3polis",
+      "infected": 0,
+      "leitosSus": 19,
+      "leitosTotal": 65,
+      "status": 3
+    },
+    {
+      "name": "Pinheiral",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Pira\u00ed",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Porci\u00fancula",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Porto Real",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 2,
+      "status": 3
+    },
+    {
+      "name": "Quatis",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Queimados",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Quissam\u00e3",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 2,
+      "status": 3
+    },
+    {
+      "name": "Resende",
+      "infected": 0,
+      "leitosSus": 4,
+      "leitosTotal": 18,
+      "status": 3
+    },
+    {
+      "name": "Rio Bonito",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Rio Claro",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Rio das Flores",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Rio das Ostras",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Rio de Janeiro",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Santa Maria Madalena",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Santo Ant\u00f4nio de P\u00e1dua",
+      "infected": 0,
+      "leitosSus": 3,
+      "leitosTotal": 3,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Francisco de Itabapoana",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Fid\u00e9lis",
+      "infected": 0,
+      "leitosSus": 3,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Gon\u00e7alo",
+      "infected": 0,
+      "leitosSus": 28,
+      "leitosTotal": 69,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Jo\u00e3o da Barra",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Jo\u00e3o de Meriti",
+      "infected": 0,
+      "leitosSus": 4,
+      "leitosTotal": 7,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Jos\u00e9 de Ub\u00e1",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "S\u00e3o Jos\u00e9 do Vale do Rio Preto",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Pedro da Aldeia",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "S\u00e3o Sebasti\u00e3o do Alto",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Sapucaia",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "name": "Saquarema",
+      "infected": 0,
+      "leitosSus": 6,
+      "leitosTotal": 6,
+      "status": 3
+    },
+    {
+      "name": "Serop\u00e9dica",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Silva Jardim",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Sumidouro",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Tangu\u00e1",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Teres\u00f3polis",
+      "infected": 0,
+      "leitosSus": 7,
+      "leitosTotal": 12,
+      "status": 3
+    },
+    {
+      "name": "Trajano de Moraes",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Tr\u00eas Rios",
+      "infected": 0,
+      "leitosSus": 4,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "name": "Valen\u00e7a",
+      "infected": 0,
+      "leitosSus": 8,
+      "leitosTotal": 8,
+      "status": 3
+    },
+    {
+      "name": "Varre-Sai",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "name": "Vassouras",
+      "infected": 0,
+      "leitosSus": 10,
+      "leitosTotal": 14,
+      "status": 3
+    },
+    {
+      "name": "Volta Redonda",
+      "infected": 0,
+      "leitosSus": 8,
+      "leitosTotal": 58,
+      "status": 3
+    }
+  ],
+  "municipio": [
+    {
+      "ap": "1.0",
+      "name": "centro",
+      "infected": 17,
+      "leitosSus": 59,
+      "leitosTotal": 68,
+      "status": 1
+    },
+    {
+      "ap": "4.2",
+      "name": "barra da tijuca",
+      "infected": 144,
+      "leitosSus": 9,
+      "leitosTotal": 97,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "lagoa",
+      "infected": 41,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.2",
+      "name": "campo grande",
+      "infected": 17,
+      "leitosSus": 6,
+      "leitosTotal": 26,
+      "status": 3
+    },
+    {
+      "ap": "4.1",
+      "name": "taquara",
+      "infected": 11,
+      "leitosSus": 0,
+      "leitosTotal": 12,
+      "status": 3
+    },
+    {
+      "ap": "5.1",
+      "name": "bangu",
+      "infected": 18,
+      "leitosSus": 0,
+      "leitosTotal": 8,
+      "status": 3
+    },
+    {
+      "ap": "4.1",
+      "name": "praca seca",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "4.1",
+      "name": "cidade de deus",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "copacabana",
+      "infected": 92,
+      "leitosSus": 0,
+      "leitosTotal": 63,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "ipanema",
+      "infected": 64,
+      "leitosSus": 4,
+      "leitosTotal": 9,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "leblon",
+      "infected": 87,
+      "leitosSus": 0,
+      "leitosTotal": 13,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "benfica",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.6",
+      "name": "guadalupe",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.1",
+      "name": "bonsucesso",
+      "infected": 8,
+      "leitosSus": 8,
+      "leitosTotal": 14,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "cacuia",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "",
+      "name": "freguesia jacarepagua",
+      "infected": 0,
+      "leitosSus": 3,
+      "leitosTotal": 8,
+      "status": 4
+    },
+    {
+      "ap": "3.3",
+      "name": "madureira",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.2",
+      "name": "tijuca",
+      "infected": 50,
+      "leitosSus": 14,
+      "leitosTotal": 84,
+      "status": 2
+    },
+    {
+      "ap": "3.2",
+      "name": "meier",
+      "infected": 21,
+      "leitosSus": 6,
+      "leitosTotal": 28,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "botafogo",
+      "infected": 61,
+      "leitosSus": 0,
+      "leitosTotal": 44,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "cascadura",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 16,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "jardim botanico",
+      "infected": 30,
+      "leitosSus": 10,
+      "leitosTotal": 10,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "jacarezinho",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.2",
+      "name": "vila isabel",
+      "infected": 21,
+      "leitosSus": 15,
+      "leitosTotal": 18,
+      "status": 2
+    },
+    {
+      "ap": "2.1",
+      "name": "flamengo",
+      "infected": 39,
+      "leitosSus": 2,
+      "leitosTotal": 2,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "vicente de carvalho",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "jardim guanabara",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.6",
+      "name": "pavuna",
+      "infected": 13,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "jardim carioca",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.7",
+      "name": "freguesia",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 16,
+      "status": 1
+    },
+    {
+      "ap": "4.1",
+      "name": "jacarepagua",
+      "infected": 28,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.5",
+      "name": "penha",
+      "infected": 3,
+      "leitosSus": 15,
+      "leitosTotal": 15,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "catete",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "todos os santos",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "bras de pina",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "2.2",
+      "name": "andarai",
+      "infected": 4,
+      "leitosSus": 8,
+      "leitosTotal": 19,
+      "status": 2
+    },
+    {
+      "ap": "4.1",
+      "name": "curicica",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "cachambi",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "paqueta",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "2.2",
+      "name": "maracana",
+      "infected": 9,
+      "leitosSus": 0,
+      "leitosTotal": 12,
+      "status": 2
+    },
+    {
+      "ap": "3.3",
+      "name": "vila da penha",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "iraja",
+      "infected": 11,
+      "leitosSus": 0,
+      "leitosTotal": 7,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "taua",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.2",
+      "name": "engenho de dentro",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 25,
+      "status": 3
+    },
+    {
+      "ap": "5.1",
+      "name": "realengo",
+      "infected": 13,
+      "leitosSus": 0,
+      "leitosTotal": 32,
+      "status": 3
+    },
+    {
+      "ap": "5.3",
+      "name": "santa cruz",
+      "infected": 2,
+      "leitosSus": 18,
+      "leitosTotal": 29,
+      "status": 1
+    },
+    {
+      "ap": "4.2",
+      "name": "recreio dos bandeirantes",
+      "infected": 26,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.1",
+      "name": "senador camara",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.4",
+      "name": "guaratiba",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "caju",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "5.2",
+      "name": "inhoaiba",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "508",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "1.0",
+      "name": "sao cristovao",
+      "infected": 5,
+      "leitosSus": 7,
+      "leitosTotal": 42,
+      "status": 1
+    },
+    {
+      "ap": "3.4",
+      "name": "del castilho",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "pilares",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "4.1",
+      "name": "vila valqueire",
+      "infected": 3,
+      "leitosSus": 4,
+      "leitosTotal": 8,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "cosme velho",
+      "infected": 5,
+      "leitosSus": 2,
+      "leitosTotal": 12,
+      "status": 3
+    },
+    {
+      "ap": "4.1",
+      "name": "tanque",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "laranjeiras",
+      "infected": 21,
+      "leitosSus": 10,
+      "leitosTotal": 61,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "portuguesa",
+      "infected": 3,
+      "leitosSus": 4,
+      "leitosTotal": 12,
+      "status": 1
+    },
+    {
+      "ap": "3.5",
+      "name": "penha circular",
+      "infected": 4,
+      "leitosSus": 2,
+      "leitosTotal": 5,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "leme",
+      "infected": 10,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.1",
+      "name": "olaria",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "galeao",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "4.1",
+      "name": "gardenia azul",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "marechal hermes",
+      "infected": 5,
+      "leitosSus": 6,
+      "leitosTotal": 18,
+      "status": 3
+    },
+    {
+      "ap": "2.2",
+      "name": "grajau",
+      "infected": 8,
+      "leitosSus": 0,
+      "leitosTotal": 4,
+      "status": 2
+    },
+    {
+      "ap": "3.6",
+      "name": "anchieta",
+      "infected": 8,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "rio comprido",
+      "infected": 7,
+      "leitosSus": 0,
+      "leitosTotal": 77,
+      "status": 1
+    },
+    {
+      "ap": "1.0",
+      "name": "saude",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.3",
+      "name": "honorio gurgel",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "engenheiro leal",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "vila kosmos",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "bento ribeiro",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "vidigal",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "5.1",
+      "name": "padre miguel",
+      "infected": 8,
+      "leitosSus": 0,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "ap": "4.2",
+      "name": "camorim",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.3",
+      "name": "sepetiba",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "4.1",
+      "name": "anil",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "rocha miranda",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.2",
+      "name": "senador vasconcelos",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "4.1",
+      "name": "pechincha",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "gavea",
+      "infected": 16,
+      "leitosSus": 8,
+      "leitosTotal": 22,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "agua santa",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.3",
+      "name": "paciencia",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.3",
+      "name": "vaz lobo",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.4",
+      "name": "engenho da rainha",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.1",
+      "name": "manguinhos",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.4",
+      "name": "inhauma",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "engenho novo",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.1",
+      "name": "ramos",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "gamboa",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.2",
+      "name": "abolicao",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "piedade",
+      "infected": 6,
+      "leitosSus": 4,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "colegio",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "vista alegre",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.6",
+      "name": "barros filho",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.6",
+      "name": "acari",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 7,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "santo cristo",
+      "infected": 0,
+      "leitosSus": 2,
+      "leitosTotal": 2,
+      "status": 1
+    },
+    {
+      "ap": "3.6",
+      "name": "coelho neto",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "rocinha",
+      "infected": 11,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "cidade nova",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.5",
+      "name": "parada de lucas",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "sao conrado",
+      "infected": 24,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.6",
+      "name": "parque anchieta",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "4.2",
+      "name": "vargem pequena",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "itanhanga",
+      "infected": 9,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "5.2",
+      "name": "santissimo",
+      "infected": 5,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "humaita",
+      "infected": 9,
+      "leitosSus": 9,
+      "leitosTotal": 26,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "magalhaes bastos",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "3.5",
+      "name": "cordovil",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 4,
+      "status": 3
+    },
+    {
+      "ap": "3.1",
+      "name": "mare",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.1",
+      "name": "gloria",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "barra de guaratiba",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "3.3",
+      "name": "quintino bocaiuva",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "name": "turiacu",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "mangueira",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.7",
+      "name": "cidade universitaria",
+      "infected": 0,
+      "leitosSus": 16,
+      "leitosTotal": 16,
+      "status": 1
+    },
+    {
+      "ap": "5.2",
+      "name": "cosmos",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "riachuelo",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "5.1",
+      "name": "jardim sulacap",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "sampaio",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "encantado",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "2.1",
+      "name": "urca",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "sao francisco xavier",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "1.0",
+      "name": "estacio",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 5,
+      "status": 1
+    },
+    {
+      "ap": "3.5",
+      "name": "vigario geral",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "name": "rocha",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.4",
+      "name": "complexo do alemao",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.6",
+      "name": "costa barros",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "lins de vasconcelos",
+      "infected": 7,
+      "leitosSus": 0,
+      "leitosTotal": 24,
+      "status": 4
+    },
+    {
+      "ap": "3.5",
+      "name": "jardim america",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "cocota",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "5.1",
+      "name": "vila militar",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 2,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "osvaldo cruz",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "1.0",
+      "name": "santa teresa",
+      "infected": 6,
+      "leitosSus": 0,
+      "leitosTotal": 7,
+      "status": 1
+    },
+    {
+      "ap": "1.0",
+      "name": "catumbi",
+      "infected": 4,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.4",
+      "name": "higienopolis",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "monero",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 12,
+      "status": 1
+    },
+    {
+      "ap": "3.7",
+      "name": "bancarios",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "3.6",
+      "name": "ricardo de albuquerque",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "2.2",
+      "name": "praca da bandeira",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 2
+    },
+    {
+      "ap": "3.2",
+      "name": "jacare",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "name": "praia da bandeira",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    },
+    {
+      "ap": "2.2",
+      "name": "alto da boa vista",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 2
+    },
+    {
+      "ap": "3.4",
+      "name": "maria da graca",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "pedra de guaratiba",
+      "infected": 1,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "3.4",
+      "name": "tomas coelho",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "4.2",
+      "name": "joa",
+      "infected": 2,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "",
+      "name": "cavalcanti",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 4
+    },
+    {
+      "ap": "3.7",
+      "name": "zumbi",
+      "infected": 0,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 1
+    }
+  ],
+  "aps": [
+    {
+      "ap": "1.0",
+      "infected": 57,
+      "leitosSus": 68,
+      "leitosTotal": 201,
+      "status": 1
+    },
+    {
+      "ap": "2.1",
+      "infected": 519,
+      "leitosSus": 45,
+      "leitosTotal": 262,
+      "status": 3
+    },
+    {
+      "ap": "2.2",
+      "infected": 96,
+      "leitosSus": 37,
+      "leitosTotal": 137,
+      "status": 2
+    },
+    {
+      "ap": "3.1",
+      "infected": 26,
+      "leitosSus": 8,
+      "leitosTotal": 14,
+      "status": 3
+    },
+    {
+      "ap": "3.2",
+      "infected": 51,
+      "leitosSus": 10,
+      "leitosTotal": 57,
+      "status": 3
+    },
+    {
+      "ap": "3.3",
+      "infected": 56,
+      "leitosSus": 6,
+      "leitosTotal": 41,
+      "status": 3
+    },
+    {
+      "ap": "3.4",
+      "infected": 16,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    },
+    {
+      "ap": "3.5",
+      "infected": 20,
+      "leitosSus": 17,
+      "leitosTotal": 24,
+      "status": 3
+    },
+    {
+      "ap": "3.6",
+      "infected": 32,
+      "leitosSus": 0,
+      "leitosTotal": 7,
+      "status": 3
+    },
+    {
+      "ap": "3.7",
+      "infected": 12,
+      "leitosSus": 20,
+      "leitosTotal": 56,
+      "status": 1
+    },
+    {
+      "ap": "4.1",
+      "infected": 66,
+      "leitosSus": 4,
+      "leitosTotal": 20,
+      "status": 3
+    },
+    {
+      "ap": "4.2",
+      "infected": 174,
+      "leitosSus": 9,
+      "leitosTotal": 97,
+      "status": 3
+    },
+    {
+      "ap": "5.1",
+      "infected": 46,
+      "leitosSus": 0,
+      "leitosTotal": 46,
+      "status": 3
+    },
+    {
+      "ap": "5.2",
+      "infected": 31,
+      "leitosSus": 6,
+      "leitosTotal": 26,
+      "status": 3
+    },
+    {
+      "ap": "5.3",
+      "infected": 9,
+      "leitosSus": 18,
+      "leitosTotal": 29,
+      "status": 1
+    },
+    {
+      "ap": "5.4",
+      "infected": 3,
+      "leitosSus": 0,
+      "leitosTotal": 0,
+      "status": 3
+    }
+  ]
+}

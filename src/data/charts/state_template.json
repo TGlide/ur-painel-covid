@@ -1,0 +1,133 @@
+{
+  "factual": {
+    "cases": {
+      "name": "Casos Totais",
+      "labels": [],
+      "datasets": [
+        {
+          "label": "Casos Di\u00e1rios",
+          "backgroundColor": "rgba(255, 107, 107,1.0)",
+          "data": []
+        },
+        {
+          "label": "Casos Totais",
+          "backgroundColor": "rgba(255, 107, 107, 0.1)",
+          "borderColor": "rgba(255, 107, 107,1.0)",
+          "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
+          "type": "line",
+          "data": []
+        }
+      ]
+    },
+    "dead": {
+      "name": "Óbitos",
+      "labels": [],
+      "datasets": [
+        {
+          "label": "Óbitos Di\u00e1rios",
+          "backgroundColor": "rgba(131, 149, 167, 1)",
+          "data": []
+        },
+        {
+          "label": "Óbitos Total",
+          "backgroundColor": "rgba(131, 149, 167, 0.1)",
+          "borderColor": "rgba(131, 149, 167, 1)",
+          "pointBackgroundColor": "rgba(131, 149, 167, 1)",
+          "type": "line",
+          "data": []
+        }
+      ]
+    }
+  },
+  "projected": {
+    "cases": {
+      "name": "Casos Totais",
+      "labels": [
+        "Abr 16",
+        "Abr 17",
+        "Abr 18",
+        "Abr 19",
+        "Abr 20",
+        "Abr 21",
+        "Abr 22",
+        "Abr 23",
+        "Abr 24"
+      ],
+      "datasets": [
+        {
+          "label": "Casos Di\u00e1rios",
+          "backgroundColor": "rgba(255, 107, 107,1.0)",
+          "data": [
+            212,
+            564,
+            423,
+            404,
+            112,
+            184,
+            77,
+            261,
+            918
+          ]
+        },
+        {
+          "label": "Casos Totais",
+          "backgroundColor": "rgba(255, 107, 107, 0.1)",
+          "borderColor": "rgba(255, 107, 107,1.0)",
+          "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
+          "type": "line",
+          "data": [
+            3955,
+            4519,
+            4942,
+            5346,
+            5458,
+            5642,
+            5719,
+            5980,
+            6898
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "tooltips": {
+      "mode": "x-axis"
+    },
+    "plugins": {
+      "datalabels": {
+        "color": "#ffffff",
+        "anchor": "end",
+        "align": "end",
+        "display": "auto"
+      }
+    },
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "legend": {
+      "display": false
+    },
+    "scales": {
+      "xAxes": [
+        {
+          "gridLines": {
+            "display": false
+          },
+          "ticks": {
+            "autoSkip": true,
+            "maxRotation": 45,
+            "minRotation": 45
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "max": 2000,
+            "min": 0
+          }
+        }
+      ]
+    }
+  }
+}

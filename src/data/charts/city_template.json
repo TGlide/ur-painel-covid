@@ -1,0 +1,174 @@
+{
+  "factual": {
+    "cases": {
+      "name": "Casos Totais",
+      "labels": [],
+      "datasets": [
+        {
+          "label": "Casos Di\u00e1rios",
+          "backgroundColor": "rgba(255, 107, 107,1.0)",
+          "data": []
+        },
+        {
+          "label": "Casos Totais",
+          "backgroundColor": "rgba(255, 107, 107, 0.1)",
+          "borderColor": "rgba(255, 107, 107,1.0)",
+          "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
+          "type": "line",
+          "data": []
+        }
+      ]
+    },
+    "hospitalized": {
+      "name": "Hospitalizados",
+      "labels": [],
+      "datasets": [
+        {
+          "label": "Hospitalizados Diarios",
+          "backgroundColor": "rgba(10, 189, 227, 1)",
+          "data": []
+        },
+        {
+          "label": "Hospitalizados Atuais",
+          "backgroundColor": "rgba(10, 189, 227, 0.1)",
+          "borderColor": "rgba(10, 189, 227, 1)",
+          "pointBackgroundColor": "rgba(10, 189, 227, 1)",
+          "type": "line",
+          "data": []
+        }
+      ]
+    },
+    "uti": {
+      "name": "UTI",
+      "labels": [],
+      "datasets": [
+        {
+          "label": "UTI Di\u00e1rios",
+          "backgroundColor": "rgba(46, 134, 222, 1)",
+          "data": []
+        },
+        {
+          "label": "UTI Atuais",
+          "backgroundColor": "rgba(46, 134, 222, 0.1)",
+          "borderColor": "rgba(46, 134, 222, 1)",
+          "pointBackgroundColor": "rgba(46, 134, 222, 1)",
+          "type": "line",
+          "data": []
+        }
+      ]
+    },
+    "dead": {
+      "name": "Óbitos",
+      "labels": [],
+      "datasets": [
+        {
+          "label": "Óbitos Di\u00e1rios",
+          "backgroundColor": "rgba(131, 149, 167, 1)",
+          "data": []
+        },
+        {
+          "label": "Óbitos Total",
+          "backgroundColor": "rgba(131, 149, 167, 0.1)",
+          "borderColor": "rgba(131, 149, 167, 1)",
+          "pointBackgroundColor": "rgba(131, 149, 167, 1)",
+          "type": "line",
+          "data": []
+        }
+      ]
+    }
+  },
+  "projected": {
+    "cases": {
+      "name": "Casos Totais",
+      "labels": [
+        "Abr 16",
+        "Abr 17",
+        "Abr 18",
+        "Abr 19",
+        "Abr 20",
+        "Abr 21",
+        "Abr 22",
+        "Abr 23",
+        "Abr 24",
+        "Abr 25"
+      ],
+      "datasets": [
+        {
+          "label": "Casos Di\u00e1rios",
+          "backgroundColor": "rgba(255, 107, 107,1.0)",
+          "data": [
+            283,
+            145,
+            384,
+            289,
+            275,
+            76,
+            126,
+            52,
+            178,
+            626
+          ]
+        },
+        {
+          "label": "Casos Totais",
+          "backgroundColor": "rgba(255, 107, 107, 0.1)",
+          "borderColor": "rgba(255, 107, 107,1.0)",
+          "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
+          "type": "line",
+          "data": [
+            2802,
+            2947,
+            3331,
+            3620,
+            3895,
+            3971,
+            4097,
+            4149,
+            4327,
+            4953
+          ]
+        }
+      ]
+    }
+  },
+  "options": {
+    "tooltips": {
+      "mode": "x-axis"
+    },
+    "plugins": {
+      "datalabels": {
+        "color": "#ffffff",
+        "anchor": "end",
+        "align": "end",
+        "display": "auto"
+      }
+    },
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "legend": {
+      "display": false
+    },
+    "scales": {
+      "xAxes": [
+        {
+          "gridLines": {
+            "display": false
+          },
+          "ticks": {
+            "autoSkip": true,
+            "maxRotation": 45,
+            "minRotation": 45
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "max": 2000,
+            "min": 0
+          }
+        }
+      ]
+    }
+  }
+}
