@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="section">
-      <div class="container">
+      <div class="container is-fluid">
         <div class="columns">
           <div class="column is-12">
             <Charts />
