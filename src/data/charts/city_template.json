@@ -95,7 +95,7 @@
       "datasets": [
         {
           "label": "Casos Di\u00e1rios",
-          "backgroundColor": "rgba(255, 107, 107,1.0)",
+          "backgroundColor": "rgba(225, 95, 65,1.0)",
           "data": [
             283,
             145,
@@ -111,9 +111,9 @@
         },
         {
           "label": "Casos Totais",
-          "backgroundColor": "rgba(255, 107, 107, 0.1)",
-          "borderColor": "rgba(255, 107, 107,1.0)",
-          "pointBackgroundColor": "rgba(255, 107, 107,1.0)",
+          "backgroundColor": "rgba(225, 95, 65,0.1)",
+          "borderColor": "rgba(225, 95, 65,1.0)",
+          "pointBackgroundColor": "rgba(225, 95, 65,1.0)",
           "type": "line",
           "data": [
             2802,
