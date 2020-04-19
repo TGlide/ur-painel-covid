@@ -20,7 +20,7 @@
 
     <div class="legends" ref="legends">
       <div
-        class="container"
+        class="l-container"
         ref="legendsContainer"
         :style="{ transform: `translateX(${legendsContainerTranslate}%)` }"
       >
@@ -197,7 +197,7 @@ export default {
     }
   }
 
-  .container {
+  .l-container {
     transition: 0.5s ease;
   }
 
