@@ -55,7 +55,9 @@
 
 <script>
 import cloneDeep from "lodash.clonedeep";
+
 import { getMaxValueFromDatasets, getUpperBound } from "@/helpers/chart.js";
+import { sortedDateArray } from "@/helpers/date.js";
 
 import LineChart from "@/components/shared/LineChart";
 import NoContent from "@/components/shared/NoContent";
@@ -96,11 +98,13 @@ export default {
         return this.selected.includes(key);
       });
 
-      const labels = new Set();
+      let labels = new Set();
 
       for (let key of selectedKeys) {
         this.scopedCData[key].labels.forEach(el => labels.add(el));
       }
+
+      labels = sortedDateArray(new Array(...labels));
 
       const datasets = [];
       for (let key of selectedKeys) {
