@@ -33,6 +33,7 @@
           <div class="charts">
             <multi-chart
               v-if="!$store.getters.loading"
+              :key="chart.selected"
               select-label="Tipo de Dado"
               :chart-data="combinedCharts"
               :chart-options="$store.getters.charts[chart.selected].options"
@@ -65,12 +66,14 @@ export default {
   computed: {
     combinedCharts() {
       if (this.$store.getters.loading) return undefined;
+      console.log(this.chart.selected);
 
       const combined = {};
       const chartsObj = cloneDeep(
         this.$store.getters.charts[this.chart.selected]
       );
       console.log(this.$store.getters.charts[this.chart.selected]);
+      console.log(chartsObj);
 
       for (let factualKey of Object.keys(chartsObj.factual)) {
         combined[`factual - ${factualKey}`] = chartsObj.factual[factualKey];
