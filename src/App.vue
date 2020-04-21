@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view />
+    <router-view v-if="!$store.getters.loading" />
+    <b-loading
+      :is-full-page="true"
+      :active.sync="$store.getters.loading"
+      :can-cancel="false"
+    ></b-loading>
   </div>
 </template>
 

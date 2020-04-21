@@ -30,6 +30,7 @@
     <div class="columns charts" v-if="!$store.getters.loading">
       <div class="column is-8">
         <multi-chart
+          :key="mainChart.selected"
           :default-selected="['cases']"
           select-label="Tipo de Dado"
           :chart-data="$store.getters.charts[mainChart.selected].factual"
@@ -38,6 +39,7 @@
       </div>
       <div class="column is-4">
         <multi-chart
+          :key="mainChart.selected"
           :default-selected="['cases']"
           select-label="Fonte Projetados"
           :chart-data="$store.getters.charts[mainChart.selected].projected"

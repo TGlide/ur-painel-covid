@@ -1,3 +1,5 @@
+import cloneDeep from "lodash.clonedeep";
+
 const months = [
   "Jan",
   "Feb",
@@ -12,6 +14,23 @@ const months = [
   "Nov",
   "Dez"
 ];
+
+function parseDataStr(dataStr) {
+  return parseInt(
+    `${months.indexOf(dataStr.slice(0, 3)) * 100 +
+      parseInt(dataStr.slice(4, dataStr.length))}`
+  );
+}
+
+export function sortedDateArray(arr) {
+  const localeArray = cloneDeep(arr);
+  return localeArray.sort((l1, l2) => {
+    const l1Parsed = parseDataStr(l1);
+    const l2Parsed = parseDataStr(l2);
+
+    return l1Parsed - l2Parsed;
+  });
+}
 
 export function dateToStr(dt) {
   const month = months[parseInt(dt.slice(5, 7)) - 1];

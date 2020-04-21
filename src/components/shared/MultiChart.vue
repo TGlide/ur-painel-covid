@@ -20,7 +20,7 @@
 
     <div class="legends" ref="legends">
       <div
-        class="container"
+        class="l-container"
         ref="legendsContainer"
         :style="{ transform: `translateX(${legendsContainerTranslate}%)` }"
       >
@@ -43,7 +43,7 @@
 
     <line-chart
       :chartdata="chartDataSelected"
-      :options="options"
+      :options="scopedCOptions"
       v-if="selected && selected.length > 0 && chartData"
     >
     </line-chart>
@@ -54,56 +54,91 @@
 </template>
 
 <script>
+import cloneDeep from "lodash.clonedeep";
+
+import { getMaxValueFromDatasets, getUpperBound } from "@/helpers/chart.js";
+import { sortedDateArray } from "@/helpers/date.js";
+
 import LineChart from "@/components/shared/LineChart";
 import NoContent from "@/components/shared/NoContent";
 
-import { getMaxValueFromDatasets, getUpperBound } from "@/helpers/chart.js";
-
 export default {
   components: { LineChart, NoContent },
+
   props: ["selectLabel", "defaultSelected", "chartData", "chartOptions"],
+
   data() {
     return {
       selected: [],
       legendsContainerTranslate: 0,
       legendsContainerWidth: 0,
-      options: this.chartOptions,
+      scopedCOptions: cloneDeep(this.chartOptions),
+      scopedCData: cloneDeep(this.chartData),
       defaultMaxTick: this.chartOptions.scales.yAxes[0].ticks.max
     };
   },
+
   computed: {
     selectOptions() {
-      if (!this.chartData) return [];
+      if (!this.scopedCData) return [];
       let res = [];
-      for (let key of Object.keys(this.chartData)) {
+      for (let key of Object.keys(this.scopedCData)) {
         res.push({
           value: key,
-          label: this.chartData[key].name || key
+          label: this.scopedCData[key].name || key
         });
       }
       return res;
     },
-    chartDataSelected() {
-      if (!this.chartData) return undefined;
 
-      const selectedKeys = Object.keys(this.chartData).filter(key => {
+    chartDataSelected() {
+      if (!this.scopedCData) return undefined;
+
+      const selectedKeys = Object.keys(this.scopedCData).filter(key => {
         return this.selected.includes(key);
       });
 
-      const data = {
-        labels: [],
-        datasets: []
-      };
+      let labels = new Set();
 
       for (let key of selectedKeys) {
-        data.datasets = [...data.datasets, ...this.chartData[key].datasets];
-        data.labels = this.chartData[key].labels;
+        this.scopedCData[key].labels.forEach(el => labels.add(el));
       }
+
+      labels = sortedDateArray(new Array(...labels));
+
+      const datasets = [];
+      for (let key of selectedKeys) {
+        const keyDatasets = cloneDeep(this.chartData[key].datasets);
+        const dsLabels = cloneDeep(this.chartData[key].labels);
+
+        for (let idx = 0; idx < keyDatasets.length; idx++) {
+          const dsData = cloneDeep(keyDatasets[idx].data);
+          const newDsData = [];
+
+          for (let label of labels) {
+            const labelIndex = dsLabels.indexOf(label);
+            if (labelIndex === -1) {
+              newDsData.push(null);
+            } else {
+              newDsData.push(dsData[labelIndex]);
+            }
+          }
+
+          keyDatasets[idx].data = newDsData;
+        }
+        datasets.push(...keyDatasets);
+      }
+
+      const data = {
+        labels: new Array(...labels),
+        datasets: datasets
+      };
 
       return data;
     },
+
     legends() {
-      if (!this.chartData) return [];
+      if (!this.scopedCData) return [];
       const res = [];
 
       for (let ds of this.chartDataSelected.datasets) {
@@ -124,28 +159,33 @@ export default {
       if (this.legendsContainerTranslate > 0)
         this.legendsContainerTranslate = 0;
     },
+
     scrollLegendsRight() {
       this.legendsContainerTranslate -= 50;
     }
   },
+
   mounted() {
     this.selected = [];
     if (this.defaultSelected) this.selected = this.defaultSelected;
   },
+
   watch: {
     defaultSelected: function() {
       this.selected = [];
       if (this.defaultSelected) this.selected = this.defaultSelected;
     },
+
     chartOptions: function() {
-      this.options = this.chartOptions;
-      this.defaultMaxTick = this.chartOptions.scales.yAxes[0].ticks.max;
+      this.scopedCOptions = cloneDeep(this.chartOptions);
+      this.defaultMaxTick = this.scopedCOptions.scales.yAxes[0].ticks.max;
     },
+
     chartDataSelected: function() {
       if (this.selected.includes("cases") || this.selected.length === 0) {
-        this.options.scales.yAxes[0].ticks.max = this.defaultMaxTick;
+        this.scopedCOptions.scales.yAxes[0].ticks.max = this.defaultMaxTick;
       } else {
-        this.options.scales.yAxes[0].ticks.max = getUpperBound(
+        this.scopedCOptions.scales.yAxes[0].ticks.max = getUpperBound(
           getMaxValueFromDatasets(this.chartDataSelected.datasets)
         );
       }
@@ -197,7 +237,7 @@ export default {
     }
   }
 
-  .container {
+  .l-container {
     transition: 0.5s ease;
   }
 
