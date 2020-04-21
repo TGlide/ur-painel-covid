@@ -7,9 +7,9 @@
           alt="Movimento União Rio"
           class="logo"
         />
-        <h4 class="title is-4">
+        <h5 class="title is-5">
           Monitoramento União Rio
-        </h4>
+        </h5>
       </b-navbar-item>
     </template>
 
