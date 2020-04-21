@@ -66,15 +66,10 @@ export default {
   computed: {
     combinedCharts() {
       if (this.$store.getters.loading) return undefined;
-      console.log(this.chart.selected);
-
       const combined = {};
       const chartsObj = cloneDeep(
         this.$store.getters.charts[this.chart.selected]
       );
-      console.log(this.$store.getters.charts[this.chart.selected]);
-      console.log(chartsObj);
-
       for (let factualKey of Object.keys(chartsObj.factual)) {
         combined[`factual - ${factualKey}`] = chartsObj.factual[factualKey];
         combined[`factual - ${factualKey}`].name = `Real: ${
@@ -89,8 +84,6 @@ export default {
           combined[`projected - ${projectedKey}`].name
         }`;
       }
-
-      console.log(combined);
 
       return combined;
     }

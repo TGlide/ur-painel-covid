@@ -24,8 +24,6 @@ function parseDataStr(dataStr) {
 
 export function sortedDateArray(arr) {
   const localeArray = cloneDeep(arr);
-  console.log(localeArray);
-
   return localeArray.sort((l1, l2) => {
     const l1Parsed = parseDataStr(l1);
     const l2Parsed = parseDataStr(l2);
