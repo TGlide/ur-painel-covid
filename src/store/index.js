@@ -143,7 +143,6 @@ export default new Vuex.Store({
         });
     }
   },
-  modules: {},
   getters: {
     city: state => state.city,
     charts: state => state.charts,
