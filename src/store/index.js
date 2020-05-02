@@ -4,7 +4,7 @@ import Vuex from "vuex";
 import axios from "axios";
 
 import { dateCompare, dateToStr } from "../helpers/date";
-import { getCityCharts, getStateCharts } from "../helpers/chart";
+import { getCharts } from "../helpers/chart";
 import { getLocaleData } from "../helpers/locale";
 
 Vue.use(Vuex);
@@ -91,15 +91,30 @@ export default new Vuex.Store({
       const citiesPromise = axios.get(
         `${process.env.VUE_APP_API_URL}api/cities`
       );
+      const cityProjectionsPromise = axios.get(
+        `${process.env.VUE_APP_PROJECTIONS_API_URL}projection/city`
+      );
+      const stateProjectionsPromise = axios.get(
+        `${process.env.VUE_APP_PROJECTIONS_API_URL}projection/state`
+      );
 
       Promise.all([
         cityPromise,
         statePromise,
         neighborhoodPromise,
-        citiesPromise
+        citiesPromise,
+        cityProjectionsPromise,
+        stateProjectionsPromise
       ])
         .then(values => {
-          const [cityRes, stateRes, neighborhoodRes, citiesRes] = values;
+          const [
+            cityRes,
+            stateRes,
+            neighborhoodRes,
+            citiesRes,
+            cityProjectionsRes,
+            stateProjectionsRes
+          ] = values;
 
           let city = {
             historic: [],
@@ -125,8 +140,16 @@ export default new Vuex.Store({
           state.current = state.historic[state.historic.length - 1];
           commit("setStateData", { ...state });
 
-          const cityCharts = getCityCharts(city);
-          const stateCharts = getStateCharts(state);
+          const cityCharts = getCharts(
+            city,
+            cityProjectionsRes.data.data,
+            "city"
+          );
+          const stateCharts = getCharts(
+            state,
+            stateProjectionsRes.data.data,
+            "state"
+          );
           commit("setCharts", { city: cityCharts, state: stateCharts });
 
           const localeData = getLocaleData(
