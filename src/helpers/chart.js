@@ -1,3 +1,5 @@
+import { dateToStr } from "./date";
+
 import cityTemplate from "../data/charts/city_template.json";
 import stateTemplate from "../data/charts/state_template.json";
 
@@ -19,16 +21,17 @@ export function getMaxValueFromDatasets(obj) {
   return Math.max(...obj.map(ds => Math.max(...ds.data)));
 }
 
-export function getCityCharts(cityData) {
-  const res = { ...cityTemplate };
+export function getCharts(receivedData, projections, type) {
+  const template = type == "city" ? cityTemplate : stateTemplate;
+  const res = { ...template };
   const keys = Object.keys(res.factual);
-  const labels = cityData.historic.map(entry => entry.date);
+  const labels = receivedData.historic.map(entry => entry.date);
   const bounds = [];
 
   for (let key of keys) {
     res.factual[key].labels = labels;
 
-    res.factual[key].datasets[1].data = cityData.historic.map(
+    res.factual[key].datasets[1].data = receivedData.historic.map(
       entry => entry[key]
     );
     res.factual[key].datasets[0].data = dailyDifference(
@@ -39,39 +42,35 @@ export function getCityCharts(cityData) {
       getUpperBound(getMaxValueFromDatasets(res.factual[key].datasets))
     );
   }
-  bounds.push(
-    getUpperBound(getMaxValueFromDatasets(res.projected.cases.datasets))
-  );
 
-  res.options.scales.yAxes[0].ticks.max = Math.max(...bounds);
+  const projection_keys_started = {
+    cases: false,
+    leitos: false
+  };
 
-  return res;
-}
+  for (let projection of projections) {
+    for (let key of Object.keys(projection_keys_started)) {
+      if (projection[key] > 0) projection_keys_started[key] = true;
 
-export function getStateCharts(stateData) {
-  const res = { ...stateTemplate };
-  const keys = Object.keys(res.factual);
-  const labels = stateData.historic.map(entry => entry.date);
-  const bounds = [];
-
-  for (let key of keys) {
-    res.factual[key].labels = labels;
-
-    res.factual[key].datasets[1].data = stateData.historic.map(
-      entry => entry[key]
-    );
-    res.factual[key].datasets[0].data = dailyDifference(
-      res.factual[key].datasets[1].data
-    );
-
-    bounds.push(
-      getUpperBound(getMaxValueFromDatasets(res.factual[key].datasets))
-    );
+      if (projection_keys_started[key]) {
+        res.projected[key].labels.push(dateToStr(projection.date));
+        res.projected[key].datasets[1].data.push(projection[key]);
+        const total_length = res.projected[key].datasets[1].data.length;
+        res.projected[key].datasets[0].data.push(
+          total_length > 1
+            ? res.projected[key].datasets[1].data[total_length - 1] -
+                res.projected[key].datasets[1].data[total_length - 2]
+            : 0
+        );
+      }
+    }
   }
+
   bounds.push(
     getUpperBound(getMaxValueFromDatasets(res.projected.cases.datasets))
   );
 
   res.options.scales.yAxes[0].ticks.max = Math.max(...bounds);
+
   return res;
 }

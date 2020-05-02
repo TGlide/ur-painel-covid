@@ -2,50 +2,39 @@
   <div class="box">
     <div class="columns box-header">
       <div class="column">
-        <h4 class="title is-4">Evolução qnt. casos</h4>
+        <h4 class="title is-4">Evolução de casos</h4>
       </div>
       <div class="column">
         <b-field>
-          <b-dropdown v-model="mainChart.selected" aria-role="list">
+          <b-dropdown v-model="chart.selected" aria-role="list">
             <button
               class="button is-primary is-outlined"
               type="button"
               slot="trigger"
             >
-              <span>{{ mainChart.options[mainChart.selected] }}</span>
+              <span>{{ chart.options[chart.selected] }}</span>
             </button>
 
             <b-dropdown-item
-              v-for="key in Object.keys(mainChart.options)"
+              v-for="key in Object.keys(chart.options)"
               :key="key"
               :value="key"
               aria-role="listitem"
             >
-              <span>{{ mainChart.options[key] }}</span>
+              <span>{{ chart.options[key] }}</span>
             </b-dropdown-item>
           </b-dropdown>
         </b-field>
       </div>
     </div>
-    <div class="columns charts" v-if="!$store.getters.loading">
-      <div class="column is-8">
-        <multi-chart
-          :key="mainChart.selected"
-          :default-selected="['cases']"
-          select-label="Tipo de Dado"
-          :chart-data="$store.getters.charts[mainChart.selected].factual"
-          :chart-options="$store.getters.charts[mainChart.selected].options"
-        />
-      </div>
-      <div class="column is-4">
-        <multi-chart
-          :key="mainChart.selected"
-          :default-selected="['cases']"
-          select-label="Fonte Projetados"
-          :chart-data="$store.getters.charts[mainChart.selected].projected"
-          :chart-options="$store.getters.charts[mainChart.selected].options"
-        />
-      </div>
+    <div class="charts">
+      <multi-chart
+        v-if="!$store.getters.loading"
+        :key="chart.selected"
+        select-label="Tipo de Dado"
+        :chart-data="combinedCharts"
+        :chart-options="$store.getters.charts[chart.selected].options"
+      />
     </div>
   </div>
 </template>
@@ -53,11 +42,13 @@
 <script>
 import MultiChart from "@/components/shared/MultiChart";
 
+import cloneDeep from "lodash.clonedeep";
+
 export default {
   components: { MultiChart },
   data() {
     return {
-      mainChart: {
+      chart: {
         selected: "city",
         options: {
           city: "Municipio",
@@ -65,12 +56,64 @@ export default {
         }
       }
     };
+  },
+  computed: {
+    combinedCharts() {
+      if (this.$store.getters.loading) return undefined;
+      const combined = {};
+      const chartsObj = cloneDeep(
+        this.$store.getters.charts[this.chart.selected]
+      );
+      for (let factualKey of Object.keys(chartsObj.factual)) {
+        combined[`factual - ${factualKey}`] = chartsObj.factual[factualKey];
+        combined[`factual - ${factualKey}`].name = `Real: ${
+          combined[`factual - ${factualKey}`].name
+        }`;
+      }
+
+      for (let projectedKey of Object.keys(chartsObj.projected)) {
+        combined[`projected - ${projectedKey}`] =
+          chartsObj.projected[projectedKey];
+        combined[`projected - ${projectedKey}`].name = `Projetado: ${
+          combined[`projected - ${projectedKey}`].name
+        }`;
+      }
+
+      return combined;
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/theme.scss";
+
+@import "@/styles/theme.scss";
+
+/deep/ .box {
+  height: 100%;
+
+  .box-header {
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    .title {
+      margin-bottom: 0 !important;
+    }
+
+    .column:first-child {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+
+    .column:last-child {
+      &:not(:first-child) {
+        flex-grow: 0;
+      }
+    }
+  }
+}
 
 .charts {
   align-items: stretch;
