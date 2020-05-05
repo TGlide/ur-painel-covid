@@ -1,4 +1,4 @@
-import { dateToStr } from "./date";
+import { dateToStr, dateCompare } from "./date";
 
 import cityTemplate from "../data/charts/city_template.json";
 import stateTemplate from "../data/charts/state_template.json";
@@ -28,8 +28,12 @@ export function getCharts(receivedData, projections, type) {
   const labels = receivedData.historic.map(entry => entry.date);
   const bounds = [];
 
+  const startDates = [];
+
   for (let key of keys) {
     res.factual[key].labels = labels;
+
+    startDates.push(labels[labels.length - 1]);
 
     res.factual[key].datasets[1].data = receivedData.historic.map(
       entry => entry[key]
@@ -48,12 +52,14 @@ export function getCharts(receivedData, projections, type) {
     leitos: false
   };
 
-  for (let projection of projections) {
+  for (let projection of projections.sort(dateCompare)) {
     for (let key of Object.keys(projection_keys_started)) {
-      if (projection[key] > 0) projection_keys_started[key] = true;
+      const projectionDate = dateToStr(projection.date);
+      if (projection[key] > 0 && startDates.includes(projectionDate))
+        projection_keys_started[key] = true;
 
       if (projection_keys_started[key]) {
-        res.projected[key].labels.push(dateToStr(projection.date));
+        res.projected[key].labels.push(projectionDate);
         res.projected[key].datasets[1].data.push(projection[key]);
         const total_length = res.projected[key].datasets[1].data.length;
         res.projected[key].datasets[0].data.push(

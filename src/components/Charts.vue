@@ -88,8 +88,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/theme.scss";
 
-@import "@/styles/theme.scss";
-
 /deep/ .box {
   height: 100%;
 
