@@ -28,6 +28,7 @@
       </div>
     </div>
     <b-table
+      class="fade-in"
       :data="$store.getters.locales[locales.selected]"
       default-sort-direction="desc"
       default-sort="cases"

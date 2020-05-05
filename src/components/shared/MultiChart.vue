@@ -44,6 +44,8 @@
     <line-chart
       :chartdata="chartDataSelected"
       :options="scopedCOptions"
+      class="fade-in"
+      :key="selected.length"
       v-if="selected && selected.length > 0 && chartData"
     >
     </line-chart>

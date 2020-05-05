@@ -117,6 +117,10 @@ $link-focus-border: $primary;
   }
 }
 
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

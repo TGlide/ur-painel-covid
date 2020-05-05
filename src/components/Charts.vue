@@ -29,7 +29,11 @@
     </div>
     <div class="charts">
       <multi-chart
-        :default-selected="['factual - cases', 'projected - cases']"
+        :default-selected="[
+          'factual - cases',
+          'factual - dead',
+          'projected - cases'
+        ]"
         v-if="!$store.getters.loading"
         :key="chart.selected"
         select-label="Tipo de Dado"

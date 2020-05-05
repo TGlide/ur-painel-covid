@@ -27,32 +27,34 @@
         </b-field>
       </div>
     </div>
-    <div class="stat">
-      <span class="type"
-        ><span class="status danger" /> Total Confirmados:</span
-      >
-      <span class="value danger">{{
-        $store.getters[selected].current.cases || "-"
-      }}</span>
-    </div>
-    <div class="stat">
-      <span class="type"><span class="status gray" /> Casos fatais:</span>
-      <span class="value gray">{{
-        $store.getters[selected].current.dead || "-"
-      }}</span>
-    </div>
+    <div class="fade-in" :key="selected">
+      <div class="stat">
+        <span class="type"
+          ><span class="status danger" /> Total Confirmados:</span
+        >
+        <span class="value danger">{{
+          $store.getters[selected].current.cases || "-"
+        }}</span>
+      </div>
+      <div class="stat">
+        <span class="type"><span class="status gray" /> Casos fatais:</span>
+        <span class="value gray">{{
+          $store.getters[selected].current.dead || "-"
+        }}</span>
+      </div>
 
-    <div class="stat">
-      <span class="type"><span class="status blue" /> Hospitalizados:</span>
-      <span class="value blue">{{
-        $store.getters[selected].current.hospitalized || "-"
-      }}</span>
-    </div>
-    <div class="stat">
-      <span class="type"><span class="status dark-blue" /> Em UTI:</span>
-      <span class="value dark-blue">{{
-        $store.getters[selected].current.uti || "-"
-      }}</span>
+      <div class="stat">
+        <span class="type"><span class="status blue" /> Hospitalizados:</span>
+        <span class="value blue">{{
+          $store.getters[selected].current.hospitalized || "-"
+        }}</span>
+      </div>
+      <div class="stat">
+        <span class="type"><span class="status dark-blue" /> Em UTI:</span>
+        <span class="value dark-blue">{{
+          $store.getters[selected].current.uti || "-"
+        }}</span>
+      </div>
     </div>
   </div>
 </template>
