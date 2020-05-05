@@ -46,14 +46,14 @@
       "datasets": [
         {
           "label": "Casos Di\u00e1rios",
-          "backgroundColor": "rgba(212, 51, 68,  1.0)",
+          "backgroundColor": "rgba(16, 172, 132,  1.0)",
           "data": []
         },
         {
           "label": "Casos Totais",
-          "backgroundColor": "rgba(212, 51, 68,  0.1)",
-          "borderColor": "rgba(212, 51, 68, 1.0)",
-          "pointBackgroundColor": "rgba(212, 51, 68, 1.0)",
+          "backgroundColor": "rgba(16, 172, 132,  0.1)",
+          "borderColor": "rgba(16, 172, 132, 1.0)",
+          "pointBackgroundColor": "rgba(16, 172, 132, 1.0)",
           "type": "line",
           "data": []
         }
