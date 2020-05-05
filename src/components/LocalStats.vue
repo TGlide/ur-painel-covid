@@ -30,15 +30,21 @@
     <b-table
       :data="$store.getters.locales[locales.selected]"
       default-sort-direction="desc"
-      default-sort="leitos"
+      default-sort="cases"
       sort-icon="arrow-up"
       sort-icon-size="is-small"
       paginated
       per-page="10"
       striped
+      :key="locales.selected"
     >
       <template slot-scope="props">
-        <b-table-column field="ap" label="AP" sortable>
+        <b-table-column
+          field="ap"
+          label="AP"
+          sortable
+          v-if="locales.selected !== 'state'"
+        >
           <span v-if="props.row.ap">
             {{ props.row.ap }}
           </span>
@@ -46,7 +52,13 @@
             ?
           </span>
         </b-table-column>
-        <b-table-column field="name" label="Local" width="250" sortable>
+        <b-table-column
+          field="name"
+          label="Local"
+          width="250"
+          sortable
+          v-if="locales.selected !== 'aps'"
+        >
           <span v-if="props.row.name">
             {{ titleCase(props.row.name) }}
           </span>
