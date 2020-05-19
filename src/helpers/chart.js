@@ -55,8 +55,7 @@ export function getCharts(receivedData, projections, type) {
   for (let projection of projections.sort(dateCompare)) {
     for (let key of Object.keys(projection_keys_started)) {
       const projectionDate = dateToStr(projection.date);
-      if (projection[key] > 0 && startDates.includes(projectionDate))
-        projection_keys_started[key] = true;
+      if (projection[key] > 0) projection_keys_started[key] = true;
 
       if (projection_keys_started[key]) {
         res.projected[key].labels.push(projectionDate);
