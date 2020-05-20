@@ -3,7 +3,14 @@ import { ptBR } from "date-fns/locale";
 import { format as formatDate, parse as parseDate } from "date-fns";
 
 export function dateToStr(dt) {
-  const formattedDate = formatDate(new Date(dt), "MMM dd", { locale: ptBR });
+  const dateObj = parseDate(dt.slice(0, 10), "y-MM-dd", new Date(), {
+    locale: ptBR
+  });
+
+  const formattedDate = formatDate(new Date(dateObj), "MMM dd", {
+    locale: ptBR
+  });
+
   return `${formattedDate.slice(0, 1).toUpperCase()}${formattedDate.slice(1)}`;
 }
 
