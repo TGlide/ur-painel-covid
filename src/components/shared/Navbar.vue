@@ -17,9 +17,9 @@
       <b-navbar-item tag="router-link" :to="{ name: 'Home' }">
         Início
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ name: 'Projections' }">
+      <!-- <b-navbar-item tag="router-link" :to="{ name: 'Projections' }">
         Projeções
-      </b-navbar-item>
+      </b-navbar-item> -->
     </template>
   </b-navbar>
 </template>

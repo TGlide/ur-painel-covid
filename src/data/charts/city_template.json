@@ -56,25 +56,6 @@
           "data": []
         }
       ]
-    },
-    "dead": {
-      "name": "Óbitos",
-      "labels": [],
-      "datasets": [
-        {
-          "label": "Óbitos Di\u00e1rios",
-          "backgroundColor": "rgba(131, 149, 167, 1)",
-          "data": []
-        },
-        {
-          "label": "Óbitos Total",
-          "backgroundColor": "rgba(131, 149, 167, 0.1)",
-          "borderColor": "rgba(131, 149, 167, 1)",
-          "pointBackgroundColor": "rgba(131, 149, 167, 1)",
-          "type": "line",
-          "data": []
-        }
-      ]
     }
   },
   "projected": {
